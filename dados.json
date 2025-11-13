@@ -1,0 +1,2846 @@
+[
+  {
+    "palavra": "mutu",
+    "traducao": "pessoa",
+    "classe": "substantivo",
+    "exemplo": "Muntu wa nge.",
+    "traducao_exemplo": "A pessoa é minha.",
+    "imagem": "pessoa.jpg",
+    "audio": "mutu.mp3.opus"
+  },
+  {
+    "palavra": "mbwa",
+    "traducao": "cão",
+    "classe": "substantivo",
+    "exemplo": "Mbwa wa samba.",
+    "traducao_exemplo": "O cão corre.",
+    "imagem": "cao.png",
+    "audio": "cao.mp3.opus"
+  },
+  {
+    "palavra": "ngulu",
+    "traducao": "porco",
+    "classe": "substantivo",
+    "exemplo": "Ngulu ke mu zamba.",
+    "traducao_exemplo": "O porco está na floresta.",
+    "imagem": "porco.avif",
+    "audio": "ngulo.mp3.opus"
+  },
+  {
+    "palavra": "samba",
+    "traducao": "dançar",
+    "classe": "verbo",
+    "exemplo": "Tuna samba lela.",
+    "traducao_exemplo": "Nós dançamos hoje.",
+    "imagem": "dancar.jpg",
+    "audio": "ndanza.mp3.opus"
+  }, {
+    "palavra": "nzua",
+    "traducao": "sol",
+    "classe": "substantivo",
+    "exemplo": "Nzua wakitadi.",
+    "traducao_exemplo": "O sol está quente.",
+    "imagem": "sol.png",
+    "audio": "sol.waptt"
+  },
+  {
+    "palavra": "mbanje",
+    "traducao": "casa",
+    "classe": "substantivo",
+    "exemplo": "Mbanje ame i nene.",
+    "traducao_exemplo": "Minha casa é grande.",
+    "imagem": "casa.avif",
+    "audio": "casa.waptt"
+  },
+
+  {
+    "palavra": "kulia",
+    "traducao": "comer",
+    "classe": "verbo",
+    "exemplo": "Ngi kulia mbolo",
+    "traducao_exemplo": "Eu como pão.",
+    "imagem": "comer.png",
+    "audio": "comer.waptt"
+  },
+  {
+    "palavra": "kunua",
+    "traducao": "beber",
+    "classe": "verbo",
+    "exemplo": "Ene kunua maza.",
+    "traducao_exemplo": "Você bebe água.",
+    "imagem": "beber.jpg",
+    "audio": "beber.waptt"
+  },
+  {
+    "palavra": "maza",
+    "traducao": "água || agua",
+    "classe": "substantivo",
+    "exemplo": "Maza ma waba.",
+    "traducao_exemplo": "A água está fria." ,
+    "imagem": "agua.jpg",
+    "audio": "agua.waptt"
+  },
+
+  {
+    "palavra": "tata",
+    "traducao": "pai",
+    "classe": "substantivo",
+    "exemplo": "Tata ame uya.",
+    "traducao_exemplo": "Meu pai chegou.",
+    "imagem": "pai.webp",
+    "audio": "pai.waptt"
+  },
+  {
+    "palavra": "mai",
+    "traducao": "mãe",
+    "classe": "substantivo",
+    "exemplo": "Mai ame u sala.",
+    "traducao_exemplo": "Minha mãe está trabalhando.",
+    "imagem": "mae.png",
+    "audio": "mae.waptt"
+  },
+{
+    "palavra": "kukema",
+    "traducao": "andar/caminhar",
+    "classe": "verbo",
+    "exemplo": "Ngi kukema ku mbanje.",
+    "traducao_exemplo": "Eu ando para casa.",
+    "imagem": "andar.webp",
+    "audio": "andar.waptt"
+  },{
+    "palavra": "moxi",
+    "traducao": "fogo",
+    "classe": "substantivo",
+    "exemplo": "Moxi wa tunga.",
+    "traducao_exemplo": "O fogo queima.",
+    "imagem": "fogo.webp",
+    "audio": "fogo.waptt"
+  },{
+    "palavra": "kutanga",
+    "traducao": "ler",
+    "classe": "verbo",
+    "exemplo": "Nona kutanga livru.",
+    "traducao_exemplo": "Nós lemos o livro.",
+    "imagem": "ler.webp",
+    "audio": "ler.waptt"
+  },{
+    "palavra": "mutenene",
+    "traducao": "vermelho",
+    "classe": "adjetivo",
+    "exemplo": "Ngunda ya mutenene.",
+    "traducao_exemplo": "A flor é vermelha.",
+    "imagem": "Vermelho.webp",
+    "audio": "vermelho.waptt"
+  },{
+    "palavra": "kiazi",
+    "traducao": "verde",
+    "classe": "adjetivo",
+    "exemplo": "Maza ma kiazi.",
+    "traducao_exemplo": "A água é verde (de plantas).",
+    "imagem": "verde.webp",
+    "audio": "verde.waptt"
+  },{
+    "palavra": "mupu",
+    "traducao": "branco",
+    "classe": "adjetivo",
+    "exemplo": "Ngeye ya mupu.",
+    "traducao_exemplo": "A roupa é branca.",
+    "imagem": "branca.webp",
+    "audio": "branco.waptt"
+  },{
+    "palavra": "toke",
+    "traducao": "preto",
+    "classe": "adjetivo",
+    "exemplo": "Mbwa wa toke.",
+    "traducao_exemplo": "O cão é preto.",
+    "imagem": "preto.webp",
+    "audio": "preto.waptt"
+  },{
+    "palavra": "kienge",
+    "traducao": "claro",
+    "classe": "adjetivo",
+    "exemplo": "Nzua wa kienge.",
+    "traducao_exemplo": "O sol está claro.",
+    "imagem": "claro.webp",
+    "audio": "claro.waptt"
+  },{
+    "palavra": "nzo",
+    "traducao": "porta",
+    "classe": "substantivo",
+    "exemplo": "Nzo ya mbanje.",
+    "traducao_exemplo": "A porta da casa.",
+    "imagem": "porta.jpeg",
+    "audio": "nzo.mp3.opus"
+  },
+  {
+    "palavra": "dilanda",
+    "traducao": "janela",
+    "classe": "substantivo",
+    "exemplo": "Dilanda dia waba.",
+    "traducao_exemplo": "A janela está aberta.",
+    "imagem": "janela.jpg",
+    "audio": "janela.waptt"
+  },{
+    "palavra": "tumbu",
+    "traducao": "quarto",
+    "classe": "substantivo",
+    "exemplo": "Tumbu tua kulala.",
+    "traducao_exemplo": "Quarto de dormir.",
+    "imagem": "quarto.png",
+    "audio": "quarto.waptt"
+  },
+  {
+    "palavra": "kixiko",
+    "traducao": "cozinha",
+    "classe": "substantivo",
+    "exemplo": "Kixiko kia kulia.",
+    "traducao_exemplo": "Cozinha para comer.",
+    "imagem": "cozinha.png",
+    "audio": "cozinha.waptt"
+  },{
+    "palavra": "nzo a maza",
+    "traducao": "casa de banho",
+    "classe": "substantivo",
+    "exemplo": "Nzo a maza i kiele.",
+    "traducao_exemplo": "A casa de banho está limpa.",
+    "imagem": "banheiro.png",
+    "audio": "casadebanho.waptt"
+  },
+  {
+    "palavra": "sala",
+    "traducao": "sala de estar",
+    "classe": "substantivo",
+    "exemplo": "Sala ya tuala.",
+    "traducao_exemplo": "Sala de visitas.",
+    "imagem": "sala.png",
+    "audio": "sala.waptt"
+  },
+  {
+    "palavra": "mutala",
+    "traducao": "quintal",
+    "classe": "substantivo",
+    "exemplo": "Ngi samba mu mutala.",
+    "traducao_exemplo": "Eu danço no quintal.",
+    "imagem": "quintal.png",
+    "audio": "mutala.waptt"
+  },
+  {
+    "palavra": "lumbu",
+    "traducao": "muro/parede",
+    "classe": "substantivo",
+    "exemplo": "Lumbu lua mbanje.",
+    "traducao_exemplo": "O muro da casa.",
+    "imagem": "muro.png",
+    "audio": "parede.waptt"
+  },
+  {
+    "palavra": "teto",
+    "traducao": "teto",
+    "classe": "substantivo",
+    "exemplo": "Teto wa tale.",
+    "traducao_exemplo": "O teto é alto.",
+    "imagem": "tetu.png",
+    "audio": "teto.mp3.opus"
+  },
+  {
+    "palavra": "tulante",
+    "traducao": "chão",
+    "classe": "substantivo",
+    "exemplo": "Tulante tua kiele.",
+    "traducao_exemplo": "O chão está limpo.",
+    "imagem": "chao.png",
+    "audio": "chao.waptt"
+  },
+{
+    "palavra": "kandele",
+    "traducao": "cama",
+    "classe": "substantivo",
+    "exemplo": "Kandele kia kulala.",
+    "traducao_exemplo": "Cama para dormir.",
+    "imagem": "cama.png",
+    "audio": "cama.waptt"
+  },{
+    "palavra": "mesa",
+    "traducao": "mesa",
+    "classe": "substantivo",
+    "exemplo": "Mesa ya kixiko.",
+    "traducao_exemplo": "Mesa da cozinha.",
+    "imagem": "mesa.png",
+    "audio": "mesa.mp3.opus"
+  },
+  {
+    "palavra": "kaxataji",
+    "traducao": "cadeira",
+    "classe": "substantivo",
+    "exemplo": "Kaxataji kia kutuala.",
+    "traducao_exemplo": "Cadeira para sentar.",
+    "imagem": "cadeira.webp",
+    "audio": "cadeira.waptt"
+  },{
+    "palavra": "armario",
+    "traducao": "armário",
+    "classe": "substantivo",
+    "exemplo": "Armario wa ngeye.",
+    "traducao_exemplo": "Armário de roupa.",
+    "imagem": "armario.webp",
+    "audio": "armario.mp3.opus"
+  },
+  {
+    "palavra": "kandengue",
+    "traducao": "criança",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke mu mbanje.",
+    "traducao_exemplo": "A criança está em casa.",
+    "imagem": "crianca.webp",
+    "audio": "crianca.waptt"
+  },
+
+  {
+    "palavra": "kitanda",
+    "traducao": "cama (esteira tradicional)",
+    "classe": "substantivo",
+    "exemplo": "Kitanda kia kulala.",
+    "traducao_exemplo": "Esteira para dormir.",
+    "imagem": "cama_esteira.webp",
+    "audio": "camaa.waptt"
+  },
+  {
+    "palavra": "lumbu lua nzambi",
+    "traducao": "telhado",
+    "classe": "substantivo",
+    "exemplo": "Lumbu lua nzambi lua tale.",
+    "traducao_exemplo": "O telhado é alto.",
+    "imagem": "tttt.webp",
+    "audio": "telhado.waptt"
+  },
+  {
+    "palavra": "kandandala",
+    "traducao": "corredor",
+    "classe": "substantivo",
+    "exemplo": "Kandandala ka nene.",
+    "traducao_exemplo": "O corredor é grande.",
+    "imagem": "corredor.webp",
+    "audio": "corredor.waptt"
+  },{
+    "palavra": "kijinga",
+    "traducao": "lareira/fogueira",
+    "classe": "substantivo",
+    "exemplo": "Kijinga kia moxi.",
+    "traducao_exemplo": "Lareira de fogo.",
+    "imagem": "fogueira.webp",
+    "audio": "fogueira.waptt"
+  },
+
+  {
+    "palavra": "kutuala",
+    "traducao": "sentar",
+    "classe": "verbo",
+    "exemplo": "Ngi kutuala mu sala.",
+    "traducao_exemplo": "Eu sento na sala.",
+    "imagem": "sentar.webp",
+    "audio": "sentar.waptt"
+  },
+  {
+    "palavra": "kulala",
+    "traducao": "dormir",
+    "classe": "verbo",
+    "exemplo": "Tuna kulala mu tumbu.",
+    "traducao_exemplo": "Nós dormimos no quarto.",
+    "imagem": "dormir.webp",
+    "audio": "dormir.waptt"
+  },
+  {
+    "palavra": "kukanga",
+    "traducao": "fechar",
+    "classe": "verbo",
+    "exemplo": "Kukanga nzo.",
+    "traducao_exemplo": "Fechar a porta.",
+    "imagem": "fechar_porta.webp",
+    "audio": "fechar.waptt"
+  },
+  {
+    "palavra": "kuwaba",
+    "traducao": "abrir",
+    "classe": "verbo",
+    "exemplo": "Kuwaba dilanda.",
+    "traducao_exemplo": "Abrir a janela.",
+    "imagem": "abrir_janela.webp",
+    "audio": "abrir.waptt"
+  },
+  {
+    "palavra": "kusala",
+    "traducao": "trabalhar/limpar",
+    "classe": "verbo",
+    "exemplo": "Mai ke kusala mbanje.",
+    "traducao_exemplo": "Mãe está limpando a casa.",
+    "imagem": "limpar.webp",
+    "audio": "trabalhar.waptt"
+  },
+  {
+    "palavra": "Nzambi",
+    "traducao": "Deus",
+    "classe": "substantivo",
+    "exemplo": "Nzambi a sokolola kima.",
+    "traducao_exemplo": "Deus criou a coisa.",
+    "imagem": "Deus.webp",
+    "audio": "Deus.waptt"
+  },
+  {
+    "palavra": "Ngola",
+    "traducao": "Rei/Rainha",
+    "classe": "substantivo",
+    "exemplo": "Ngola a kilamba mu ndandu.",
+    "traducao_exemplo": "O Rei surgiu no início.",
+    "imagem": "rei.webp",
+    "audio": "rei.waptt"
+  },
+  {
+    "palavra": "Ndalangi",
+    "traducao": "Universo",
+    "classe": "substantivo",
+    "exemplo": "Ndalangi wa nene.",
+    "traducao_exemplo": "O Universo é grande.",
+    "imagem": "universo.jpg",
+    "audio": "universo.waptt"
+  },
+  {
+    "palavra": "sokolola",
+    "traducao": "criar",
+    "classe": "verbo",
+    "exemplo": "Nzambi a sokolola kima.",
+    "traducao_exemplo": "Deus criou a coisa.",
+    "imagem": "criar.jpg",
+    "audio": "criar.waptt"
+  },
+ {
+    "palavra": "kilamba",
+    "traducao": "surgir",
+    "classe": "verbo",
+    "exemplo": "Nzua wa kilamba.",
+    "traducao_exemplo": "O sol surgiu.",
+    "imagem": "surgir.webp",
+    "audio": "surgir.waptt"
+  },
+  {
+    "palavra": "ndandu",
+    "traducao": "início || inicio",
+    "classe": "substantivo",
+    "exemplo": "Mu ndandu a kimbo.",
+    "traducao_exemplo": "No início dos tempos.",
+    "imagem": "inicio.webp",
+    "audio": "ndando.waptt"
+  },
+  {
+    "palavra": "kixikola",
+    "traducao": "liberdade",
+    "classe": "substantivo",
+    "exemplo": "Dixi dia kixikola.",
+    "traducao_exemplo": "O fogo da liberdade.",
+    "imagem": "liberdade.webp",
+    "audio": "liberdade.waptt"
+  },
+  {
+    "palavra": "n'jongo",
+    "traducao": "desenvolvimento",
+    "classe": "substantivo",
+    "exemplo": "Dixi dia n'jongo.",
+    "traducao_exemplo": "O fogo do desenvolvimento.",
+    "imagem": "desenvolvimento.webp",
+    "audio": "desenvolvimento.waptt"
+  }, 
+  {
+    "palavra": "kimbo",
+    "traducao": "tempo/época",
+    "classe": "substantivo",
+    "exemplo": "Mu kimbo kia nene.",
+    "traducao_exemplo": "No tempo/época grande.",
+    "imagem": "tempo.webp",
+    "audio": "tempo.waptt"
+  },
+  {
+    "palavra": "dixi",
+    "traducao": "fumu",
+    "classe": "substantivo",
+    "exemplo": "Dixi dia kixikola.",
+    "traducao_exemplo": "O fogo da liberdade.",
+    "imagem": "fumo.webp",
+    "audio": "fumu.waptt"
+  },
+  {
+    "palavra": "mafula",
+    "traducao": "abacate",
+    "classe": "substantivo",
+    "exemplo": "Mafula wa mona.",
+    "traducao_exemplo": "O abacate está maduro.",
+    "imagem": "abacate.jpg",
+    "audio": "abacate.waptt"
+  },
+  {
+    "palavra": "dilamuka",
+    "traducao": "abacaxi",
+    "classe": "substantivo",
+    "exemplo": "Dilamuka dia waba.",
+    "traducao_exemplo": "O abacaxi está doce.",
+    "imagem": "abacaxi.png",
+    "audio": "abacaxi.waptt"
+  },
+  {
+    "palavra": "makia",
+    "traducao": "banana",
+    "classe": "substantivo",
+    "exemplo": "Makia ma kuela.",
+    "traducao_exemplo": "As bananas estão verdes.",
+    "imagem": "banana.jpeg",
+    "audio": "banana_doce.waptt"
+  },
+  {
+    "palavra": "kisukulu",
+    "traducao": "caju",
+    "classe": "substantivo",
+    "exemplo": "Kisukulu ke mu nzanza.",
+    "traducao_exemplo": "O caju está na árvore.",
+    "imagem": "caju.jpg",
+    "audio": "caju.waptt"
+  },
+  {
+    "palavra": "makia ma kizungu",
+    "traducao": "goiaba",
+    "classe": "substantivo",
+    "exemplo": "Makia ma kizungu ma waba.",
+    "traducao_exemplo": "As goiabas são doces.",
+    "imagem": "goiaba.jpg",
+    "audio": "goiba.waptt"
+  },
+
+
+
+
+  {
+    "palavra": "ndunda",
+    "traducao": "laranja",
+    "classe": "substantivo",
+    "exemplo": "Ndunda ya mona.",
+    "traducao_exemplo": "A laranja está madura.",
+    "imagem": "laranja_fruto.webp",
+    "audio": "laranja.waptt"
+  },
+  {
+    "palavra": "madia",
+    "traducao": "limão",
+    "classe": "substantivo",
+    "exemplo": "Madia ma kota.",
+    "traducao_exemplo": "O limão é azedo.",
+    "imagem": "limao.webp",
+    "audio": "limao.waptt"
+  },
+  {
+    "palavra": "manga",
+    "traducao": "manga",
+    "classe": "substantivo",
+    "exemplo": "Manga wa nene.",
+    "traducao_exemplo": "A manga é grande.",
+    "imagem": "manga.webp",
+    "audio": "manga.waptt"
+  },
+  {
+    "palavra": "kimbala",
+    "traducao": "mamão",
+    "classe": "substantivo",
+    "exemplo": "Kimbala kia mona.",
+    "traducao_exemplo": "O mamão está maduro.",
+    "imagem": "mamao.webp",
+    "audio": "mamao.waptt"
+  },
+  {
+    "palavra": "nana",
+    "traducao": "ananás",
+    "classe": "substantivo",
+    "exemplo": "Nana wa waba.",
+    "traducao_exemplo": "O ananás é doce.",
+    "imagem": "ananas.webp",
+    "audio": "nana.waptt"
+  },
+  {
+    "palavra": "kisala",
+    "traducao": "cacau",
+    "classe": "substantivo",
+    "exemplo": "Kisala kia sala mazi.",
+    "traducao_exemplo": "O cacau faz chocolate.",
+    "imagem": "cacao.webp",
+    "audio": "cacau.waptt"
+  },
+  {
+    "palavra": "tutuma",
+    "traducao": "melancia",
+    "classe": "substantivo",
+    "exemplo": "Tutuma tua nene.",
+    "traducao_exemplo": "A melancia é grande.",
+    "imagem": "melancia.webp",
+    "audio": "melancia.waptt"
+  },
+  {
+    "palavra": "kilemba",
+    "traducao": "melão",
+    "classe": "substantivo",
+    "exemplo": "Kilemba kia waba.",
+    "traducao_exemplo": "O melão é doce.",
+    "imagem": "melao.webp",
+    "audio": "melao.waptt"
+  },
+  {
+    "palavra": "ndozi",
+    "traducao": "noz",
+    "classe": "substantivo",
+    "exemplo": "Ndozi za kota.",
+    "traducao_exemplo": "As nozes são duras.",
+    "imagem": "noz.webp",
+    "audio": "noz.waptt"
+  },
+  {
+    "palavra": "mabengela",
+    "traducao": "papaia",
+    "classe": "substantivo",
+    "exemplo": "Mabengela ma mona.",
+    "traducao_exemplo": "A papaia está madura.",
+    "imagem": "papaia.webp",
+    "audio": "papaia.waptt"
+  },
+  {
+    "palavra": "mazunda",
+    "traducao": "tangerina",
+    "classe": "substantivo",
+    "exemplo": "Mazunda ma waba.",
+    "traducao_exemplo": "As tangerinas são doces.",
+    "imagem": "tangerina.webp",
+    "audio": "tangerina.waptt"
+  },
+  {
+    "palavra": "kikwata",
+    "traducao": "coco",
+    "classe": "substantivo",
+    "exemplo": "Kikwata kia maza.",
+    "traducao_exemplo": "O coco tem água.",
+    "imagem": "coco.webp",
+    "audio": "cocu.waptt"
+  },
+  {
+    "palavra": "nsafu",
+    "traducao": "safu (fruta tradicional)",
+    "classe": "substantivo",
+    "exemplo": "Nsafu wa kota.",
+    "traducao_exemplo": "O safu é azedo.",
+    "imagem": "safu.webp",
+    "audio": "safu.waptt"
+  },
+  {
+    "palavra": "kissenguele",
+    "traducao": "tamarindo",
+    "classe": "substantivo",
+    "exemplo": "Kissenguele ke kota.",
+    "traducao_exemplo": "O tamarindo é azedo.",
+    "imagem": "tamarindo.jpg",
+    "audio": "tamarindo.waptt"
+  },
+  {
+    "palavra": "maboke",
+    "traducao": "maboke",
+    "classe": "substantivo",
+    "exemplo": "Maboke ma sala sadia.",
+    "traducao_exemplo": "A fruta-pão faz comida.",
+    "imagem": "maboque.webp",
+    "audio": "maboque.waptt"
+  } ,
+  {
+    "palavra": "kumona",
+    "traducao": "amadurecer",
+    "classe": "verbo",
+    "exemplo": "Makia ma kumona.",
+    "traducao_exemplo": "As bananas estão amadurecendo.",
+    "imagem": "amadurecer.webp",
+    "audio": "amadurecer.waptt"
+  },
+  {
+    "palavra": "kuwaba",
+    "traducao": "ser doce",
+    "classe": "verbo",
+    "exemplo": "Manga wa kuwaba.",
+    "traducao_exemplo": "A manga é doce.",
+    "imagem": "doce.png",
+    "audio": "serdoce.waptt"
+  },
+  {
+    "palavra": "kukota",
+    "traducao": "ser azedo/duro",
+    "classe": "verbo",
+    "exemplo": "Madia ma kukota.",
+    "traducao_exemplo": "O limão é azedo.",
+    "imagem": "azedo.jpg",
+    "audio": "duro_azedo.waptt"
+  },
+  {
+    "palavra": "kukuela",
+    "traducao": "estar verde",
+    "classe": "verbo",
+    "exemplo": "Ndunda ya kukuela.",
+    "traducao_exemplo": "A laranja está verde.",
+    "imagem": "verde.png",
+    "audio": "laranja_verde.webp"
+  },
+  {
+    "palavra": "kusasula",
+    "traducao": "colher frutas",
+    "classe": "verbo",
+    "exemplo": "Tuna kusasula makia.",
+    "traducao_exemplo": "Nós colhemos bananas.",
+    "imagem": "colheita.jpg",
+    "audio": "colher_frutos.waptt"
+  },
+  {
+    "palavra": "Ngi zola makia",
+    "traducao": "Eu gosto de bananas",
+    "classe": "frase",
+    "exemplo": "Ngi zola makia ma mona.",
+    "traducao_exemplo": "Eu gosto de bananas maduras.",
+    "imagem": "gosto_banana.jpg",
+    "audio": "eu_gosto_de_banana.waptt"
+  },
+  {
+    "palavra": "Makia ma waba",
+    "traducao": "As bananas são doces",
+    "classe": "frase",
+    "exemplo": "Makia ma waba lela.",
+    "traducao_exemplo": "As bananas estão doces hoje.",
+    "imagem": "bananas_doces.png",
+    "audio": "banana_doce.waptt"
+  },
+  {
+    "palavra": "Nzaidi kulia mafula",
+    "traducao": "Eu quero comer abacate",
+    "classe": "frase",
+    "exemplo": "Nzaidi kulia mafula wa mona.",
+    "traducao_exemplo": "Eu quero comer abacate maduro.",
+    "imagem": "comer_abacate.png",
+    "audio": "comer_abacate.waptt"
+  } ,
+  {
+    "palavra": "kiabo",
+    "traducao": "mandioca",
+    "classe": "substantivo",
+    "exemplo": "Kiabo kia sala funge.",
+    "traducao_exemplo": "A mandioca faz funje.",
+    "imagem": "mandioca.webp",
+    "audio": "mandioca.waptt"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "palavra": "mbambu",
+    "traducao": "batata-doce",
+    "classe": "substantivo",
+    "exemplo": "Mbambu wa waba.",
+    "traducao_exemplo": "A batata-doce é doce.",
+    "imagem": "batata_doce.png",
+    "audio": "mbambu.mp3.opus"
+  },
+  {
+    "palavra": "mbia",
+    "traducao": "inhame",
+    "classe": "substantivo",
+    "exemplo": "Mbia ya nene.",
+    "traducao_exemplo": "O inhame é grande.",
+    "imagem": "inhame.jpg",
+    "audio": "mbia.mp3.opus"
+  },
+  {
+    "palavra": "kizaka",
+    "traducao": "milho",
+    "classe": "substantivo",
+    "exemplo": "Kizaka kia sala musangu.",
+    "traducao_exemplo": "O milho faz farinha.",
+    "imagem": "milho.png",
+    "audio": "kizaka.mp3.opus"
+  },
+  {
+    "palavra": "ntaba",
+    "traducao": "amendoim",
+    "classe": "substantivo",
+    "exemplo": "Ntaba za sala mazi ma ntaba.",
+    "traducao_exemplo": "O amendoim faz manteiga de amendoim.",
+    "imagem": "amendoim.jpg",
+    "audio": "ntaba.mp3.opus"
+  },
+  {
+    "palavra": "nguba",
+    "traducao": "feijão",
+    "classe": "substantivo",
+    "exemplo": "Nguba za kota.",
+    "traducao_exemplo": "O feijão está duro.",
+    "imagem": "feijao.png",
+    "audio": "nguba.mp3.opus"
+  },
+  {
+    "palavra": "kimbundu",
+    "traducao": "abóbora",
+    "classe": "substantivo",
+    "exemplo": "Kimbundu kia nene.",
+    "traducao_exemplo": "A abóbora é grande.",
+    "imagem": "abobora.jpg",
+    "audio": "kimbundu.mp3.opus"
+  },
+  {
+    "palavra": "txiyo",
+    "traducao": "cebola",
+    "classe": "substantivo",
+    "exemplo": "Txiyo ya kota.",
+    "traducao_exemplo": "A cebola é forte.",
+    "imagem": "cebola.png",
+    "audio": "txiyo.mp3.opus"
+  },
+  {
+    "palavra": "aladixi",
+    "traducao": "alho",
+    "classe": "substantivo",
+    "exemplo": "Aladixi wa kota.",
+    "traducao_exemplo": "O alho é forte.",
+    "imagem": "alho.jpg",
+    "audio": "aladixi.mp3.opus"
+  },
+  {
+    "palavra": "matata",
+    "traducao": "tomate",
+    "classe": "substantivo",
+    "exemplo": "Matata ma mona.",
+    "traducao_exemplo": "Os tomates estão maduros.",
+    "imagem": "tomate.png",
+    "audio": "matata.mp3.opus"
+  },
+  {
+    "palavra": "mbilingani",
+    "traducao": "berinjela",
+    "classe": "substantivo",
+    "exemplo": "Mbilingani wa toke.",
+    "traducao_exemplo": "A berinjela é preta.",
+    "imagem": "berinjela.jpg",
+    "audio": "mbilingani.mp3.opus"
+  },
+  {
+    "palavra": "kiamvu",
+    "traducao": "pimentão",
+    "classe": "substantivo",
+    "exemplo": "Kiamvu kia mutenene.",
+    "traducao_exemplo": "O pimentão é vermelho.",
+    "imagem": "pimentao.png",
+    "audio": "kiamvu.mp3.opus"
+  },
+  {
+    "palavra": "ndongo",
+    "traducao": "quiabo",
+    "classe": "substantivo",
+    "exemplo": "Ndongo wa kota.",
+    "traducao_exemplo": "O quiabo é viscoso.",
+    "imagem": "quiabo.jpg",
+    "audio": "ndongo.mp3.opus"
+  },
+  {
+    "palavra": "kizungu",
+    "traducao": "repolho",
+    "classe": "substantivo",
+    "exemplo": "Kizungu kia nene.",
+    "traducao_exemplo": "O repolho é grande.",
+    "imagem": "repolho.png",
+    "audio": "kizungu.mp3.opus"
+  },
+  {
+    "palavra": "sabola",
+    "traducao": "cenoura",
+    "classe": "substantivo",
+    "exemplo": "Sabola ya mutenene.",
+    "traducao_exemplo": "A cenoura é laranja.",
+    "imagem": "cenoura.jpg",
+    "audio": "sabola.mp3.opus"
+  },
+  {
+    "palavra": "madesu",
+    "traducao": "ervilha",
+    "classe": "substantivo",
+    "exemplo": "Madesu ma kiazi.",
+    "traducao_exemplo": "As ervilhas são verdes.",
+    "imagem": "ervilha.png",
+    "audio": "madesu.mp3.opus"
+  },
+  {
+    "palavra": "kibwabwa",
+    "traducao": "abobrinha",
+    "classe": "substantivo",
+    "exemplo": "Kibwabwa kia kiazi.",
+    "traducao_exemplo": "A abobrinha é verde.",
+    "imagem": "abobrinha.jpg",
+    "audio": "kibwabwa.mp3.opus"
+  },
+  {
+    "palavra": "nsangu",
+    "traducao": "espinafre",
+    "classe": "substantivo",
+    "exemplo": "Nsangu wa kiazi.",
+    "traducao_exemplo": "O espinafre é verde.",
+    "imagem": "espinafre.png",
+    "audio": "nsangu.mp3.opus"
+  },
+  {
+    "palavra": "kinkubala",
+    "traducao": "batata",
+    "classe": "substantivo",
+    "exemplo": "Kinkubala kia sala masanga.",
+    "traducao_exemplo": "A batata faz purê.",
+    "imagem": "batata.jpg",
+    "audio": "kinkubala.mp3.opus"
+  },
+  {
+    "palavra": "mboa",
+    "traducao": "pepino",
+    "classe": "substantivo",
+    "exemplo": "Mboa wa waba.",
+    "traducao_exemplo": "O pepino é fresco.",
+    "imagem": "pepino.png",
+    "audio": "mboa.mp3.opus"
+  }
+,
+
+  {
+    "palavra": "musangu",
+    "traducao": "farinha",
+    "classe": "substantivo",
+    "exemplo": "Musangu wa kiabo.",
+    "traducao_exemplo": "Farinha de mandioca.",
+    "imagem": "farinha.jpg",
+    "audio": "musangu.mp3.opus"
+  },
+  {
+    "palavra": "funge",
+    "traducao": "pirão",
+    "classe": "substantivo",
+    "exemplo": "Funge wa kiabo.",
+    "traducao_exemplo": "Pirão de mandioca.",
+    "imagem": "funge.png",
+    "audio": "funge.mp3.opus"
+  },
+  {
+    "palavra": "mazi ma ntaba",
+    "traducao": "manteiga de amendoim",
+    "classe": "substantivo",
+    "exemplo": "Mazi ma ntaba ma waba.",
+    "traducao_exemplo": "A manteiga de amendoim é doce.",
+    "imagem": "manteiga_amendoim.jpg",
+    "audio": "mazi_ma_ntaba.mp3.opus"
+  },
+  {
+    "palavra": "masanga",
+    "traducao": "purê",
+    "classe": "substantivo",
+    "exemplo": "Masanga ma kinkubala.",
+    "traducao_exemplo": "Purê de batata.",
+    "imagem": "pure.png",
+    "audio": "masanga.mp3.opus"
+  },
+  {
+    "palavra": "kitoko",
+    "traducao": "óleo de palma",
+    "classe": "substantivo",
+    "exemplo": "Kitoko kia mutenene.",
+    "traducao_exemplo": "O óleo de palma é vermelho.",
+    "imagem": "oleo_palma.jpg",
+    "audio": "kitoko.mp3.opus"
+  }
+,
+
+  {
+    "palavra": "kusoka",
+    "traducao": "plantar",
+    "classe": "verbo",
+    "exemplo": "Tata ke kusoka kizaka.",
+    "traducao_exemplo": "Pai está plantando milho.",
+    "imagem": "plantar.jpg",
+    "audio": "kusoka.mp3.opus"
+  },
+  {
+    "palavra": "kusasula",
+    "traducao": "colher",
+    "classe": "verbo",
+    "exemplo": "Tuna kusasula matata.",
+    "traducao_exemplo": "Nós colhemos tomates.",
+    "imagem": "colher.png",
+    "audio": "kusasula.mp3.opus"
+  },
+  {
+    "palavra": "kutoka",
+    "traducao": "cavar",
+    "classe": "verbo",
+    "exemplo": "Ngi kutoka kiabo.",
+    "traducao_exemplo": "Eu cavo mandioca.",
+    "imagem": "cavar.jpg",
+    "audio": "kutoka.mp3.opus"
+  },
+  {
+    "palavra": "kutotola",
+    "traducao": "regar",
+    "classe": "verbo",
+    "exemplo": "Mai ke kutotola mbilingani.",
+    "traducao_exemplo": "Mãe está regando berinjelas.",
+    "imagem": "regar.png",
+    "audio": "kutotola.mp3.opus"
+  },
+  {
+    "palavra": "kukema mu nzelo",
+    "traducao": "arar a terra",
+    "classe": "verbo",
+    "exemplo": "Tata ke kukema mu nzelo.",
+    "traducao_exemplo": "Pai está arando a terra.",
+    "imagem": "arar.jpg",
+    "audio": "kukema_nzelo.mp3.opus"
+  }
+, 
+
+  {
+    "palavra": "Nzelo ya mbotu",
+    "traducao": "A terra é fértil",
+    "classe": "frase",
+    "exemplo": "Nzelo ya mbotu kwa kusoka.",
+    "traducao_exemplo": "A terra é fértil para plantar.",
+    "imagem": "terra_fertil.jpg",
+    "audio": "nzelo_mbotu.mp3.opus"
+  },
+  {
+    "palavra": "Mvula ya kwiza",
+    "traducao": "A chuva está chegando",
+    "classe": "frase",
+    "exemplo": "Mvula ya kwiza, nzelo ya zola.",
+    "traducao_exemplo": "A chuva está chegando, a terra fica feliz.",
+    "imagem": "chuva.png",
+    "audio": "mvula_kwiza.mp3.opus"
+  },
+  {
+    "palavra": "Kizaka kia kuela",
+    "traducao": "O milho está verde",
+    "classe": "frase",
+    "exemplo": "Kizaka kia kuela mu nzelo.",
+    "traducao_exemplo": "O milho está verde na terra.",
+    "imagem": "milho_verde.jpg",
+    "audio": "kizaka_kuela.mp3.opus"
+  },
+  {
+    "palavra": "Tuna sala sadia",
+    "traducao": "Nós fazemos comida",
+    "classe": "frase",
+    "exemplo": "Tuna sala sadia ya nzelo.",
+    "traducao_exemplo": "Nós fazemos comida da terra.",
+    "imagem": "fazer_comida.png",
+    "audio": "tuna_sala_sadia.mp3.opus"
+  },
+  {
+    "palavra": "nzelo",
+    "traducao": "terra/roça",
+    "classe": "substantivo",
+    "exemplo": "Nzelo ya mbotu.",
+    "traducao_exemplo": "A terra é fértil.",
+    "imagem": "terra.jpg",
+    "audio": "nzelo.mp3.opus"
+  },
+  {
+    "palavra": "mvula",
+    "traducao": "chuva",
+    "classe": "substantivo",
+    "exemplo": "Mvula ya sala maza.",
+    "traducao_exemplo": "A chuva faz água.",
+    "imagem": "chuva_agricola.png",
+    "audio": "mvula.mp3.opus"
+  },
+  {
+    "palavra": "nzuzi",
+    "traducao": "enxada",
+    "classe": "substantivo",
+    "exemplo": "Nzuzi ya kutoka.",
+    "traducao_exemplo": "A enxada para cavar.",
+    "imagem": "enxada.jpg",
+    "audio": "nzuzi.mp3.opus"
+  },
+  {
+    "palavra": "dimbu",
+    "traducao": "semente",
+    "classe": "substantivo",
+    "exemplo": "Dimbu dia kizaka.",
+    "traducao_exemplo": "Semente de milho.",
+    "imagem": "semente.png",
+    "audio": "dimbu.mp3.opus"
+  },
+  {
+    "palavra": "nzuzi",
+    "traducao": "enxada",
+    "classe": "substantivo",
+    "exemplo": "Nzuzi ya kutoka nzelo.",
+    "traducao_exemplo": "A enxada para cavar a terra.",
+    "imagem": "enxada.jpg",
+    "audio": "nzuzi.mp3.opus"
+  },
+  {
+    "palavra": "mbele",
+    "traducao": "facão",
+    "classe": "substantivo",
+    "exemplo": "Mbele wa kukata.",
+    "traducao_exemplo": "O facão para cortar.",
+    "imagem": "facao.png",
+    "audio": "mbele.mp3.opus"
+  },
+  {
+    "palavra": "kixoko",
+    "traducao": "foice",
+    "classe": "substantivo",
+    "exemplo": "Kixoko kia kukata.",
+    "traducao_exemplo": "A foice para cortar.",
+    "imagem": "foice.jpg",
+    "audio": "kixoko.mp3.opus"
+  },
+  {
+    "palavra": "dikanda",
+    "traducao": "pá",
+    "classe": "substantivo",
+    "exemplo": "Dikanda dia kutoka.",
+    "traducao_exemplo": "A pá para cavar.",
+    "imagem": "pa.png",
+    "audio": "dikanda.mp3.opus"
+  },
+  {
+    "palavra": "lukembe",
+    "traducao": "enxadão",
+    "classe": "substantivo",
+    "exemplo": "Lukembe lua nene.",
+    "traducao_exemplo": "O enxadão é grande.",
+    "imagem": "enxadao.jpg",
+    "audio": "lukembe.mp3.opus"
+  },
+  {
+    "palavra": "kibete",
+    "traducao": "cesto",
+    "classe": "substantivo",
+    "exemplo": "Kibete kia kutuala.",
+    "traducao_exemplo": "O cesto para carregar.",
+    "imagem": "cesto.png",
+    "audio": "kibete.mp3.opus"
+  },
+  {
+    "palavra": "ndeke",
+    "traducao": "ancinho",
+    "classe": "substantivo",
+    "exemplo": "Ndeke ya kusokola.",
+    "traducao_exemplo": "O ancinho para juntar.",
+    "imagem": "ancinho.jpg",
+    "audio": "ndeke.mp3.opus"
+  },
+  {
+    "palavra": "kisalu",
+    "traducao": "carro de mão",
+    "classe": "substantivo",
+    "exemplo": "Kisalu kia kulemba.",
+    "traducao_exemplo": "O carro de mão para transportar.",
+    "imagem": "carro_mao.png",
+    "audio": "kisalu.mp3.opus"
+  },
+  {
+    "palavra": "lwimbu",
+    "traducao": "regador",
+    "classe": "substantivo",
+    "exemplo": "Lwimbu lua maza.",
+    "traducao_exemplo": "O regador de água.",
+    "imagem": "regador.jpg",
+    "audio": "lwimbu.mp3.opus"
+  },
+  {
+    "palavra": "kikungu",
+    "traducao": "pulverizador",
+    "classe": "substantivo",
+    "exemplo": "Kikungu kia mankondo.",
+    "traducao_exemplo": "O pulverizador de pesticidas.",
+    "imagem": "pulverizador.png",
+    "audio": "kikungu.mp3.opus"
+  },
+  {
+    "palavra": "nsengo",
+    "traducao": "sachola",
+    "classe": "substantivo",
+    "exemplo": "Nsengo ya kusoka.",
+    "traducao_exemplo": "A sachola para plantar.",
+    "imagem": "sachola.jpg",
+    "audio": "nsengo.mp3.opus"
+  },
+  {
+    "palavra": "kimbungu",
+    "traducao": "machado",
+    "classe": "substantivo",
+    "exemplo": "Kimbungu kia kukata.",
+    "traducao_exemplo": "O machado para cortar.",
+    "imagem": "machado.png",
+    "audio": "kimbungu.mp3.opus"
+  },
+  {
+    "palavra": "dikwata",
+    "traducao": "serrote",
+    "classe": "substantivo",
+    "exemplo": "Dikwata dia kukata.",
+    "traducao_exemplo": "O serrote para cortar.",
+    "imagem": "serrote.jpg",
+    "audio": "dikwata.mp3.opus"
+  },
+  {
+    "palavra": "lukonko",
+    "traducao": "picareta",
+    "classe": "substantivo",
+    "exemplo": "Lukonko lua kutoka.",
+    "traducao_exemplo": "A picareta para cavar.",
+    "imagem": "picareta.png",
+    "audio": "lukonko.mp3.opus"
+  },
+  {
+    "palavra": "kilemba",
+    "traducao": "corda",
+    "classe": "substantivo",
+    "exemplo": "Kilemba kia kukanga.",
+    "traducao_exemplo": "A corda para amarrar.",
+    "imagem": "corda.jpg",
+    "audio": "kilemba.mp3.opus"
+  }
+  ,
+  
+  {
+    "palavra": "mankondo",
+    "traducao": "adubo/fertilizante",
+    "classe": "substantivo",
+    "exemplo": "Mankondo ma nzelo.",
+    "traducao_exemplo": "Adubo para a terra.",
+    "imagem": "adubo.png",
+    "audio": "mankondo.mp3.opus"
+  },
+  {
+    "palavra": "maza ma kukulula",
+    "traducao": "água de regar",
+    "classe": "substantivo",
+    "exemplo": "Maza ma kukulula mbota.",
+    "traducao_exemplo": "Água para regar as plantas.",
+    "imagem": "agua_regar.jpg",
+    "audio": "maza_kukulula.mp3.opus"
+  },
+  {
+    "palavra": "kitutu",
+    "traducao": "esterco",
+    "classe": "substantivo",
+    "exemplo": "Kitutu kia mankondo.",
+    "traducao_exemplo": "Esterco como adubo.",
+    "imagem": "esterco.png",
+    "audio": "kitutu.mp3.opus"
+  },
+  {
+    "palavra": "kimbwidi",
+    "traducao": "composto",
+    "classe": "substantivo",
+    "exemplo": "Kimbwidi kia mbotu.",
+    "traducao_exemplo": "Composto fértil.",
+    "imagem": "composto.jpg",
+    "audio": "kimbwidi.mp3.opus"
+  },
+  {
+    "palavra": "mavunga",
+    "traducao": "sementes",
+    "classe": "substantivo",
+    "exemplo": "Mavunga ma kizaka.",
+    "traducao_exemplo": "Sementes de milho.",
+    "imagem": "sementes.png",
+    "audio": "mavunga.mp3.opus"
+  }
+  , 
+  {
+    "palavra": "kukema nzelo",
+    "traducao": "arar a terra",
+    "classe": "verbo",
+    "exemplo": "Tata ke kukema nzelo.",
+    "traducao_exemplo": "Pai está arando a terra.",
+    "imagem": "arar_terra.jpg",
+    "audio": "kukema_nzelo.mp3.opus"
+  },
+  {
+    "palavra": "kusokola mbota",
+    "traducao": "capinar",
+    "classe": "verbo",
+    "exemplo": "Tuna kusokola mbota.",
+    "traducao_exemplo": "Nós estamos capinando.",
+    "imagem": "capinar.png",
+    "audio": "kusokola_mbota.mp3.opus"
+  },
+  {
+    "palavra": "kutotola maza",
+    "traducao": "regar",
+    "classe": "verbo",
+    "exemplo": "Mai ke kutotola maza.",
+    "traducao_exemplo": "Mãe está regando com água.",
+    "imagem": "regar_agua.jpg",
+    "audio": "kutotola_maza.mp3.opus"
+  },
+  {
+    "palavra": "kukanga nzuzi",
+    "traducao": "afiar a enxada",
+    "classe": "verbo",
+    "exemplo": "Ngi kukanga nzuzi.",
+    "traducao_exemplo": "Eu afio a enxada.",
+    "imagem": "afiar_enxada.png",
+    "audio": "kukanga_nzuzi.mp3.opus"
+  },
+  {
+    "palavra": "kusala mankondo",
+    "traducao": "adubar",
+    "classe": "verbo",
+    "exemplo": "Tuna kusala mankondo.",
+    "traducao_exemplo": "Nós estamos adubando.",
+    "imagem": "adubar.jpg",
+    "audio": "kusala_mankondo.mp3.opus"
+  },
+  {
+    "palavra": "kulemba kisalu",
+    "traducao": "transportar no carro de mão",
+    "classe": "verbo",
+    "exemplo": "Kandengue ke kulemba kisalu.",
+    "traducao_exemplo": "A criança transporta no carro de mão.",
+    "imagem": "transportar_carro.png",
+    "audio": "kulemba_kisalu.mp3.opus"
+  },
+  
+  {
+    "palavra": "Nzuzi ya kota",
+    "traducao": "A enxada está afiada",
+    "classe": "frase",
+    "exemplo": "Nzuzi ya kota, ngi kwiza kusoka.",
+    "traducao_exemplo": "A enxada está afiada, eu vou plantar.",
+    "imagem": "enxada_afiada.jpg",
+    "audio": "nzuzi_kota.mp3.opus"
+  },
+  {
+    "palavra": "Mbele wa kukata",
+    "traducao": "O facão corta bem",
+    "classe": "frase",
+    "exemplo": "Mbele wa kukata mbota.",
+    "traducao_exemplo": "O facão corta as plantas.",
+    "imagem": "facao_cortar.png",
+    "audio": "mbele_kukata.mp3.opus"
+  },
+  {
+    "palavra": "Kibete kia kuzala",
+    "traducao": "O cesto está cheio",
+    "classe": "frase",
+    "exemplo": "Kibete kia kuzala makia.",
+    "traducao_exemplo": "O cesto está cheio de bananas.",
+    "imagem": "cesto_cheio.jpg",
+    "audio": "kibete_kuzala.mp3.opus"
+  },
+  {
+    "palavra": "Tuna sala mu nzelo",
+    "traducao": "Nós trabalhamos na roça",
+    "classe": "frase",
+    "exemplo": "Tuna sala mu nzelo lela.",
+    "traducao_exemplo": "Nós trabalhamos na roça hoje.",
+    "imagem": "trabalho_roca.png",
+    "audio": "tuna_sala_nzelo.mp3.opus"
+  },
+  {
+    "palavra": "Nzelo ya mbotu kusoka",
+    "traducao": "A terra está boa para plantar",
+    "classe": "frase",
+    "exemplo": "Nzelo ya mbotu kusoka kizaka.",
+    "traducao_exemplo": "A terra está boa para plantar milho.",
+    "imagem": "terra_boa.jpg",
+    "audio": "nzelo_mbotu_kusoka.mp3.opus"
+  }
+  ,
+  {
+    "palavra": "kimbwiti",
+    "traducao": "pau de cavar",
+    "classe": "substantivo",
+    "exemplo": "Kimbwiti kia kutoka.",
+    "traducao_exemplo": "Pau de cavar para escavar.",
+    "imagem": "pau_cavar.png",
+    "audio": "kimbwiti.mp3.opus"
+  },
+  {
+    "palavra": "lukwakwa",
+    "traducao": "cesto de palha",
+    "classe": "substantivo",
+    "exemplo": "Lukwakwa lua kulemba.",
+    "traducao_exemplo": "Cesto de palha para carregar.",
+    "imagem": "cesto_palha.jpg",
+    "audio": "lukwakwa.mp3.opus"
+  },
+  {
+    "palavra": "kisengwa",
+    "traducao": "peneira",
+    "classe": "substantivo",
+    "exemplo": "Kisengwa kia kusenga.",
+    "traducao_exemplo": "Peneira para peneirar.",
+    "imagem": "peneira.png",
+    "audio": "kisengwa.mp3.opus"
+  },
+  {
+    "palavra": "nduwa",
+    "traducao": "pilão",
+    "classe": "substantivo",
+    "exemplo": "Nduwa ya kukanda.",
+    "traducao_exemplo": "Pilão para pilhar.",
+    "imagem": "pilao.jpg",
+    "audio": "nduwa.mp3.opus"
+  },
+  {
+    "palavra": "luseke",
+    "traducao": "mão de pilão",
+    "classe": "substantivo",
+    "exemplo": "Luseke lua kukanda.",
+    "traducao_exemplo": "Mão de pilão para bater.",
+    "imagem": "mao_pilao.png",
+    "audio": "luseke.mp3.opus"
+  },
+  {
+    "palavra": "nkanka",
+    "traducao": "carpinteiro",
+    "classe": "substantivo",
+    "exemplo": "Nkanka ke sala mbanje.",
+    "traducao_exemplo": "O carpinteiro constrói casas.",
+    "imagem": "carpinteiro.jpg",
+    "audio": "nkanka.mp3.opus"
+  },
+  {
+    "palavra": "nuni",
+    "traducao": "madeira",
+    "classe": "substantivo",
+    "exemplo": "Nuni wa sala mesa.",
+    "traducao_exemplo": "A madeira faz mesa.",
+    "imagem": "madeira.png",
+    "audio": "nuni.mp3.opus"
+  },
+  {
+    "palavra": "kixoko",
+    "traducao": "serra",
+    "classe": "substantivo",
+    "exemplo": "Kixoko kia kukata nuni.",
+    "traducao_exemplo": "A serra para cortar madeira.",
+    "imagem": "serra.jpg",
+    "audio": "kixoko.mp3.opus"
+  },
+  {
+    "palavra": "mbele",
+    "traducao": "formão",
+    "classe": "substantivo",
+    "exemplo": "Mbele wa kusokola nuni.",
+    "traducao_exemplo": "O formão para entalhar madeira.",
+    "imagem": "formao.png",
+    "audio": "mbele.mp3.opus"
+  },
+  {
+    "palavra": "nsengo",
+    "traducao": "martelo",
+    "classe": "substantivo",
+    "exemplo": "Nsengo ya kukanda.",
+    "traducao_exemplo": "O martelo para bater.",
+    "imagem": "martelo.jpg",
+    "audio": "nsengo.mp3.opus"
+  },
+  {
+    "palavra": "lukonko",
+    "traducao": "prego",
+    "classe": "substantivo",
+    "exemplo": "Lukonko lua kukanga.",
+    "traducao_exemplo": "O prego para pregar.",
+    "imagem": "prego.png",
+    "audio": "lukonko.mp3.opus"
+  },
+  {
+    "palavra": "kimbungu",
+    "traducao": "machado",
+    "classe": "substantivo",
+    "exemplo": "Kimbungu kia kukata nuni.",
+    "traducao_exemplo": "O machado para cortar madeira.",
+    "imagem": "machado_carpintaria.jpg",
+    "audio": "kimbungu.mp3.opus"
+  },
+  {
+    "palavra": "dikwata",
+    "traducao": "serrote",
+    "classe": "substantivo",
+    "exemplo": "Dikwata dia kukata.",
+    "traducao_exemplo": "O serrote para cortar.",
+    "imagem": "serrote_carpintaria.png",
+    "audio": "dikwata.mp3.opus"
+  },
+  {
+    "palavra": "lukembe",
+    "traducao": "plaina",
+    "classe": "substantivo",
+    "exemplo": "Lukembe lua kusenga nuni.",
+    "traducao_exemplo": "A plaina para alisar madeira.",
+    "imagem": "plaina.jpg",
+    "audio": "lukembe.mp3.opus"
+  },
+  {
+    "palavra": "kilemba",
+    "traducao": "cola",
+    "classe": "substantivo",
+    "exemplo": "Kilemba kia kukanga.",
+    "traducao_exemplo": "A cola para colar.",
+    "imagem": "cola.png",
+    "audio": "kilemba.mp3.opus"
+  }
+  , 
+  {
+    "palavra": "ndando",
+    "traducao": "fita métrica",
+    "classe": "substantivo",
+    "exemplo": "Ndando ya kukengela.",
+    "traducao_exemplo": "A fita métrica para medir.",
+    "imagem": "fita_metrica.jpg",
+    "audio": "ndando.mp3.opus"
+  },
+  {
+    "palavra": "lukweso",
+    "traducao": "esquadro",
+    "classe": "substantivo",
+    "exemplo": "Lukweso lua kukengela.",
+    "traducao_exemplo": "O esquadro para medir ângulos.",
+    "imagem": "esquadro.png",
+    "audio": "lukweso.mp3.opus"
+  },
+  {
+    "palavra": "kisalu",
+    "traducao": "nível",
+    "classe": "substantivo",
+    "exemplo": "Kisalu kia kukengela.",
+    "traducao_exemplo": "O nível para verificar.",
+    "imagem": "nivel.jpg",
+    "audio": "kisalu.mp3.opus"
+  },
+  {
+    "palavra": "mbonzo",
+    "traducao": "lápis de carpinteiro",
+    "classe": "substantivo",
+    "exemplo": "Mbonzo wa kusona.",
+    "traducao_exemplo": "O lápis para marcar.",
+    "imagem": "lapis_carpinteiro.png",
+    "audio": "mbonzo.mp3.opus"
+  },
+  {
+    "palavra": "kinkete",
+    "traducao": "régua",
+    "classe": "substantivo",
+    "exemplo": "Kinkete kia kukengela.",
+    "traducao_exemplo": "A régua para medir.",
+    "imagem": "regua.jpg",
+    "audio": "kinkete.mp3.opus"
+  },
+  {
+    "palavra": "nuni ya kuela",
+    "traducao": "madeira verde",
+    "classe": "substantivo",
+    "exemplo": "Nuni ya kuela ke kota.",
+    "traducao_exemplo": "A madeira verde é dura.",
+    "imagem": "madeira_verde.png",
+    "audio": "nuni_kuela.mp3.opus"
+  },
+  {
+    "palavra": "nuni ya kukala",
+    "traducao": "madeira seca",
+    "classe": "substantivo",
+    "exemplo": "Nuni ya kukala ke waba.",
+    "traducao_exemplo": "A madeira seca é boa.",
+    "imagem": "madeira_seca.jpg",
+    "audio": "nuni_kukala.mp3.opus"
+  },
+  {
+    "palavra": "mazi ma nuni",
+    "traducao": "verniz",
+    "classe": "substantivo",
+    "exemplo": "Mazi ma nuni ma kukamba.",
+    "traducao_exemplo": "O verniz para proteger.",
+    "imagem": "verniz.png",
+    "audio": "mazi_nuni.mp3.opus"
+  },
+  {
+    "palavra": "kitoko",
+    "traducao": "tinta",
+    "classe": "substantivo",
+    "exemplo": "Kitoko kia kusona.",
+    "traducao_exemplo": "A tinta para pintar.",
+    "imagem": "tinta.jpg",
+    "audio": "kitoko.mp3.opus"
+  },
+  {
+    "palavra": "luvambu",
+    "traducao": "lixa",
+    "classe": "substantivo",
+    "exemplo": "Luvambu lua kusenga.",
+    "traducao_exemplo": "A lixa para lixar.",
+    "imagem": "lixa.png",
+    "audio": "luvambu.mp3.opus"
+  },
+  {
+    "palavra": "kukata",
+    "traducao": "cortar",
+    "classe": "verbo",
+    "exemplo": "Nkanka ke kukata nuni.",
+    "traducao_exemplo": "O carpinteiro corta madeira.",
+    "imagem": "cortar_madeira.jpg",
+    "audio": "kukata.mp3.opus"
+  },
+  {
+    "palavra": "kusenga",
+    "traducao": "alisar/lixar",
+    "classe": "verbo",
+    "exemplo": "Ngi kusenga nuni.",
+    "traducao_exemplo": "Eu aliso a madeira.",
+    "imagem": "alisar.png",
+    "audio": "kusenga.mp3.opus"
+  },
+  {
+    "palavra": "kukanga",
+    "traducao": "pregar/colar",
+    "classe": "verbo",
+    "exemplo": "Tuna kukanga lukonko.",
+    "traducao_exemplo": "Nós pregamos pregos.",
+    "imagem": "pregar.jpg",
+    "audio": "kukanga.mp3.opus"
+  },
+  {
+    "palavra": "kusokola",
+    "traducao": "entalhar",
+    "classe": "verbo",
+    "exemplo": "Nkanka ke kusokola nuni.",
+    "traducao_exemplo": "O carpinteiro entalha madeira.",
+    "imagem": "entalhar.png",
+    "audio": "kusokola.mp3.opus"
+  },
+  {
+    "palavra": "kukengela",
+    "traducao": "medir",
+    "classe": "verbo",
+    "exemplo": "Ngi kukengela nuni.",
+    "traducao_exemplo": "Eu meço a madeira.",
+    "imagem": "medir.jpg",
+    "audio": "kukengela.mp3.opus"
+  },
+  {
+    "palavra": "kusona",
+    "traducao": "marcar",
+    "classe": "verbo",
+    "exemplo": "Nkanka ke kusona nuni.",
+    "traducao_exemplo": "O carpinteiro marca a madeira.",
+    "imagem": "marcar.png",
+    "audio": "kusona.mp3.opus"
+  },
+  {
+    "palavra": "kutunga",
+    "traducao": "montar",
+    "classe": "verbo",
+    "exemplo": "Tuna kutunga mesa.",
+    "traducao_exemplo": "Nós montamos a mesa.",
+    "imagem": "montar.jpg",
+    "audio": "kutunga.mp3.opus"
+  },
+  {
+    "palavra": "kukamba",
+    "traducao": "vernizar",
+    "classe": "verbo",
+    "exemplo": "Ngi kukamba nuni.",
+    "traducao_exemplo": "Eu vernizo a madeira.",
+    "imagem": "vernizar.png",
+    "audio": "kukamba.mp3.opus"
+  },
+  {
+    "palavra": "mesa",
+    "traducao": "mesa",
+    "classe": "substantivo",
+    "exemplo": "Mesa ya nuni.",
+    "traducao_exemplo": "Mesa de madeira.",
+    "imagem": "mesa_madeira.jpg",
+    "audio": "mesa.mp3.opus"
+  },
+  {
+    "palavra": "kaxataji",
+    "traducao": "cadeira",
+    "classe": "substantivo",
+    "exemplo": "Kaxataji kia nuni.",
+    "traducao_exemplo": "Cadeira de madeira.",
+    "imagem": "cadeira_madeira.png",
+    "audio": "kaxataji.mp3.opus"
+  },
+  {
+    "palavra": "armario",
+    "traducao": "armário",
+    "classe": "substantivo",
+    "exemplo": "Armario wa nuni.",
+    "traducao_exemplo": "Armário de madeira.",
+    "imagem": "armario_madeira.jpg",
+    "audio": "armario.mp3.opus"
+  },
+  {
+    "palavra": "kandele",
+    "traducao": "cama",
+    "classe": "substantivo",
+    "exemplo": "Kandele kia nuni.",
+    "traducao_exemplo": "Cama de madeira.",
+    "imagem": "cama_madeira.png",
+    "audio": "kandele.mp3.opus"
+  },
+  {
+    "palavra": "nzo",
+    "traducao": "porta",
+    "classe": "substantivo",
+    "exemplo": "Nzo ya nuni.",
+    "traducao_exemplo": "Porta de madeira.",
+    "imagem": "porta_madeira.jpg",
+    "audio": "nzo.mp3.opus"
+  },
+  {
+    "palavra": "dilanda",
+    "traducao": "janela",
+    "classe": "substantivo",
+    "exemplo": "Dilanda dia nuni.",
+    "traducao_exemplo": "Janela de madeira.",
+    "imagem": "janela_madeira.png",
+    "audio": "dilanda.mp3.opus"
+  }
+  ,
+  {
+    "palavra": "kixoko kia moxi",
+    "traducao": "serra elétrica",
+    "classe": "substantivo",
+    "exemplo": "Kixoko kia moxi ke kukata.",
+    "traducao_exemplo": "A serra elétrica corta.",
+    "imagem": "serra_eletrica.jpg",
+    "audio": "kixoko_moxi.mp3.opus"
+  },
+  {
+    "palavra": "nsengo ya moxi",
+    "traducao": "furadeira",
+    "classe": "substantivo",
+    "exemplo": "Nsengo ya moxi ya kutoka.",
+    "traducao_exemplo": "A furadeira faz furos.",
+    "imagem": "furadeira.png",
+    "audio": "nsengo_moxi.mp3.opus"
+  },
+  {
+    "palavra": "lukembe lua moxi",
+    "traducao": "plaina elétrica",
+    "classe": "substantivo",
+    "exemplo": "Lukembe lua moxi lua kusenga.",
+    "traducao_exemplo": "A plaina elétrica alisa.",
+    "imagem": "plaina_eletrica.jpg",
+    "audio": "lukembe_moxi.mp3.opus"
+  },
+  {
+    "palavra": "luvambu lua moxi",
+    "traducao": "lixadeira",
+    "classe": "substantivo",
+    "exemplo": "Luvambu lua moxi lua kusenga.",
+    "traducao_exemplo": "A lixadeira lixa.",
+    "imagem": "lixadeira.png",
+    "audio": "luvambu_moxi.mp3.opus"
+  }
+  ,
+  {
+    "palavra": "Nuni wa kota",
+    "traducao": "A madeira é dura",
+    "classe": "frase",
+    "exemplo": "Nuni wa kota, kukata ke sala.",
+    "traducao_exemplo": "A madeira é dura, cortar é trabalho.",
+    "imagem": "madeira_dura.jpg",
+    "audio": "nuni_kota.mp3.opus"
+  },
+  {
+    "palavra": "Kixoko ke sala",
+    "traducao": "A serra funciona",
+    "classe": "frase",
+    "exemplo": "Kixoko ke sala mbotu.",
+    "traducao_exemplo": "A serra funciona bem.",
+    "imagem": "serra_funciona.png",
+    "audio": "kixoko_sala.mp3.opus"
+  },
+  {
+    "palavra": "Ngi kwiza kutunga",
+    "traducao": "Eu vou montar",
+    "classe": "frase",
+    "exemplo": "Ngi kwiza kutunga kaxataji.",
+    "traducao_exemplo": "Eu vou montar uma cadeira.",
+    "imagem": "montar_cadeira.jpg",
+    "audio": "ngi_kwiza_kutunga.mp3.opus"
+  },
+  {
+    "palavra": "Nkanka wa kimbo",
+    "traducao": "O carpinteiro é experiente",
+    "classe": "frase",
+    "exemplo": "Nkanka wa kimbo ke sala mbotu.",
+    "traducao_exemplo": "O carpinteiro experiente trabalha bem.",
+    "imagem": "carpinteiro_experiente.png",
+    "audio": "nkanka_kimbo.mp3.opus"
+  },
+  {
+    "palavra": "Mesa ya mana",
+    "traducao": "A mesa está pronta",
+    "classe": "frase",
+    "exemplo": "Mesa ya mana, tuna kwiza kutuala.",
+    "traducao_exemplo": "A mesa está pronta, nós vamos sentar.",
+    "imagem": "mesa_pronta.jpg",
+    "audio": "mesa_mana.mp3.opus"
+ },
+  {
+    "palavra": "kusokola nuni",
+    "traducao": "entalhe em madeira",
+    "classe": "substantivo",
+    "exemplo": "Kusokola nuni ke sala.",
+    "traducao_exemplo": "O entalhe em madeira é arte.",
+    "imagem": "entalhe_madeira.png",
+    "audio": "kusokola_nuni.mp3.opus"
+  },
+  {
+    "palavra": "kutunga mbanje",
+    "traducao": "construção de casa",
+    "classe": "substantivo",
+    "exemplo": "Kutunga mbanje ke kimbo.",
+    "traducao_exemplo": "A construção de casa leva tempo.",
+    "imagem": "construcao_casa.jpg",
+    "audio": "kutunga_mbanje.mp3.opus"
+  },
+  {
+    "palavra": "kukamba nuni",
+    "traducao": "acabamento",
+    "classe": "substantivo",
+    "exemplo": "Kukamba nuni ke waba.",
+    "traducao_exemplo": "O acabamento é importante.",
+    "imagem": "acabamento.png",
+    "audio": "kukamba_nuni.mp3.opus"
+  },
+  {
+    "palavra": "kukengela kwa mbotu",
+    "traducao": "medição precisa",
+    "classe": "substantivo",
+    "exemplo": "Kukengela kwa mbotu ke dia.",
+    "traducao_exemplo": "A medição precisa é fundamental.",
+    "imagem": "medicao_precisa.jpg",
+    "audio": "kukengela_mbotu.mp3.opus"
+  },
+  {
+    "palavra": "kulonga",
+    "traducao": "ensinar",
+    "classe": "verbo",
+    "exemplo": "Mfundisi ke kulonga kandengue.",
+    "traducao_exemplo": "O professor ensina as crianças.",
+    "imagem": "ensinar.jpg",
+    "audio": "kulonga.mp3.opus"
+  },
+  {
+    "palavra": "kudizola",
+    "traducao": "aprender",
+    "classe": "verbo",
+    "exemplo": "Kandengue ke kudizola.",
+    "traducao_exemplo": "A criança está aprendendo.",
+    "imagem": "aprender.png",
+    "audio": "kudizola.mp3.opus"
+  },
+  {
+    "palavra": "mfundisi",
+    "traducao": "professor",
+    "classe": "substantivo",
+    "exemplo": "Mfundisi wa nkutu.",
+    "traducao_exemplo": "O professor é sábio.",
+    "imagem": "professor.jpg",
+    "audio": "mfundisi.mp3.opus"
+  },
+  {
+    "palavra": "kandengue",
+    "traducao": "aluno/criança",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke kudizola.",
+    "traducao_exemplo": "O aluno está aprendendo.",
+    "imagem": "aluno.png",
+    "audio": "kandengue.mp3.opus"
+  },
+  {
+    "palavra": "nzo a kulongixa",
+    "traducao": "escola",
+    "classe": "substantivo",
+    "exemplo": "Nzo a kulongixa ya nene.",
+    "traducao_exemplo": "A escola é grande.",
+    "imagem": "escola.jpg",
+    "audio": "nzo_kulongixa.mp3.opus"
+  },
+  {
+    "palavra": "livru",
+    "traducao": "livro",
+    "classe": "substantivo",
+    "exemplo": "Livru lua kudizola.",
+    "traducao_exemplo": "O livro para aprender.",
+    "imagem": "livro.png",
+    "audio": "livru.mp3.opus"
+  },
+  {
+    "palavra": "kikwato",
+    "traducao": "caderno",
+    "classe": "substantivo",
+    "exemplo": "Kikwato kia kusona.",
+    "traducao_exemplo": "O caderno para escrever.",
+    "imagem": "caderno.jpg",
+    "audio": "kikwato.mp3.opus"
+  },
+  {
+    "palavra": "kalamu",
+    "traducao": "caneta/lápis",
+    "classe": "substantivo",
+    "exemplo": "Kalamu ya kusona.",
+    "traducao_exemplo": "A caneta para escrever.",
+    "imagem": "caneta.png",
+    "audio": "kalamu.mp3.opus"
+  },
+  {
+    "palavra": "mesa ya kulongixa",
+    "traducao": "carteira escolar",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke tuala mu mesa ya kulongixa.",
+    "traducao_exemplo": "O aluno senta na carteira escolar.",
+    "imagem": "carteira.jpg",
+    "audio": "mesa_kulongixa.mp3.opus"
+  },
+  {
+    "palavra": "lutala",
+    "traducao": "quadro",
+    "classe": "substantivo",
+    "exemplo": "Mfundisi ke sona mu lutala.",
+    "traducao_exemplo": "O professor escreve no quadro.",
+    "imagem": "quadro.png",
+    "audio": "lutala.mp3.opus"
+  },
+  {
+    "palavra": "kusona",
+    "traducao": "escrita",
+    "classe": "substantivo",
+    "exemplo": "Kusona ke dia.",
+    "traducao_exemplo": "A escrita é importante.",
+    "imagem": "escrita.jpg",
+    "audio": "kusona.mp3.opus"
+  },
+  {
+    "palavra": "kutanga",
+    "traducao": "leitura",
+    "classe": "substantivo",
+    "exemplo": "Kutanga ke waba.",
+    "traducao_exemplo": "A leitura é boa.",
+    "imagem": "leitura.png",
+    "audio": "kutanga.mp3.opus"
+  },
+  {
+    "palavra": "kubala",
+    "traducao": "matemática",
+    "classe": "substantivo",
+    "exemplo": "Kubala ke kota.",
+    "traducao_exemplo": "A matemática é difícil.",
+    "imagem": "matematica.jpg",
+    "audio": "kubala.mp3.opus"
+  },
+  {
+    "palavra": "kizulu",
+    "traducao": "ciências",
+    "classe": "substantivo",
+    "exemplo": "Kizulu ke tambula kima.",
+    "traducao_exemplo": "As ciências estudam as coisas.",
+    "imagem": "ciencias.png",
+    "audio": "kizulu.mp3.opus"
+  },
+  {
+    "palavra": "mazaixi",
+    "traducao": "história",
+    "classe": "substantivo",
+    "exemplo": "Mazaixi ma tambula kimbo.",
+    "traducao_exemplo": "A história estuda o tempo.",
+    "imagem": "historia.jpg",
+    "audio": "mazaixi.mp3.opus"
+  },
+  {
+    "palavra": "nzelo",
+    "traducao": "geografia",
+    "classe": "substantivo",
+    "exemplo": "Nzelo ya tambula nzelo.",
+    "traducao_exemplo": "A geografia estuda a terra.",
+    "imagem": "geografia.png",
+    "audio": "nzelo_geografia.mp3.opus"
+  },
+  {
+    "palavra": "kimbundo",
+    "traducao": "língua kimbundo",
+    "classe": "substantivo",
+    "exemplo": "Kimbundo ke diambu dia tu.",
+    "traducao_exemplo": "O kimbundo é nossa língua.",
+    "imagem": "lingua_kimbundo.jpg",
+    "audio": "kimbundo_lingua.mp3.opus"
+  },
+  {
+    "palavra": "kizungu",
+    "traducao": "língua portuguesa",
+    "classe": "substantivo",
+    "exemplo": "Kizungu ke diambu dia Portugal.",
+    "traducao_exemplo": "O português é a língua de Portugal.",
+    "imagem": "portugues.png",
+    "audio": "kizungu.mp3.opus"
+  },
+  {
+    "palavra": "nzo a kulongixa ya ntete",
+    "traducao": "escola primária",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke kwenda mu nzo a kulongixa ya ntete.",
+    "traducao_exemplo": "A criança vai para a escola primária.",
+    "imagem": "escola_primaria.jpg",
+    "audio": "nzo_kulongixa_ntete.mp3.opus"
+  },
+  {
+    "palavra": "nzo a kulongixa ya zole",
+    "traducao": "escola secundária",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ya nene ke mu nzo a kulongixa ya zole.",
+    "traducao_exemplo": "O adolescente está na escola secundária.",
+    "imagem": "escola_secundaria.png",
+    "audio": "nzo_kulongixa_zole.mp3.opus"
+  },
+  {
+    "palavra": "nzo a kulongixa ya ntatu",
+    "traducao": "universidade",
+    "classe": "substantivo",
+    "exemplo": "Mutu wa nene ke mu nzo a kulongixa ya ntatu.",
+    "traducao_exemplo": "O adulto está na universidade.",
+    "imagem": "universidade.jpg",
+    "audio": "nzo_kulongixa_ntatu.mp3.opus"
+  },
+  {
+    "palavra": "kimbangala",
+    "traducao": "creche",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ya fioti ke mu kimbangala.",
+    "traducao_exemplo": "A criança pequena está na creche.",
+    "imagem": "creche.png",
+    "audio": "kimbangala.mp3.opus"
+  },
+  {
+    "palavra": "kikwato kia kusona",
+    "traducao": "caderno de escrita",
+    "classe": "substantivo",
+    "exemplo": "Ngi kwiza sona mu kikwato kia kusona.",
+    "traducao_exemplo": "Eu vou escrever no caderno de escrita.",
+    "imagem": "caderno_escrita.jpg",
+    "audio": "kikwato_kusona.mp3.opus"
+  },
+  {
+    "palavra": "kikwato kia kubala",
+    "traducao": "caderno de matemática",
+    "classe": "substantivo",
+    "exemplo": "Kubala ke sona mu kikwato kia kubala.",
+    "traducao_exemplo": "A matemática escreve no caderno de matemática.",
+    "imagem": "caderno_matematica.png",
+    "audio": "kikwato_kubala.mp3.opus"
+  },
+  {
+    "palavra": "kalamu ya mutenene",
+    "traducao": "caneta vermelha",
+    "classe": "substantivo",
+    "exemplo": "Mfundisi ke sona mu kalamu ya mutenene.",
+    "traducao_exemplo": "O professor escreve com caneta vermelha.",
+    "imagem": "caneta_vermelha.jpg",
+    "audio": "kalamu_mutenene.mp3.opus"
+  },
+  {
+    "palavra": "kalamu ya toke",
+    "traducao": "caneta preta",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke sona mu kalamu ya toke.",
+    "traducao_exemplo": "O aluno escreve com caneta preta.",
+    "imagem": "caneta_preta.png",
+    "audio": "kalamu_toke.mp3.opus"
+  },
+  {
+    "palavra": "lusonilu",
+    "traducao": "borracha",
+    "classe": "substantivo",
+    "exemplo": "Lusonilu lua kufutila.",
+    "traducao_exemplo": "A borracha para apagar.",
+    "imagem": "borracha.jpg",
+    "audio": "lusonilu.mp3.opus"
+  },
+  {
+    "palavra": "kixixi",
+    "traducao": "apontador",
+    "classe": "substantivo",
+    "exemplo": "Kixixi kia kukanga kalamu.",
+    "traducao_exemplo": "O apontador para apontar o lápis.",
+    "imagem": "apontador.png",
+    "audio": "kixixi.mp3.opus"
+  },
+  {
+    "palavra": "kibete kia livru",
+    "traducao": "mochila",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke lemba kibete kia livru.",
+    "traducao_exemplo": "A criança carrega a mochila.",
+    "imagem": "mochila.jpg",
+    "audio": "kibete_livru.mp3.opus"
+  },
+  {
+    "palavra": "kukengela",
+    "traducao": "avaliar",
+    "classe": "verbo",
+    "exemplo": "Mfundisi ke kukengela kandengue.",
+    "traducao_exemplo": "O professor avalia o aluno.",
+    "imagem": "avaliar.png",
+    "audio": "kukengela.mp3.opus"
+  },
+  {
+    "palavra": "nota",
+    "traducao": "nota",
+    "classe": "substantivo",
+    "exemplo": "Nota ya mbotu.",
+    "traducao_exemplo": "Nota boa.",
+    "imagem": "nota.jpg",
+    "audio": "nota.mp3.opus"
+  },
+  {
+    "palavra": "kixikixo",
+    "traducao": "prova/exame",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke sala kixikixo.",
+    "traducao_exemplo": "O aluno faz a prova.",
+    "imagem": "prova.png",
+    "audio": "kixikixo.mp3.opus"
+  },
+  {
+    "palavra": "kutanga kwa ngeye",
+    "traducao": "dever de casa",
+    "classe": "substantivo",
+    "exemplo": "Kandengue ke sala kutanga kwa ngeye.",
+    "traducao_exemplo": "O aluno faz o dever de casa.",
+    "imagem": "dever_casa.jpg",
+    "audio": "kutanga_ngeye.mp3.opus"
+  },
+  {
+    "palavra": "kimbangidila",
+    "traducao": "nota máxima",
+    "classe": "substantivo",
+    "exemplo": "Kandengue wa nkutu ke mona kimbangidila.",
+    "traducao_exemplo": "O aluno inteligente tira nota máxima.",
+    "imagem": "nota_maxima.png",
+    "audio": "kimbangidila.mp3.opus"
+  },
+  {
+    "palavra": "mfumu ya nzo a kulongixa",
+    "traducao": "diretor da escola",
+    "classe": "substantivo",
+    "exemplo": "Mfumu ya nzo a kulongixa ke longa.",
+    "traducao_exemplo": "O diretor da escola orienta.",
+    "imagem": "diretor.jpg",
+    "audio": "mfumu_nzo_kulongixa.mp3.opus"
+  },
+  {
+    "palavra": "mfundisi ya ntete",
+    "traducao": "professor do primário",
+    "classe": "substantivo",
+    "exemplo": "Mfundisi ya ntete ke longa kandengue ya fioti.",
+    "traducao_exemplo": "O professor do primário ensina crianças pequenas.",
+    "imagem": "professor_primario.png",
+    "audio": "mfundisi_ntete.mp3.opus"
+  },
+  {
+    "palavra": "mfundisi ya zole",
+    "traducao": "professor do secundário",
+    "classe": "substantivo",
+    "exemplo": "Mfundisi ya zole ke longa diambu dia nene.",
+    "traducao_exemplo": "O professor do secundário ensina assuntos complexos.",
+    "imagem": "professor_secundario.jpg",
+    "audio": "mfundisi_zole.mp3.opus"
+  },
+  {
+    "palavra": "nkumbididi",
+    "traducao": "colegas de classe",
+    "classe": "substantivo",
+    "exemplo": "Nkumbididi ke disola kumosi.",
+    "traducao_exemplo": "Os colegas aprendem juntos.",
+    "imagem": "colegas.png",
+    "audio": "nkumbididi.mp3.opus"
+  },
+  {
+    "palavra": "kutanga livru",
+    "traducao": "ler livros",
+    "classe": "frase",
+    "exemplo": "Kandengue ke tanga livru.",
+    "traducao_exemplo": "O aluno lê livros.",
+    "imagem": "ler_livros.jpg",
+    "audio": "kutanga_livru.mp3.opus"
+  },
+  {
+    "palavra": "kusona mu kikwato",
+    "traducao": "escrever no caderno",
+    "classe": "frase",
+    "exemplo": "Tuna sona mu kikwato.",
+    "traducao_exemplo": "Nós escrevemos no caderno.",
+    "imagem": "escrever_caderno.png",
+    "audio": "kusona_kikwato.mp3.opus"
+  },
+  {
+    "palavra": "kubala namba",
+    "traducao": "calcular números",
+    "classe": "frase",
+    "exemplo": "Kandengue ke bala namba.",
+    "traducao_exemplo": "O aluno calcula números.",
+    "imagem": "calcular.jpg",
+    "audio": "kubala_namba.mp3.opus"
+  },
+  {
+    "palavra": "kutanga kwa ngeye",
+    "traducao": "estudar em casa",
+    "classe": "frase",
+    "exemplo": "Ngi tanga kwa ngeye.",
+    "traducao_exemplo": "Eu estudo em casa.",
+    "imagem": "estudar_casa.png",
+    "audio": "kutanga_ngeye.mp3.opus"
+  },
+  {
+    "palavra": "kulongana kumosi",
+    "traducao": "estudar em grupo",
+    "classe": "frase",
+    "exemplo": "Nkumbididi ke longana kumosi.",
+    "traducao_exemplo": "Os colegas estudam em grupo.",
+    "imagem": "estudo_grupo.jpg",
+    "audio": "kulongana_kumosi.mp3.opus"
+  },
+  {
+    "palavra": "nkutu",
+    "traducao": "inteligência/sabedoria",
+    "classe": "substantivo",
+    "exemplo": "Nkutu ke kwiza kwa kudizola.",
+    "traducao_exemplo": "A sabedoria vem do aprendizado.",
+    "imagem": "sabedoria.png",
+    "audio": "nkutu.mp3.opus"
+  },
+  {
+    "palavra": "kimbangidila",
+    "traducao": "excelência",
+    "classe": "substantivo",
+    "exemplo": "Kimbangidila ke tambula kusala mbotu.",
+    "traducao_exemplo": "A excelência requer trabalho bom.",
+    "imagem": "excelencia.jpg",
+    "audio": "kimbangidila.mp3.opus"
+  },
+  {
+    "palavra": "kuzola kudizola",
+    "traducao": "vontade de aprender",
+    "classe": "substantivo",
+    "exemplo": "Kuzola kudizola ke dia.",
+    "traducao_exemplo": "A vontade de aprender é importante.",
+    "imagem": "vontade_aprender.png",
+    "audio": "kuzola_kudizola.mp3.opus"
+  },
+  {
+    "palavra": "kimbo kia kudizola",
+    "traducao": "tempo de estudo",
+    "classe": "substantivo",
+    "exemplo": "Kimbo kia kudizola ke dia.",
+    "traducao_exemplo": "O tempo de estudo é importante.",
+    "imagem": "tempo_estudo.jpg",
+    "audio": "kimbo_kudizola.mp3.opus"
+  },
+  {
+    "palavra": "Kudizola ke kukula",
+    "traducao": "Aprender é crescer",
+    "classe": "frase",
+    "exemplo": "Kudizola ke kukula mu nkutu.",
+    "traducao_exemplo": "Aprender é crescer em sabedoria.",
+    "imagem": "aprender_crescer.png",
+    "audio": "kudizola_kukula.mp3.opus"
+  },
+  {
+    "palavra": "Nkutu ke mbotu",
+    "traducao": "O conhecimento é bom",
+    "classe": "frase",
+    "exemplo": "Nkutu ke mbotu kwa mutu yose.",
+    "traducao_exemplo": "O conhecimento é bom para todas as pessoas.",
+    "imagem": "conhecimento_bom.jpg",
+    "audio": "nkutu_mbotu.mp3.opus"
+  },
+  {
+    "palavra": "Kandengue wa nkutu ke tambula mbanje",
+    "traducao": "A criança estudiosa terá sucesso",
+    "classe": "frase",
+    "exemplo": "Kandengue wa nkutu ke tambula mbanje ya mbotu.",
+    "traducao_exemplo": "A criança estudiosa terá um bom futuro.",
+    "imagem": "crianca_estudiosa.png",
+    "audio": "kandengue_nkutu.mp3.opus"
+  },
+  {
+    "palavra": "Kutanga ke kukula",
+    "traducao": "Ler é crescer",
+    "classe": "frase",
+    "exemplo": "Kutanga livru ke kukula mu nkutu.",
+    "traducao_exemplo": "Ler livros é crescer em conhecimento.",
+    "imagem": "ler_crescer.jpg",
+    "audio": "kutanga_kukula.mp3.opus"
+  },
+  {
+    "palavra": "maji",
+    "traducao": "pedra",
+    "classe": "substantivo",
+    "exemplo": "Maji ma kota.",
+    "traducao_exemplo": "As pedras são duras.",
+    "imagem": "pedra.jpg",
+    "audio": "maji.mp3.opus"
+  },
+  {
+    "palavra": "nkadi",
+    "traducao": "pedreiro",
+    "classe": "substantivo",
+    "exemplo": "Nkadi ke sala mu maji.",
+    "traducao_exemplo": "O pedreiro trabalha com pedras.",
+    "imagem": "pedreiro.png",
+    "audio": "nkadi.mp3.opus"
+  },
+  {
+    "palavra": "nzelo ya maji",
+    "traducao": "pedreira",
+    "classe": "substantivo",
+    "exemplo": "Nkadi ke sala mu nzelo ya maji.",
+    "traducao_exemplo": "O pedreiro trabalha na pedreira.",
+    "imagem": "pedreira.jpg",
+    "audio": "nzelo_maji.mp3.opus"
+  },
+  {
+    "palavra": "kukanda maji",
+    "traducao": "quebrar pedras",
+    "classe": "verbo",
+    "exemplo": "Nkadi ke kanda maji.",
+    "traducao_exemplo": "O pedreiro quebra pedras.",
+    "imagem": "quebrar_pedras.png",
+    "audio": "kukanda_maji.mp3.opus"
+  },
+  {
+    "palavra": "kutoka maji",
+    "traducao": "cavar pedras",
+    "classe": "verbo",
+    "exemplo": "Tuna toka maji mu nzelo.",
+    "traducao_exemplo": "Nós cavamos pedras na terra.",
+    "imagem": "cavar_pedras.jpg",
+    "audio": "kutoka_maji.mp3.opus"
+  }
+,
+  {
+    "palavra": "maji ma nene",
+    "traducao": "rocha",
+    "classe": "substantivo",
+    "exemplo": "Maji ma nene ma kota.",
+    "traducao_exemplo": "As rochas são muito duras.",
+    "imagem": "rocha.png",
+    "audio": "maji_nene.mp3.opus"
+  },
+  {
+    "palavra": "maji ma fioti",
+    "traducao": "pedrisco",
+    "classe": "substantivo",
+    "exemplo": "Maji ma fioti ma sala nzelo.",
+    "traducao_exemplo": "O pedrisco faz estrada.",
+    "imagem": "pedrisco.jpg",
+    "audio": "maji_fioti.mp3.opus"
+  },
+  {
+    "palavra": "kitadi",
+    "traducao": "granito",
+    "classe": "substantivo",
+    "exemplo": "Kitadi ke kota.",
+    "traducao_exemplo": "O granito é duro.",
+    "imagem": "granito.png",
+    "audio": "kitadi.mp3.opus"
+  },
+  {
+    "palavra": "maza ma maji",
+    "traducao": "mármore",
+    "classe": "substantivo",
+    "exemplo": "Maza ma maji ma waba.",
+    "traducao_exemplo": "O mármore é bonito.",
+    "imagem": "marmore.jpg",
+    "audio": "maza_maji.mp3.opus"
+  },
+  {
+    "palavra": "kimbwiti",
+    "traducao": "ardósia",
+    "classe": "substantivo",
+    "exemplo": "Kimbwiti kia kusenga.",
+    "traducao_exemplo": "A ardósia é lisa.",
+    "imagem": "ardosia.png",
+    "audio": "kimbwiti.mp3.opus"
+  },
+  {
+    "palavra": "lukonko",
+    "traducao": "calcário",
+    "classe": "substantivo",
+    "exemplo": "Lukonko lua kuela.",
+    "traducao_exemplo": "O calcário é branco.",
+    "imagem": "calcario.jpg",
+    "audio": "lukonko.mp3.opus"
+  },
+  {
+    "palavra": "kisalu",
+    "traducao": "areia",
+    "classe": "substantivo",
+    "exemplo": "Kisalu kia fioti.",
+    "traducao_exemplo": "A areia é fina.",
+    "imagem": "areia.png",
+    "audio": "kisalu.mp3.opus"
+  },
+  {
+    "palavra": "toto",
+    "traducao": "barro",
+    "classe": "substantivo",
+    "exemplo": "Toto dia kukama.",
+    "traducao_exemplo": "O barro é mole.",
+    "imagem": "barro.jpg",
+    "audio": "toto.mp3.opus"
+  },
+  {
+    "palavra": "nsenga",
+    "traducao": "cascalho",
+    "classe": "substantivo",
+    "exemplo": "Nsenga ya kota.",
+    "traducao_exemplo": "O cascalho é duro.",
+    "imagem": "cascalho.png",
+    "audio": "nsenga.mp3.opus"
+  },
+  {
+    "palavra": "kimbungu kia nkadi",
+    "traducao": "marreta",
+    "classe": "substantivo",
+    "exemplo": "Kimbungu kia nkadi kia kukanda.",
+    "traducao_exemplo": "A marreta do pedreiro para quebrar.",
+    "imagem": "marreta.jpg",
+    "audio": "kimbungu_nkadi.mp3.opus"
+  },
+  {
+    "palavra": "lukonko lua nene",
+    "traducao": "picareta",
+    "classe": "substantivo",
+    "exemplo": "Lukonko lua nene lua kutoka.",
+    "traducao_exemplo": "A picareta grande para cavar.",
+    "imagem": "picareta_pedreira.png",
+    "audio": "lukonko_nene.mp3.opus"
+  },
+  {
+    "palavra": "mbele wa maji",
+    "traducao": "cinzel",
+    "classe": "substantivo",
+    "exemplo": "Mbele wa maji wa kusokola.",
+    "traducao_exemplo": "O cinzel para talhar pedra.",
+    "imagem": "cinzel.jpg",
+    "audio": "mbele_maji.mp3.opus"
+  },
+  {
+    "palavra": "nsengo ya maji",
+    "traducao": "martelo de pedreiro",
+    "classe": "substantivo",
+    "exemplo": "Nsengo ya maji ya kukanda.",
+    "traducao_exemplo": "O martelo de pedreiro para bater.",
+    "imagem": "martelo_pedreiro.png",
+    "audio": "nsengo_maji.mp3.opus"
+  },
+  {
+    "palavra": "kixoko kia maji",
+    "traducao": "serra de pedra",
+    "classe": "substantivo",
+    "exemplo": "Kixoko kia maji kia kukata.",
+    "traducao_exemplo": "A serra de pedra para cortar.",
+    "imagem": "serra_pedra.jpg",
+    "audio": "kixoko_maji.mp3.opus"
+  },
+  {
+    "palavra": "luvambu lua maji",
+    "traducao": "lixa de pedra",
+    "classe": "substantivo",
+    "exemplo": "Luvambu lua maji lua kusenga.",
+    "traducao_exemplo": "A lixa de pedra para polir.",
+    "imagem": "lixa_pedra.png",
+    "audio": "luvambu_maji.mp3.opus"
+  },
+  {
+    "palavra": "kibete kia maji",
+    "traducao": "carrinho de mão para pedras",
+    "classe": "substantivo",
+    "exemplo": "Kibete kia maji kia kulemba.",
+    "traducao_exemplo": "O carrinho para transportar pedras.",
+    "imagem": "carrinho_pedras.jpg",
+    "audio": "kibete_maji.mp3.opus"
+  },
+  {
+    "palavra": "ndeke ya maji",
+    "traducao": "pá de pedreiro",
+    "classe": "substantivo",
+    "exemplo": "Ndeke ya maji ya kusokola.",
+    "traducao_exemplo": "A pá do pedreiro para remover.",
+    "imagem": "pa_pedreiro.png",
+    "audio": "ndeke_maji.mp3.opus"
+  },
+  {
+    "palavra": "kutoka mu nzelo",
+    "traducao": "extrair da pedreira",
+    "classe": "verbo",
+    "exemplo": "Nkadi ke toka maji mu nzelo.",
+    "traducao_exemplo": "O pedreiro extrai pedras da pedreira.",
+    "imagem": "extrair_pedra.jpg",
+    "audio": "kutoka_nzelo.mp3.opus"
+  },
+  {
+    "palavra": "kukanda kwa nene",
+    "traducao": "desmonte de rochas",
+    "classe": "verbo",
+    "exemplo": "Tuna kanda kwa nene maji.",
+    "traducao_exemplo": "Nós fazemos desmonte de rochas.",
+    "imagem": "desmonte_rochas.png",
+    "audio": "kukanda_nene.mp3.opus"
+  },
+  {
+    "palavra": "kusenga maji",
+    "traducao": "polir pedras",
+    "classe": "verbo",
+    "exemplo": "Nkadi ke senga maji.",
+    "traducao_exemplo": "O pedreiro poliu pedras.",
+    "imagem": "polir_pedras.jpg",
+    "audio": "kusenga_maji.mp3.opus"
+  },
+  {
+    "palavra": "kusokola maji",
+    "traducao": "talhar pedras",
+    "classe": "verbo",
+    "exemplo": "Nkadi ke sokola maji.",
+    "traducao_exemplo": "O pedreiro talha pedras.",
+    "imagem": "talhar_pedras.png",
+    "audio": "kusokola_maji.mp3.opus"
+  },
+  {
+    "palavra": "kukengela maji",
+    "traducao": "medir pedras",
+    "classe": "verbo",
+    "exemplo": "Ngi kengela maji kwa mbotu.",
+    "traducao_exemplo": "Eu meço as pedras com precisão.",
+    "imagem": "medir_pedras.jpg",
+    "audio": "kukengela_maji.mp3.opus"
+  },
+  {
+    "palavra": "kutunga maji",
+    "traducao": "assentar pedras",
+    "classe": "verbo",
+    "exemplo": "Nkadi ke tunga maji mu lumbu.",
+    "traducao_exemplo": "O pedreiro assenta pedras no muro.",
+    "imagem": "assentar_pedras.png",
+    "audio": "kutunga_maji.mp3.opus"
+  },
+  {
+    "palavra": "maji ma lumbu",
+    "traducao": "pedra para construção",
+    "classe": "substantivo",
+    "exemplo": "Maji ma lumbu ma kota.",
+    "traducao_exemplo": "As pedras para construção são duras.",
+    "imagem": "pedra_construcao.jpg",
+    "audio": "maji_lumbu.mp3.opus"
+  },
+  {
+    "palavra": "maji ma nzelo",
+    "traducao": "pedra para calçada",
+    "classe": "substantivo",
+    "exemplo": "Maji ma nzelo ma sala nzelo.",
+    "traducao_exemplo": "As pedras para calçada fazem caminho.",
+    "imagem": "pedra_calcada.png",
+    "audio": "maji_nzelo.mp3.opus"
+  },
+  {
+    "palavra": "maji ma mbanje",
+    "traducao": "pedra para alicerce",
+    "classe": "substantivo",
+    "exemplo": "Maji ma mbanje ma tunga.",
+    "traducao_exemplo": "As pedras para alicerce sustentam.",
+    "imagem": "pedra_alicerce.jpg",
+    "audio": "maji_mbanje.mp3.opus"
+  },
+  {
+    "palavra": "maji ma kusenga",
+    "traducao": "pedra decorativa",
+    "classe": "substantivo",
+    "exemplo": "Maji ma kusenga ma waba.",
+    "traducao_exemplo": "As pedras decorativas são bonitas.",
+    "imagem": "pedra_decorativa.png",
+    "audio": "maji_kusenga.mp3.opus"
+  },
+  {
+    "palavra": "kisalu kia maji",
+    "traducao": "brita",
+    "classe": "substantivo",
+    "exemplo": "Kisalu kia maji kia nzelo.",
+    "traducao_exemplo": "A brita para estrada.",
+    "imagem": "brita.jpg",
+    "audio": "kisalu_maji.mp3.opus"
+  },
+  {
+    "palavra": "mavunga ma maji",
+    "traducao": "pedrisco",
+    "classe": "substantivo",
+    "exemplo": "Mavunga ma maji ma fioti.",
+    "traducao_exemplo": "O pedrisco é miúdo.",
+    "imagem": "pedrisco_construcao.png",
+    "audio": "mavunga_maji.mp3.opus"
+  },
+  {
+    "palavra": "kibakala",
+    "traducao": "capacete",
+    "classe": "substantivo",
+    "exemplo": "Kibakala kia kukamba.",
+    "traducao_exemplo": "O capacete para proteger.",
+    "imagem": "capacete.jpg",
+    "audio": "kibakala.mp3.opus"
+  },
+  {
+    "palavra": "makwala",
+    "traducao": "luvas",
+    "classe": "substantivo",
+    "exemplo": "Makwala ma kukamba moko.",
+    "traducao_exemplo": "As luvas para proteger as mãos.",
+    "imagem": "luvas.png",
+    "audio": "makwala.mp3.opus"
+  },
+  {
+    "palavra": "makwala ma meso",
+    "traducao": "óculos de proteção",
+    "classe": "substantivo",
+    "exemplo": "Makwala ma meso ma kukamba.",
+    "traducao_exemplo": "Os óculos de proteção protegem.",
+    "imagem": "oculos_protecao.jpg",
+    "audio": "makwala_meso.mp3.opus"
+  },
+  {
+    "palavra": "makwala ma makt",
+    "traducao": "botas de segurança",
+    "classe": "substantivo",
+    "exemplo": "Makwala ma makt ma kota.",
+    "traducao_exemplo": "As botas de segurança são resistentes.",
+    "imagem": "botas_seguranca.png",
+    "audio": "makwala_makt.mp3.opus"
+  },
+  {
+    "palavra": "kukula kwa maji",
+    "traducao": "tamanho da pedra",
+    "classe": "substantivo",
+    "exemplo": "Kukula kwa maji ke kengela.",
+    "traducao_exemplo": "O tamanho da pedra é medido.",
+    "imagem": "tamanho_pedra.jpg",
+    "audio": "kukula_maji.mp3.opus"
+  },
+  {
+    "palavra": "kota kwa maji",
+    "traducao": "dureza da pedra",
+    "classe": "substantivo",
+    "exemplo": "Kota kwa maji ke tambula.",
+    "traducao_exemplo": "A dureza da pedra é testada.",
+    "imagem": "dureza_pedra.png",
+    "audio": "kota_maji.mp3.opus"
+  },
+  {
+    "palavra": "kimbangidila kwa maji",
+    "traducao": "qualidade da pedra",
+    "classe": "substantivo",
+    "exemplo": "Kimbangidila kwa maji ke dia.",
+    "traducao_exemplo": "A qualidade da pedra é importante.",
+    "imagem": "qualidade_pedra.jpg",
+    "audio": "kimbangidila_maji.mp3.opus"
+  },
+  {
+    "palavra": "nzelo ya kuela",
+    "traducao": "pedreira a céu aberto",
+    "classe": "substantivo",
+    "exemplo": "Nzelo ya kuela ya waba.",
+    "traducao_exemplo": "A pedreira a céu aberto é boa.",
+    "imagem": "pedreira_ceu_aberto.png",
+    "audio": "nzelo_kuela.mp3.opus"
+  },
+  {
+    "palavra": "nzelo ya kukama",
+    "traducao": "pedreira subterrânea",
+    "classe": "substantivo",
+    "exemplo": "Nzelo ya kukama ya kota.",
+    "traducao_exemplo": "A pedreira subterrânea é perigosa.",
+    "imagem": "pedreira_subterranea.jpg",
+    "audio": "nzelo_kukama.mp3.opus"
+  },
+  {
+    "palavra": "Maji ma kota",
+    "traducao": "As pedras são duras",
+    "classe": "frase",
+    "exemplo": "Maji ma kota, kukanda ke sala.",
+    "traducao_exemplo": "As pedras são duras, quebrar é trabalho.",
+    "imagem": "pedras_duras.png",
+    "audio": "maji_kota_frase.mp3.opus"
+  },
+  {
+    "palavra": "Nkadi ke sala",
+    "traducao": "O pedreiro trabalha",
+    "classe": "frase",
+    "exemplo": "Nkadi ke sala mu mvula.",
+    "traducao_exemplo": "O pedreiro trabalha na chuva.",
+    "imagem": "pedreiro_trabalhando.jpg",
+    "audio": "nkadi_sala.mp3.opus"
+  },
+  {
+    "palavra": "Tuna toka maji",
+    "traducao": "Nós extraímos pedras",
+    "classe": "frase",
+    "exemplo": "Tuna toka maji ma nene.",
+    "traducao_exemplo": "Nós extraímos rochas grandes.",
+    "imagem": "extraindo_pedras.png",
+    "audio": "tuna_toka_maji.mp3.opus"
+  },
+  {
+    "palavra": "Kibete kia kuzala",
+    "traducao": "O carrinho está cheio",
+    "classe": "frase",
+    "exemplo": "Kibete kia kuzala maji.",
+    "traducao_exemplo": "O carrinho está cheio de pedras.",
+    "imagem": "carrinho_cheio.jpg",
+    "audio": "kibete_kuzala_maji.mp3.opus"
+  },
+  {
+    "palavra": "Nzelo ya maji ya nene",
+    "traducao": "A pedreira é grande",
+    "classe": "frase",
+    "exemplo": "Nzelo ya maji ya nene, tuna sala.",
+    "traducao_exemplo": "A pedreira é grande, nós trabalhamos.",
+    "imagem": "pedreira_grande.png",
+    "audio": "nzelo_maji_nene.mp3.opus"
+  }
+  ,
+  {
+    "palavra": "kitoko kia maji",
+    "traducao": "cimento",
+    "classe": "substantivo",
+    "exemplo": "Kitoko kia maji kia kukanga.",
+    "traducao_exemplo": "O cimento para unir.",
+    "imagem": "cimento.jpg",
+    "audio": "kitoko_maji.mp3.opus"
+  },
+  {
+    "palavra": "kisalu kia kitoko",
+    "traducao": "argamassa",
+    "classe": "substantivo",
+    "exemplo": "Kisalu kia kitoko kia kutunga.",
+    "traducao_exemplo": "A argamassa para assentar.",
+    "imagem": "argamassa.png",
+    "audio": "kisalu_kitoko.mp3.opus"
+  },
+  {
+    "palavra": "maji ma kitoko",
+    "traducao": "concreto",
+    "classe": "substantivo",
+    "exemplo": "Maji ma kitoko ma kota.",
+    "traducao_exemplo": "O concreto é duro.",
+    "imagem": "concreto.jpg",
+    "audio": "maji_kitoko.mp3.opus"
+  },
+  {
+    "palavra": "kimbwidi kia maji",
+    "traducao": "bloco de pedra",
+    "classe": "substantivo",
+    "exemplo": "Kimbwidi kia maji kia kutunga.",
+    "traducao_exemplo": "O bloco de pedra para construir.",
+    "imagem": "bloco_pedra.png",
+    "audio": "kimbwidi_maji.mp3.opus"
+  },
+   {
+    "palavra": "kiacu",
+    "traducao": "escuro",
+    "classe": "adjetivo",
+    "exemplo": "Mbanje ya kiacu.",
+    "traducao_exemplo": "A casa está escura.",
+    "imagem": "escuro.webp",
+    "audio": "kiacu.mp3.opus"
+  },
+  {
+    "palavra": "amarelo",
+    "traducao": "amarelo",
+    "classe": "adjetivo",
+    "exemplo": "Kamba dia amarelo.",
+    "traducao_exemplo": "O sol é amarelo.",
+    "imagem": "amarelo.webp",
+    "audio": "amarelo.mp3.opus"
+  },
+  {
+    "palavra": "luanje",
+    "traducao": "azul",
+    "classe": "adjetivo",
+    "exemplo": "Kaluki ka luanje.",
+    "traducao_exemplo": "O céu é azul.",
+    "imagem": "azul.webp",
+    "audio": "luanje.mp3.opus"
+  },
+  {
+    "palavra": "roxo",
+    "traducao": "roxo",
+    "classe": "adjetivo",
+    "exemplo": "Ngunda ya roxo.",
+    "traducao_exemplo": "A flor é roxa.",
+    "imagem": "roxo.webp",
+    "audio": "roxo.mp3.opus"
+  },
+
+ {
+    "palavra": "laranja",
+    "traducao": "laranja",
+    "classe": "adjetivo",
+    "exemplo": "Makaya ma laranja.",
+    "traducao_exemplo": "As frutas são laranjas.",
+    "imagem": "laranja.webp",
+    "audio": "laranja.mp3.opus"
+  },
+  {
+    "palavra": "castanho",
+    "traducao": "marrom/castanho",
+    "classe": "adjetivo",
+    "exemplo": "Toto dia castanho.",
+    "traducao_exemplo": "A terra é marrom.",
+    "imagem": "castanho.webp",
+    "audio": "castanho.mp3.opus"
+  },
+  {
+    "palavra": "cinza",
+    "traducao": "cinza",
+    "classe": "adjetivo",
+    "exemplo": "Maji ma cinza.",
+    "traducao_exemplo": "As pedras são cinzas.",
+    "imagem": "cinza.webp",
+    "audio": "cinza.mp3.opus"
+  },
+  {
+    "palavra": "rosa",
+    "traducao": "rosa",
+    "classe": "adjetivo",
+    "exemplo": "Ngeye ya rosa.",
+    "traducao_exemplo": "A roupa é rosa.",
+    "imagem": "rosa.webp",
+    "audio": "rosa.mp3.opus"
+  }
+
+]
+
+

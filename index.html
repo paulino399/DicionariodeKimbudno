@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-6593043404794712">
+  <title>Dicionário Visual Kimbundo-Português</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="logo-section">
+        <i class="fas fa-book-open"></i>
+        <h1>Dicionário Visual Kimbundo ↔ Português</h1>
+      </div>
+      <p class="subtitle">Preservando e compartilhando a língua Kimbundo 🇦🇴</p>
+    </div>
+    
+    <div class="search-container">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Digite uma palavra em Kimbundo ou Português...">
+        <button id="clearSearch" class="clear-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="search-stats">
+        <span id="wordCount">0</span> palavras disponíveis
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Carregando dicionário...</p>
+      </div>
+      
+      <div id="results" class="results-grid"></div>
+      
+      <div id="noResults" class="no-results">
+        <i class="fas fa-search"></i>
+        <h3>Nenhuma palavra encontrada</h3>
+        <p>Tente buscar por outra palavra ou verifique a ortografia.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>Feito com <i class="fas fa-heart"></i> por João Paulino • 2025</p>
+        <p class="footer-sub">Projeto de preservação linguística</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Sobre o projeto</a>
+        <a href="#" class="footer-link">Contribuir</a>
+        <a href="/jp.html" class="footer-link">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

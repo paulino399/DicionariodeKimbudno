@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Digital Kimbundo - Livros e PDFs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #2c5530;
+      --primary-dark: #1e3a23;
+      --primary-light: #4a7c59;
+      --secondary-color: #8c1b54;
+      --accent-color: #d4af37;
+      --text-dark: #2d3748;
+      --text-light: #718096;
+      --bg-light: #f8f9fa;
+      --bg-white: #ffffff;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+      --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.1);
+      --radius: 12px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 1.5rem 1rem;
+      box-shadow: var(--shadow);
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-section i {
+      font-size: 2rem;
+    }
+
+    .logo-section h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover {
+      opacity: 1;
+      color: var(--accent-color);
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+      color: white;
+      border-radius: var(--radius);
+      margin-bottom: 3rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Filters */
+    .filters {
+      background: var(--bg-white);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .filter-select {
+      padding: 0.5rem 1rem;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius);
+      background: var(--bg-white);
+      color: var(--text-dark);
+      cursor: pointer;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .search-box i {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.75rem 1rem 0.75rem 3rem;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius);
+      font-size: 1rem;
+    }
+
+    /* Books Grid */
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .book-card {
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .book-cover {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-color) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .book-cover i {
+      font-size: 4rem;
+      opacity: 0.9;
+    }
+
+    .book-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent-color);
+      color: var(--text-dark);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .book-content {
+      padding: 1.5rem;
+    }
+
+    .book-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-dark);
+    }
+
+    .book-author {
+      color: var(--text-light);
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .book-description {
+      color: var(--text-light);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .book-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+
+    .book-price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .book-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-weight: 500;
+      transition: var(--transition);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--primary-color);
+      color: white;
+      flex: 1;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-secondary {
+      background: var(--accent-color);
+      color: var(--text-dark);
+    }
+
+    .btn-secondary:hover {
+      background: #e6c34d;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-content {
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      width: 90%;
+      max-width: 800px;
+      max-height: 90vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .modal-header {
+      padding: 1.5rem;
+      border-bottom: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-light);
+    }
+
+    .modal-body {
+      padding: 1.5rem;
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text-dark);
+      color: white;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-info p {
+      margin: 0;
+    }
+
+    .footer-sub {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      margin-top: 0.25rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .nav-links {
+        gap: 1rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .filters {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .books-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .book-actions {
+        flex-direction: column;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="logo-section">
+        <i class="fas fa-book"></i>
+        <h1>Biblioteca Digital Kimbundo</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="/index.html" class="nav-link">Dicionário</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h2>Descubra a Literatura Kimbundo</h2>
+        <p>Leia online ou adquira livros em PDF para apoiar a preservação da língua e cultura Kimbundo</p>
+      </section>
+
+      <section class="filters">
+        <div class="filter-group">
+          <label>Categoria:</label>
+          <select class="filter-select" id="categoryFilter">
+            <option value="all">Todas as Categorias</option>
+            <option value="historia">História</option>
+            <option value="linguistica">Linguística</option>
+            <option value="cultura">Cultura</option>
+            <option value="literatura">Literatura</option>
+            <option value="educacao">Educação</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label>Preço:</label>
+          <select class="filter-select" id="priceFilter">
+            <option value="all">Todos os Preços</option>
+            <option value="free">Gratuito</option>
+            <option value="paid">Pago</option>
+          </select>
+        </div>
+
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="bookSearch" placeholder="Pesquisar livros...">
+        </div>
+      </section>
+
+      <section class="books-grid" id="booksGrid">
+        <!-- Livros serão carregados via JavaScript -->
+      </section>
+    </div>
+  </main>
+
+  <!-- Modal para leitura -->
+  <div class="modal" id="readModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Leitura do Livro</h3>
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Conteúdo do PDF será carregado aqui -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>Biblioteca Digital Kimbundo • 2025</p>
+        <p class="footer-sub">Preservando a língua e cultura através da literatura</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dados dos livros
+   // Dados dos livros - CORRIGIDO
+const books = [
+  {
+    id: 1,
+    title: "Gramática do Kimbundo Moderno",
+    author: "Prof. João Paulino",
+    description: "Guia completo da gramática kimbundo com exercícios práticos e exemplos do cotidiano.",
+    category: "linguistica",
+    price: 29.90,
+    pages: 245,
+    language: "Kimbundo/Português",
+    cover: "gramatica",
+    preview: true,
+    file: "biblioteca/FAQ ENSEM.pdf"
+  },
+  {
+    id: 2,
+    title: "História do Reino do Ndongo",
+    author: "Dr. Manuel Ngola",
+    description: "Narrativa histórica sobre a formação e desenvolvimento do Reino do Ndongo.",
+    category: "historia",
+    price: 0,
+    pages: 180,
+    language: "Português",
+    cover: "historia",
+    preview: true,
+    file: "biblioteca/paulino.pdf"
+  },
+  {
+    id: 3,
+    title: "Contos Tradicionais Kimbundos",
+    author: "Coletânea Cultural",
+    description: "Coletânea de contos e lendas tradicionais passadas oralmente por gerações.",
+    category: "literatura",
+    price: 19.90,
+    pages: 156,
+    language: "Kimbundo",
+    cover: "contos",
+    preview: false,
+    file: "contos-tradicionais.pdf"
+  },
+  {
+    id: 4,
+    title: "Dicionário Kimbundo-Português",
+    author: "Academia de Línguas",
+    description: "Dicionário completo com mais de 5.000 palavras e expressões do Kimbundo.",
+    category: "linguistica",
+    price: 49.90,
+    pages: 420,
+    language: "Kimbundo/Português",
+    cover: "dicionario",
+    preview: true,
+    file: "dicionario-completo.pdf"
+  },
+  {
+    id: 5,
+    title: "Textos Históricos em Kimbundo",
+    author: "João Paulino",
+    description: "Coletânea de 5 textos históricos em Kimbundo com tradução para português.",
+    category: "historia",
+    price: 0,
+    pages: 25,
+    language: "Kimbundo/Português",
+    cover: "historia",
+    preview: true,
+    file: "textos-historicos.pdf"
+  }
+];
+
+// Elementos DOM
+const booksGrid = document.getElementById('booksGrid');
+const categoryFilter = document.getElementById('categoryFilter');
+const priceFilter = document.getElementById('priceFilter');
+const bookSearch = document.getElementById('bookSearch');
+const readModal = document.getElementById('readModal');
+const modalTitle = document.getElementById('modalTitle');
+const modalBody = document.getElementById('modalBody');
+
+// Inicialização
+document.addEventListener('DOMContentLoaded', function() {
+  displayBooks(books);
+  setupEventListeners();
+});
+
+function displayBooks(booksToShow) {
+  booksGrid.innerHTML = '';
+  
+  if (booksToShow.length === 0) {
+    booksGrid.innerHTML = `
+      <div class="no-results" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+        <i class="fas fa-book" style="font-size: 4rem; color: var(--text-light); opacity: 0.5;"></i>
+        <h3>Nenhum livro encontrado</h3>
+        <p>Tente ajustar os filtros de pesquisa.</p>
+      </div>
+    `;
+    return;
+  }
+
+  booksToShow.forEach(book => {
+    const bookCard = createBookCard(book);
+    booksGrid.appendChild(bookCard);
+  });
+}
+
+function createBookCard(book) {
+  const card = document.createElement('div');
+  card.className = 'book-card';
+  
+  const coverIcons = {
+    'gramatica': 'fas fa-language',
+    'historia': 'fas fa-landmark',
+    'contos': 'fas fa-book-open',
+    'dicionario': 'fas fa-book',
+    'culinaria': 'fas fa-utensils',
+    'aprendendo': 'fas fa-graduation-cap'
+  };
+
+  card.innerHTML = `
+    <div class="book-cover">
+      <i class="${coverIcons[book.cover] || 'fas fa-book'}"></i>
+      ${book.price === 0 ? '<div class="book-badge">Gratuito</div>' : ''}
+    </div>
+    <div class="book-content">
+      <h3 class="book-title">${book.title}</h3>
+      <p class="book-author">por ${book.author}</p>
+      <p class="book-description">${book.description}</p>
+      <div class="book-meta">
+        <span>${book.pages} páginas</span>
+        <span>${book.language}</span>
+      </div>
+      <div class="book-price">
+        ${book.price === 0 ? 'Gratuito' : `R$ ${book.price.toFixed(2)}`}
+      </div>
+      <div class="book-actions">
+        <button class="btn btn-primary" onclick="handleRead('${book.file}', ${book.preview}, ${book.price}, ${book.id})">
+          <i class="fas fa-eye"></i> Ler
+        </button>
+        ${book.price > 0 ? `
+          <button class="btn btn-secondary" onclick="handlePurchase(${book.id})">
+            <i class="fas fa-shopping-cart"></i> Comprar
+          </button>
+        ` : `
+          <button class="btn btn-secondary" onclick="handleDownload('${book.file}', '${book.title}')">
+            <i class="fas fa-download"></i> Baixar
+          </button>
+        `}
+      </div>
+    </div>
+  `;
+  
+  return card;
+}
+
+function setupEventListeners() {
+  categoryFilter.addEventListener('change', filterBooks);
+  priceFilter.addEventListener('change', filterBooks);
+  bookSearch.addEventListener('input', filterBooks);
+}
+
+function filterBooks() {
+  const category = categoryFilter.value;
+  const price = priceFilter.value;
+  const searchTerm = bookSearch.value.toLowerCase();
+
+  const filteredBooks = books.filter(book => {
+    const matchesCategory = category === 'all' || book.category === category;
+    const matchesPrice = price === 'all' || 
+                       (price === 'free' && book.price === 0) ||
+                       (price === 'paid' && book.price > 0);
+    const matchesSearch = book.title.toLowerCase().includes(searchTerm) ||
+                        book.author.toLowerCase().includes(searchTerm) ||
+                        book.description.toLowerCase().includes(searchTerm);
+
+    return matchesCategory && matchesPrice && matchesSearch;
+  });
+
+  displayBooks(filteredBooks);
+}
+
+// FUNÇÃO CORRIGIDA - handleRead
+function handleRead(file, hasPreview, price, bookId) {
+  console.log('Tentando abrir:', file, 'Preview:', hasPreview, 'Preço:', price);
+  
+  if (price > 0 && !hasPreview) {
+    alert('Este livro não possui pré-visualização. Por favor, adquira o livro completo.');
+    return;
+  }
+
+  // Para livros gratuitos ou com preview
+  if (price === 0 || hasPreview) {
+    modalTitle.textContent = 'Leitura do Livro: ' + getBookTitle(bookId);
+    modalBody.innerHTML = `
+      <div style="text-align: center; padding: 2rem;">
+        <i class="fas fa-book-reader" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+        <h3>${getBookTitle(bookId)}</h3>
+        <p>${price > 0 ? 'Pré-visualização disponível' : 'Livro gratuito completo'}</p>
+        
+        <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; margin: 2rem 0; text-align: left;">
+          <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Conteúdo do Livro:</h4>
+          <p>• Textos históricos em Kimbundo</p>
+          <p>• Traduções para português</p>
+          <p>• Vocabulário histórico</p>
+          <p>• Explicações culturais</p>
+        </div>
+
+        ${price > 0 ? `
+          <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+            <p><strong>Pré-visualização:</strong> Você está visualizando apenas parte do conteúdo.</p>
+            <p>Para acessar o livro completo, adquira a versão integral.</p>
+          </div>
+        ` : ''}
+
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-primary" onclick="handleDownload('${file}', '${getBookTitle(bookId)}')">
+            <i class="fas fa-download"></i> Baixar PDF
+          </button>
+          ${price > 0 ? `
+            <button class="btn btn-secondary" onclick="handlePurchase(${bookId})">
+              <i class="fas fa-shopping-cart"></i> Comprar Completo
+            </button>
+          ` : ''}
+          <button class="btn" onclick="closeModal()" style="background: #6c757d; color: white;">
+            Fechar
+          </button>
+        </div>
+      </div>
+    `;
+  }
+
+  readModal.style.display = 'flex';
+}
+
+function handlePurchase(bookId) {
+  const book = books.find(b => b.id === bookId);
+  if (book) {
+    const confirmPurchase = confirm(`Deseja comprar o livro "${book.title}" por R$ ${book.price.toFixed(2)}?`);
+    if (confirmPurchase) {
+      alert(`Compra realizada com sucesso!\nLivro: ${book.title}\nValor: R$ ${book.price.toFixed(2)}`);
+      // Aqui você integraria com um sistema de pagamento real
+    }
+  }
+}
+
+function handleDownload(file, title) {
+  // Simular download - em produção, isso seria um link real para o PDF
+  const link = document.createElement('a');
+  link.href = '#'; // Substitua pelo caminho real do PDF
+  link.download = file;
+  link.click();
+  
+  alert(`Download iniciado: ${title}\nArquivo: ${file}`);
+}
+
+function closeModal() {
+  readModal.style.display = 'none';
+}
+
+function getBookTitle(bookId) {
+  const book = books.find(b => b.id === bookId);
+  return book ? book.title : 'Livro';
+}
+
+// Fechar modal ao clicar fora
+window.addEventListener('click', function(event) {
+  if (event.target === readModal) {
+    closeModal();
+  }
+});
+
+// Adicionar estas funções ao escopo global
+window.handleRead = handleRead;
+window.handlePurchase = handlePurchase;
+window.handleDownload = handleDownload;
+window.closeModal = closeModal;
+  </script>
+</body>
+</html>
