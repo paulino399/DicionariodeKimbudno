@@ -482,6 +482,34 @@
                 gap: 20px;
             }
         }
+
+        @media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px; /* abaixo do header */
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav.active {
+        display: flex; /* mostra o menu quando ativo */
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+}
+
+
     </style>
 </head>
 <body>
