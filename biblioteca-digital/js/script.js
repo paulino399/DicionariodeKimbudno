@@ -86,40 +86,57 @@ function filterBooks() {
   displayBooks(filteredBooks);
 }
 
-// Função para ler/visualizar
-function handleRead(file, hasPreview, price, bookId) {
+async function handleRead(file, hasPreview, price, bookId) {
   const book = books.find(b => b.id === bookId);
   if (!book) return;
 
   if (price > 0 && !hasPreview) {
-    alert('Este item não possui pré-visualização. Por favor, adquira a versão completa.');
+    alert('Este livro não possui pré-visualização. Por favor, adquira a versão completa.');
     return;
   }
 
-  modalTitle.textContent = book.type === 'imagem' ? 'Visualizar Imagem' : 'Leitura';
+  modalTitle.textContent = `Leitura: ${book.title}`;
   modalBody.innerHTML = `
-    <div style="text-align: center; padding: 2rem;">
-      <i class="fas ${book.type === 'imagem' ? 'fa-image' : 'fa-book-reader'}" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+    <div style="text-align: center; padding: 1rem;">
       <h3>${book.title}</h3>
-      <p>${price > 0 ? 'Pré-visualização disponível' : 'Conteúdo gratuito'}</p>
-      <div style="margin: 2rem 0;">
-        ${book.type === 'imagem' ? `<img src="${file}" alt="${book.title}" style="max-width: 100%; border-radius: 8px;">` : ''}
-      </div>
-      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <button class="btn btn-primary" onclick="handleDownload('${file}', '${book.title}')">
-          <i class="fas fa-download"></i> Baixar
+      <p>${book.author}</p>
+    </div>
+    <div style="width: 100%; height: 500px; overflow: auto; border: 1px solid #ddd; margin: 1rem 0;">
+      <canvas id="pdf-canvas" style="width: 100%;"></canvas>
+    </div>
+    <div style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center;">
+      <button class="btn btn-primary" onclick="handleDownload('${file}', '${book.title}')">
+        <i class="fas fa-download"></i> Baixar PDF
+      </button>
+      ${price > 0 ? `
+        <button class="btn btn-secondary" onclick="handlePurchase(${bookId})">
+          <i class="fas fa-shopping-cart"></i> Comprar Completo
         </button>
-        ${price > 0 ? `
-          <button class="btn btn-secondary" onclick="handlePurchase(${bookId})">
-            <i class="fas fa-shopping-cart"></i> Comprar Completo
-          </button>
-        ` : ''}
-        <button class="btn" onclick="closeModal()" style="background: #6c757d; color: white;">
-          Fechar
-        </button>
-      </div>
+      ` : ''}
+      <button class="btn" onclick="closeModal()" style="background: #6c757d; color: white;">
+        Fechar
+      </button>
     </div>
   `;
+
+  // Carregar e renderizar o PDF
+  try {
+    const loadingTask = pdfjsLib.getDocument(file);
+    const pdf = await loadingTask.promise;
+    const page = await pdf.getPage(1);
+    const viewport = page.getViewport({ scale: 1.5 });
+    const canvas = document.getElementById('pdf-canvas');
+    const context = canvas.getContext('2d');
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+    await page.render({
+      canvasContext: context,
+      viewport: viewport
+    }).promise;
+  } catch (error) {
+    modalBody.innerHTML += `<p style="color: red;">Erro ao carregar o PDF: ${error.message}</p>`;
+  }
+
   readModal.style.display = 'flex';
 }
 
@@ -164,3 +181,4 @@ window.handleRead = handleRead;
 window.handlePurchase = handlePurchase;
 window.handleDownload = handleDownload;
 window.closeModal = closeModal;
+
