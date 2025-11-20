@@ -10,6 +10,7 @@ const books = [
     pages: 245,
     language: "Kimbundo/Português",
     cover: "gramatica",
+     coverImage: "assets/images/capa.jpg",
     preview: true,
     file: "assets/pdfs/paulino.pdf",
     type: "livro"
@@ -55,5 +56,23 @@ const books = [
     preview: true,
     file: "",
     type: "imagem"
+  },
+
+
+
+   {
+    id: 4,
+    title: "Revista Cultural Kimbundo",
+    author: "Editora Kimbundo",
+    description: "Edição mensal com artigos sobre cultura, história e atualidades.",
+    category: "revistas",
+    price: 9.90,
+    pages: 50,
+    language: "Português",
+    cover: "revista",
+    coverImage: "assets/images/revista-cultural.jpg", // Caminho da imagem da capa
+    preview: true,
+    file: "assets/pdfs/revista-cultural.pdf",
+    type: "revista"
   }
 ];
