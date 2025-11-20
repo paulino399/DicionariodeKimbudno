@@ -30,7 +30,7 @@ const books = [
     file: "assets/pdfs/Introdução 5G.pdf",
     type: "dicionario"
   },
-  {
+{
     id: 3,
     title: "Revista Cultural Kimbundo",
     author: "Editora Kimbundo",
@@ -40,10 +40,14 @@ const books = [
     pages: 50,
     language: "Português",
     cover: "revista",
+    coverImage: "assets/images/polinomio.jpg", // Caminho da imagem da capa
     preview: true,
-    file: "assets/pdfs/paulino.pdf",
+    file: "assets/pdfs/Math.pdf",
     type: "revista"
   },
+
+  
+
   {
     id: 4,
     title: "Imagens Históricas do Ndongo",
@@ -54,13 +58,11 @@ const books = [
     pages: 0,
     language: "Visual",
     cover: "imagem",
+    coverImage: "assets/images/revista-cultural.jpg", // Caminho da imagem da capa
     preview: true,
     file: "",
     type: "imagem"
   },
-
-
-
    {
     id: 4,
     title: "Revista Cultural Kimbundo",
