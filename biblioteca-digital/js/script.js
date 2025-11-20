@@ -316,7 +316,7 @@ function updatePaymentDetails() {
       detailsHTML = `
         <div class="form-group">
           <label for="ibanNumber">Número IBAN</label>
-          <input type="text" id="ibanNumber" placeholder="Ex: AO06 0001 0001 0000 0000 1234 5">
+          <input type="text" id="ibanNumber" placeholder="Ex: AO06 0040 0000 3663 9709 1019 0">
         </div>
         <div class="form-group">
           <label for="accountName">Nome do Titular da Conta</label>
@@ -333,7 +333,7 @@ function updatePaymentDetails() {
       detailsHTML = `
         <div class="form-group">
           <label for="baiPhone">Número de Telefone (BAI Direto)</label>
-          <input type="text" id="baiPhone" placeholder="Ex: 923 123 456">
+          <input type="text" id="baiPhone" placeholder="Ex: 933 610 091">
         </div>
         <div class="form-group">
           <label for="baiReference">Referência de Pagamento</label>
@@ -346,7 +346,7 @@ function updatePaymentDetails() {
       detailsHTML = `
         <div class="form-group">
           <label for="multicaixaPhone">Número de Telefone (Multicaixa)</label>
-          <input type="text" id="multicaixaPhone" placeholder="Ex: 923 123 456">
+          <input type="text" id="multicaixaPhone" placeholder="Ex: 933 610 091">
         </div>
         <div class="form-group">
           <label for="multicaixaReference">Referência Multicaixa</label>
@@ -464,9 +464,9 @@ function confirmPurchase() {
     case 'iban':
       instructions = `
         <strong>Instruções para Transferência via IBAN:</strong><br>
-        1. Faça uma transferência para o IBAN: <strong>AO06 0001 0001 0000 0000 1234 5</strong><br>
+        1. Faça uma transferência para o IBAN: <strong>AO06 0040 0000 3663 9709 019 0</strong><br>
         2. Use a referência: <strong>${purchase.id}</strong><br>
-        3. Envie o comprovativo para <strong>contato@biblioteca-kimbundo.ao</strong><br>
+        3. Envie o comprovativo para <strong>palancatech639@gmail.com</strong><br>
         4. Após confirmação, os livros serão liberados para download.
       `;
       break;
@@ -497,7 +497,7 @@ function confirmPurchase() {
       instructions = `
         <strong>Instruções para PayPal:</strong><br>
         1. Faça login na sua conta PayPal.<br>
-        2. Envie o valor de <strong>R$ ${total.toFixed(2)}</strong> para o e-mail <strong>pagamentos@biblioteca-kimbundo.ao</strong><br>
+        2. Envie o valor de <strong>R$ ${total.toFixed(2)}</strong> para o e-mail <strong>joaopaulino399@gmail.com</strong><br>
         3. Use a referência: <strong>${purchase.id}</strong><br>
         4. Após confirmação, os livros serão liberados para download.
       `;
