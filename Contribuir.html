@@ -12,28 +12,178 @@
       --accent: #e94560;
       --light: #f5f5f5;
     }
-    * {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
-    body {background:var(--light);color:#333;line-height:1.6;}
-    header {background:var(--primary);color:#fff;padding:1rem 0;position:fixed;width:100%;top:0;z-index:1000;}
-    .container {width:90%;max-width:1200px;margin:0 auto;}
-    .header-content {display:flex;justify-content:space-between;align-items:center;}
-    .logo {font-size:1.5rem;font-weight:700;color:#fff;}
-    nav ul {display:flex;list-style:none;}
-    nav ul li {margin-left:2rem;}
-    nav ul li a {color:#fff;text-decoration:none;font-weight:500;}
-    nav ul li a:hover {color:var(--accent);}
-    .hero {background:linear-gradient(135deg,var(--secondary),var(--primary));color:#fff;text-align:center;padding:150px 20px 100px;}
-    .hero h1 {font-size:3rem;margin-bottom:1rem;}
-    .hero p {font-size:1.2rem;max-width:700px;margin:0 auto 2rem;}
-    section {padding:80px 0;}
-    .section-title {text-align:center;margin-bottom:3rem;}
-    .section-title h2 {font-size:2.2rem;color:var(--primary);}
-    .donation-methods {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
-    .method-card {background:#fff;padding:20px;border-radius:8px;box-shadow:0 5px 15px rgba(0,0,0,0.1);text-align:center;}
-    .method-card i {font-size:2rem;color:var(--accent);margin-bottom:15px;}
-    .method-card h3 {margin-bottom:10px;color:var(--secondary);}
-    .iban-box {background:#f9f9f9;padding:15px;border-radius:5px;margin-top:10px;font-weight:bold;}
-    footer {background:var(--secondary);color:#fff;text-align:center;padding:20px 0;margin-top:40px;}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 2rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: #fff;
+      text-align: center;
+      padding: 150px 20px 100px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    .donation-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .method-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .method-logo {
+      width: 100%;
+      max-width: 120px;
+      height: 60px;
+      margin: 0 auto 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .method-logo img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .method-card h3 {
+      margin-bottom: 10px;
+      color: var(--secondary);
+    }
+
+    .iban-box {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-weight: bold;
+      word-break: break-all;
+    }
+
+    .whatsapp-link {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .whatsapp-button {
+      background: #25D366;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background: #128C7E;
+    }
+
+    .whatsapp-button i {
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background: var(--secondary);
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -62,38 +212,66 @@
   <!-- Métodos de Contribuição -->
   <section id="methods">
     <div class="container">
-      <div class="section-title"><h2>Formas de Contribuição</h2></div>
+      <div class="section-title">
+        <h2>Formas de Contribuição</h2>
+      </div>
       <div class="donation-methods">
+        <!-- Transferência Bancária (IBAN) -->
         <div class="method-card">
-          <i class="fas fa-university"></i>
+          <div class="method-logo">
+            <img src="assets/images/banco.png" alt="Logo do Banco">
+          </div>
           <h3>Transferência Bancária (IBAN)</h3>
           <p>Faça a sua contribuição diretamente via IBAN.</p>
           <div class="iban-box">IBAN: AO06 0000 0000 0000 0000 0000</div>
         </div>
+
+        <!-- Multicaixa Express -->
         <div class="method-card">
-          <i class="fas fa-mobile-alt"></i>
-          <h3>Multicaixa eXpresse</h3>
-          <p>Contribua facilmente através da aplicação Multicaixa eXpresse.</p>
+          <div class="method-logo">
+            <img src="assets/images/express.png" alt="Logo Multicaixa Express">
+          </div>
+          <h3>Multicaixa Express</h3>
+          <p>Contribua facilmente através da aplicação Multicaixa Express.</p>
           <div class="iban-box">Número: +244 900 000 000</div>
         </div>
+
+        <!-- PayPal -->
         <div class="method-card">
-          <i class="fab fa-paypal"></i>
+          <div class="method-logo">
+            <img src="assets/images/paypal.png" alt="Logo PayPal">
+          </div>
           <h3>PayPal</h3>
           <p>Envie a sua contribuição via PayPal.</p>
           <div class="iban-box">paypal.me/dicionarioKimbundu</div>
         </div>
+
+        <!-- Paylib -->
         <div class="method-card">
-          <i class="fas fa-credit-card"></i>
+          <div class="method-logo">
+            <img src="assets/images/paylib.png" alt="Logo Paylib">
+          </div>
           <h3>Paylib</h3>
           <p>Contribua de forma rápida e segura com Paylib.</p>
           <div class="iban-box">Conta: dicionario@paylib.com</div>
         </div>
+
+        <!-- Wero -->
         <div class="method-card">
-          <i class="fas fa-wallet"></i>
+          <div class="method-logo">
+            <img src="assets/images/wero.png" alt="Logo Wero">
+          </div>
           <h3>Wero</h3>
           <p>Utilize a plataforma Wero para apoiar o projeto.</p>
           <div class="iban-box">Conta: dicionario@wero.com</div>
         </div>
+      </div>
+
+      <!-- Link para WhatsApp -->
+      <div class="whatsapp-link">
+        <a href="https://wa.me/244900000000?text=Olá!%20Enviei%20o%20comprovativo%20da%20minha%20contribuição%20para%20o%20Dicionário%20Kimbundu-Português." class="whatsapp-button" target="_blank">
+          <i class="fab fa-whatsapp"></i> Enviar Comprovativo pelo WhatsApp
+        </a>
       </div>
     </div>
   </section>
