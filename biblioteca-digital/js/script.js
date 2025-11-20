@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
 // Função para exibir livros
 function displayBooks(booksToShow) {
   booksGrid.innerHTML = booksToShow.length === 0
-    ? `<div class="no-results" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
+    ? `
+      <div class="no-results" style="grid-column: 1 / -1; text-align: center; padding: 3rem;">
         <i class="fas fa-book" style="font-size: 4rem; color: var(--text-light); opacity: 0.5;"></i>
         <h3>Nenhum item encontrado</h3>
         <p>Tente ajustar os filtros de pesquisa.</p>
-      </div>`
+      </div>
+    `
     : booksToShow.map(book => createBookCard(book)).join('');
 }
 
@@ -32,6 +34,7 @@ function createBookCard(book) {
     'revista': 'fas fa-newspaper',
     'imagem': 'fas fa-image'
   };
+
   return `
     <div class="book-card">
       <div class="book-cover">
@@ -86,15 +89,39 @@ function filterBooks() {
   displayBooks(filteredBooks);
 }
 
+// Função para ler/visualizar PDFs ou outros arquivos
 async function handleRead(file, hasPreview, price, bookId) {
   const book = books.find(b => b.id === bookId);
   if (!book) return;
 
   if (price > 0 && !hasPreview) {
-    alert('Este livro não possui pré-visualização. Por favor, adquira a versão completa.');
+    alert('Este item não possui pré-visualização. Por favor, adquira a versão completa.');
     return;
   }
 
+  // Verifica se o arquivo é um PDF
+  if (!file.toLowerCase().endsWith('.pdf')) {
+    modalTitle.textContent = `Visualizar: ${book.title}`;
+    modalBody.innerHTML = `
+      <div style="text-align: center; padding: 2rem;">
+        <i class="fas ${book.type === 'imagem' ? 'fa-image' : 'fa-file-archive'}" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+        <h3>${book.title}</h3>
+        <p>Este é um arquivo ${file.split('.').pop().toUpperCase()} e não pode ser visualizado diretamente no navegador.</p>
+        <div style="margin-top: 2rem;">
+          <button class="btn btn-primary" onclick="handleDownload('${file}', '${book.title}')">
+            <i class="fas fa-download"></i> Baixar Arquivo
+          </button>
+          <button class="btn" onclick="closeModal()" style="background: #6c757d; color: white;">
+            Fechar
+          </button>
+        </div>
+      </div>
+    `;
+    readModal.style.display = 'flex';
+    return;
+  }
+
+  // Se for um PDF, carrega com PDF.js
   modalTitle.textContent = `Leitura: ${book.title}`;
   modalBody.innerHTML = `
     <div style="text-align: center; padding: 1rem;">
@@ -119,7 +146,6 @@ async function handleRead(file, hasPreview, price, bookId) {
     </div>
   `;
 
-  // Carregar e renderizar o PDF
   try {
     const loadingTask = pdfjsLib.getDocument(file);
     const pdf = await loadingTask.promise;
@@ -134,7 +160,8 @@ async function handleRead(file, hasPreview, price, bookId) {
       viewport: viewport
     }).promise;
   } catch (error) {
-    modalBody.innerHTML += `<p style="color: red;">Erro ao carregar o PDF: ${error.message}</p>`;
+    modalBody.innerHTML += `<p style="color: red; text-align: center;">Erro ao carregar o PDF: ${error.message}</p>`;
+    console.error("Erro ao carregar o PDF:", error);
   }
 
   readModal.style.display = 'flex';
@@ -151,10 +178,11 @@ function handlePurchase(bookId) {
   }
 }
 
+// Função para baixar
 function handleDownload(file, title) {
   const link = document.createElement('a');
   link.href = file;
-  link.download = title.replace(/\s+/g, '-').toLowerCase() + '.pdf';
+  link.download = title.replace(/\s+/g, '-').toLowerCase() + (file.toLowerCase().endsWith('.pdf') ? '.pdf' : '');
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -184,4 +212,3 @@ window.handleRead = handleRead;
 window.handlePurchase = handlePurchase;
 window.handleDownload = handleDownload;
 window.closeModal = closeModal;
-
