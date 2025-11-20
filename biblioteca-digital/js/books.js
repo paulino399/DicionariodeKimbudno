@@ -25,7 +25,7 @@ const books = [
     pages: 420,
     language: "Kimbundo/Português",
     cover: "dicionario",
-    coverImage: "assets/images/5G.jpg",
+    coverImage: "assets/images/5G.png",
     preview: true,
     file: "assets/pdfs/Introdução 5G.pdf",
     type: "dicionario"
@@ -46,7 +46,7 @@ const books = [
     type: "revista"
   },
 
-  
+
 
   {
     id: 4,
