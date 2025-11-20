@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Digital Kimbundo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/biblioteca-digital/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-section">
+        <i class="fas fa-book"></i>
+        <h1>Biblioteca Digital Kimbundo</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="#dicionarios" class="nav-link">Dicionários</a>
+        <a href="#revistas" class="nav-link">Revistas</a>
+        <a href="#imagens" class="nav-link">Imagens</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h2>Descubra a Literatura Kimbundo</h2>
+        <p>Leia online, adquira livros em PDF, dicionários, revistas e imagens para apoiar a preservação da língua e cultura Kimbundo</p>
+      </section>
+      <section class="filters">
+        <div class="filter-group">
+          <label>Categoria:</label>
+          <select class="filter-select" id="categoryFilter">
+            <option value="all">Todas as Categorias</option>
+            <option value="livros">Livros</option>
+            <option value="dicionarios">Dicionários</option>
+            <option value="revistas">Revistas</option>
+            <option value="imagens">Imagens</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Preço:</label>
+          <select class="filter-select" id="priceFilter">
+            <option value="all">Todos os Preços</option>
+            <option value="free">Gratuito</option>
+            <option value="paid">Pago</option>
+          </select>
+        </div>
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" id="bookSearch" placeholder="Pesquisar...">
+        </div>
+      </section>
+      <section class="books-grid" id="booksGrid">
+        <!-- Conteúdo dinâmico -->
+      </section>
+    </div>
+  </main>
+  <!-- Modal para leitura -->
+  <div class="modal" id="readModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Leitura</h3>
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Conteúdo dinâmico -->
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <p>Biblioteca Digital Kimbundo • 2025</p>
+        <p class="footer-sub">Preservando a língua e cultura através da literatura</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/books.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
