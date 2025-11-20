@@ -334,6 +334,15 @@ header {
   overflow-y: auto;
 }
 
+/* Estilo para o visualizador de PDF */
+#pdf-canvas {
+  display: block;
+  margin: 0 auto;
+  background: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Footer */
 footer {
   background: var(--text-dark);
