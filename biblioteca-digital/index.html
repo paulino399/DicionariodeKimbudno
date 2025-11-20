@@ -6,10 +6,9 @@
   <title>Biblioteca Digital Kimbundo</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/biblioteca-digital/css/style.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
   <script>
-    // Configuração global do PDF.js
     pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.worker.min.js';
   </script>
 </head>
@@ -24,12 +23,48 @@
         <a href="index.html" class="nav-link">Início</a>
         <a href="#dicionarios" class="nav-link">Dicionários</a>
         <a href="#revistas" class="nav-link">Revistas</a>
-        <a href="#imagens" class="nav-link">Imagens</a>
         <a href="#sobre" class="nav-link">Sobre</a>
         <a href="#contato" class="nav-link">Contato</a>
       </nav>
+      <div class="cart-section">
+        <button id="cartButton" class="cart-button">
+          <i class="fas fa-shopping-cart"></i>
+          <span id="cartCount" class="cart-count">0</span>
+        </button>
+      </div>
     </div>
   </header>
+
+  <!-- Modal do Carrinho -->
+  <div class="modal" id="cartModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Carrinho de Compras</h3>
+        <button class="modal-close" onclick="closeCartModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="cartModalBody">
+        <!-- Conteúdo do carrinho será carregado aqui -->
+      </div>
+      <div class="modal-footer">
+        <p id="cartTotal">Total: R$ 0.00</p>
+        <button class="btn btn-primary" id="checkoutButton" onclick="checkout()">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Leitura -->
+  <div class="modal" id="readModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Leitura</h3>
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Conteúdo do PDF será carregado aqui -->
+      </div>
+    </div>
+  </div>
+
   <main>
     <div class="container">
       <section class="hero">
@@ -44,7 +79,6 @@
             <option value="livros">Livros</option>
             <option value="dicionarios">Dicionários</option>
             <option value="revistas">Revistas</option>
-            <option value="imagens">Imagens</option>
           </select>
         </div>
         <div class="filter-group">
@@ -65,18 +99,24 @@
       </section>
     </div>
   </main>
-  <!-- Modal para leitura -->
-  <div class="modal" id="readModal">
+
+  <!-- Modal de Finalização de Compra -->
+  <div class="modal" id="checkoutModal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 id="modalTitle">Leitura</h3>
-        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <h3>Finalizar Compra</h3>
+        <button class="modal-close" onclick="closeCheckoutModal()">&times;</button>
       </div>
-      <div class="modal-body" id="modalBody">
-        <!-- Conteúdo dinâmico -->
+      <div class="modal-body" id="checkoutModalBody">
+        <!-- Conteúdo do checkout será carregado aqui -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" onclick="confirmPurchase()">Confirmar Pagamento</button>
+        <button class="btn" onclick="closeCheckoutModal()" style="background: #6c757d; color: white;">Cancelar</button>
       </div>
     </div>
   </div>
+
   <footer>
     <div class="footer-content">
       <div class="footer-info">
@@ -85,7 +125,8 @@
       </div>
     </div>
   </footer>
-  <script src="/biblioteca-digital/js/books.js"></script>
-  <script src="/biblioteca-digital/js/script.js"></script>
+
+  <script src="js/books.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
