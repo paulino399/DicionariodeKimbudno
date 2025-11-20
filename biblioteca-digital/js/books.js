@@ -10,7 +10,7 @@ const books = [
     pages: 245,
     language: "Kimbundo/Português",
     cover: "gramatica",
-     coverImage: "assets/images/capa.jpg",
+    coverImage: "assets/images/capa.jpg",
     preview: true,
     file: "assets/pdfs/paulino.pdf",
     type: "livro"

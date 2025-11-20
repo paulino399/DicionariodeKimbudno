@@ -39,18 +39,12 @@ function displayBooks(booksToShow) {
 }
 
 // Função para criar cartão de livro
+// Função para criar cartão de livro
 function createBookCard(book) {
-  const coverIcons = {
-    'gramatica': 'fas fa-language',
-    'dicionario': 'fas fa-book',
-    'revista': 'fas fa-newspaper',
-    'imagem': 'fas fa-image'
-  };
-
   return `
     <div class="book-card">
       <div class="book-cover">
-        <i class="${coverIcons[book.cover] || 'fas fa-book'}"></i>
+        <img src="${book.coverImage}" alt="${book.title}" onerror="this.onerror=null; this.src='assets/images/default-cover.jpg';">
         ${book.price === 0 ? '<div class="book-badge">Gratuito</div>' : ''}
       </div>
       <div class="book-content">
@@ -82,6 +76,7 @@ function createBookCard(book) {
     </div>
   `;
 }
+
 
 // Função para filtrar livros
 function filterBooks() {
