@@ -39,7 +39,7 @@ const books = [
     language: "Português",
     cover: "revista",
     preview: true,
-    file: "assets/pdfs/revista-cultural.pdf",
+    file: "biblioteca-digital/assets/pdfs/paulino.pdf",
     type: "revista"
   },
   {
