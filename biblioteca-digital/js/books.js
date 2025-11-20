@@ -11,7 +11,7 @@ const books = [
     language: "Kimbundo/Português",
     cover: "gramatica",
     preview: true,
-    file: "assets/pdfs/gramatica-kimbundo.pdf",
+    file: "biblioteca-digital/assets/pdfs/paulino.pdf",
     type: "livro"
   },
   {
