@@ -66,5 +66,32 @@
   </footer>
 
   <script src="script.js"></script>
+
+
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD5cZj9LOwPm_XuPQ86CpUmjEsydy2cl4I",
+    authDomain: "dicionariokimbundo-17c00.firebaseapp.com",
+    projectId: "dicionariokimbundo-17c00",
+    storageBucket: "dicionariokimbundo-17c00.firebasestorage.app",
+    messagingSenderId: "1002651562278",
+    appId: "1:1002651562278:web:71757aef25cd981ffdd1e7",
+    measurementId: "G-ZZBKJTKYS3"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+
 </body>
 </html>
