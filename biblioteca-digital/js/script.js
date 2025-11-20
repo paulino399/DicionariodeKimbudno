@@ -151,10 +151,13 @@ function handlePurchase(bookId) {
   }
 }
 
-// Função para baixar
 function handleDownload(file, title) {
-  alert(`Download iniciado: ${title}\nArquivo: ${file}`);
-  // Em produção, substituir por um link real para download
+  const link = document.createElement('a');
+  link.href = file;
+  link.download = title.replace(/\s+/g, '-').toLowerCase() + '.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
 
 // Função para fechar modal
