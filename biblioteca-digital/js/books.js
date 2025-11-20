@@ -11,7 +11,7 @@ const books = [
     language: "Kimbundo/Português",
     cover: "gramatica",
     preview: true,
-    file: "biblioteca-digital/assets/pdfs/paulino.pdf",
+    file: "assets/pdfs/paulino.pdf",
     type: "livro"
   },
   {
@@ -25,7 +25,7 @@ const books = [
     language: "Kimbundo/Português",
     cover: "dicionario",
     preview: true,
-    file: "assets/pdfs/dicionario-kimbundo.pdf",
+    file: "assets/pdfs/paulino.pdf",
     type: "dicionario"
   },
   {
@@ -39,7 +39,7 @@ const books = [
     language: "Português",
     cover: "revista",
     preview: true,
-    file: "biblioteca-digital/assets/pdfs/paulino.pdf",
+    file: "assets/pdfs/paulino.pdf",
     type: "revista"
   },
   {
@@ -53,7 +53,7 @@ const books = [
     language: "Visual",
     cover: "imagem",
     preview: true,
-    file: "assets/images/imagens-historicas.zip",
+    file: "",
     type: "imagem"
   }
 ];
