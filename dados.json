@@ -718,13 +718,13 @@
     "audio": "comer_abacate.waptt"
   } ,
   {
-    "palavra": "kiabo",
+    "palavra": "mukamba",
     "traducao": "mandioca",
     "classe": "substantivo",
     "exemplo": "Kiabo kia sala funge.",
     "traducao_exemplo": "A mandioca faz funje.",
     "imagem": "mandioca.webp",
-    "audio": "mandioca.waptt"
+    "audio": "mukamba.waptt"
   },
 
 
@@ -749,7 +749,7 @@
     "exemplo": "Aladixi wa kota.",
     "traducao_exemplo": "O alho é forte.",
     "imagem": "alho.jpg",
-    "audio": "aladixi.mp3.opus"
+    "audio": "alho.waptt"
   },
   {
     "palavra": "matata",
