@@ -727,12 +727,6 @@
     "audio": "mukamba.waptt"
   },
 
-
-
-
-
-
-
   {
     "palavra": "txiyo",
     "traducao": "cebola",
@@ -758,7 +752,7 @@
     "exemplo": "Matata ma mona.",
     "traducao_exemplo": "Os tomates estão maduros.",
     "imagem": "tomate.png",
-    "audio": "matata.mp3.opus"
+    "audio": "matata.waptt"
   },
   {
     "palavra": "mbilingani",
