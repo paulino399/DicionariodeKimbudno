@@ -823,7 +823,7 @@
     "classe": "substantivo",
     "exemplo": "Nsangu wa kiazi.",
     "traducao_exemplo": "O espinafre é verde.",
-    "imagem": "espinafre.png",
+    "imagem": "espinafre.jpeg",
     "audio": "epinafre.waptt"
   },
   {
@@ -832,8 +832,8 @@
     "classe": "substantivo",
     "exemplo": "Kinkubala kia sala masanga.",
     "traducao_exemplo": "A batata faz purê.",
-    "imagem": "batata.jpg",
-    "audio": "kinkubala.mp3.opus"
+    "imagem": "batata.jpeg",
+    "audio": "BATATA1.waptt"
   },
   {
     "palavra": "mboa",
@@ -842,7 +842,7 @@
     "exemplo": "Mboa wa waba.",
     "traducao_exemplo": "O pepino é fresco.",
     "imagem": "pepino.png",
-    "audio": "mboa.mp3.opus"
+    "audio": "pepino.waptt"
   }
 ,
 
