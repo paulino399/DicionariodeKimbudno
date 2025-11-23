@@ -780,17 +780,7 @@
     "traducao_exemplo": "O quiabo é viscoso.",
     "imagem": "quiabo.jpg",
     "audio": "ndongo.waptt"
-  },
-  {
-    "palavra": "kizungu",
-    "traducao": "repolho",
-    "classe": "substantivo",
-    "exemplo": "Kizungu kia nene.",
-    "traducao_exemplo": "O repolho é grande.",
-    "imagem": "repolho.png",
-    "audio": "kizungu.mp3.opus"
-  },
-  {
+  },  {
     "palavra": "sabola",
     "traducao": "cenoura",
     "classe": "substantivo",
@@ -845,7 +835,15 @@
     "audio": "pepino.waptt"
   }
 ,
-
+  {
+    "palavra": "kizungu",
+    "traducao": "repolho",
+    "classe": "substantivo",
+    "exemplo": "Kizungu kia nene.",
+    "traducao_exemplo": "O repolho é grande.",
+    "imagem": "repolho.jpg",
+    "audio": "kizungu.mp3.opus"
+  },
 
 
 
