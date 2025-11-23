@@ -681,8 +681,7 @@
     "traducao_exemplo": "A laranja está verde.",
     "imagem": "verde.png",
     "audio": "laranja_verde.webp"
-  },
-  {
+  },{
     "palavra": "kusasula",
     "traducao": "colher frutas",
     "classe": "verbo",
@@ -734,66 +733,6 @@
 
 
 
-
-
-
-
-
-
-  {
-    "palavra": "mbambu",
-    "traducao": "batata-doce",
-    "classe": "substantivo",
-    "exemplo": "Mbambu wa waba.",
-    "traducao_exemplo": "A batata-doce é doce.",
-    "imagem": "batata_doce.png",
-    "audio": "mbambu.mp3.opus"
-  },
-  {
-    "palavra": "mbia",
-    "traducao": "inhame",
-    "classe": "substantivo",
-    "exemplo": "Mbia ya nene.",
-    "traducao_exemplo": "O inhame é grande.",
-    "imagem": "inhame.jpg",
-    "audio": "mbia.mp3.opus"
-  },
-  {
-    "palavra": "kizaka",
-    "traducao": "milho",
-    "classe": "substantivo",
-    "exemplo": "Kizaka kia sala musangu.",
-    "traducao_exemplo": "O milho faz farinha.",
-    "imagem": "milho.png",
-    "audio": "kizaka.mp3.opus"
-  },
-  {
-    "palavra": "ntaba",
-    "traducao": "amendoim",
-    "classe": "substantivo",
-    "exemplo": "Ntaba za sala mazi ma ntaba.",
-    "traducao_exemplo": "O amendoim faz manteiga de amendoim.",
-    "imagem": "amendoim.jpg",
-    "audio": "ntaba.mp3.opus"
-  },
-  {
-    "palavra": "nguba",
-    "traducao": "feijão",
-    "classe": "substantivo",
-    "exemplo": "Nguba za kota.",
-    "traducao_exemplo": "O feijão está duro.",
-    "imagem": "feijao.png",
-    "audio": "nguba.mp3.opus"
-  },
-  {
-    "palavra": "kimbundu",
-    "traducao": "abóbora",
-    "classe": "substantivo",
-    "exemplo": "Kimbundu kia nene.",
-    "traducao_exemplo": "A abóbora é grande.",
-    "imagem": "abobora.jpg",
-    "audio": "kimbundu.mp3.opus"
-  },
   {
     "palavra": "txiyo",
     "traducao": "cebola",
@@ -1186,6 +1125,62 @@
     "traducao_exemplo": "O machado para cortar.",
     "imagem": "machado.png",
     "audio": "kimbungu.mp3.opus"
+  },
+  
+  
+  {
+    "palavra": "mbambu",
+    "traducao": "batata-doce",
+    "classe": "substantivo",
+    "exemplo": "Mbambu wa waba.",
+    "traducao_exemplo": "A batata-doce é doce.",
+    "imagem": "batata_doce.png",
+    "audio": "mbambu.mp3.opus"
+  },
+  {
+    "palavra": "mbia",
+    "traducao": "inhame",
+    "classe": "substantivo",
+    "exemplo": "Mbia ya nene.",
+    "traducao_exemplo": "O inhame é grande.",
+    "imagem": "inhame.jpg",
+    "audio": "mbia.mp3.opus"
+  },
+  {
+    "palavra": "kizaka",
+    "traducao": "milho",
+    "classe": "substantivo",
+    "exemplo": "Kizaka kia sala musangu.",
+    "traducao_exemplo": "O milho faz farinha.",
+    "imagem": "milho.png",
+    "audio": "kizaka.mp3.opus"
+  },
+  {
+    "palavra": "ntaba",
+    "traducao": "amendoim",
+    "classe": "substantivo",
+    "exemplo": "Ntaba za sala mazi ma ntaba.",
+    "traducao_exemplo": "O amendoim faz manteiga de amendoim.",
+    "imagem": "amendoim.jpg",
+    "audio": "ntaba.mp3.opus"
+  },
+  {
+    "palavra": "nguba",
+    "traducao": "feijão",
+    "classe": "substantivo",
+    "exemplo": "Nguba za kota.",
+    "traducao_exemplo": "O feijão está duro.",
+    "imagem": "feijao.png",
+    "audio": "nguba.mp3.opus"
+  },
+  {
+    "palavra": "kimbundu",
+    "traducao": "abóbora",
+    "classe": "substantivo",
+    "exemplo": "Kimbundu kia nene.",
+    "traducao_exemplo": "A abóbora é grande.",
+    "imagem": "abobora.jpg",
+    "audio": "kimbundu.mp3.opus"
   },
   {
     "palavra": "dikwata",
