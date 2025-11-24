@@ -38,7 +38,7 @@ function displayBooks(booksToShow) {
     : booksToShow.map(book => createBookCard(book)).join('');
 }
 
-// Função para criar cartão de livro
+
 // Função para criar cartão de livro
 function createBookCard(book) {
   return `
@@ -96,27 +96,30 @@ function filterBooks() {
   displayBooks(filteredBooks);
 }
 
-// Função para ler/visualizar PDFs ou outros arquivos
 function handleRead(file, hasPreview, price, bookId) {
-    const book = books.find(b => b.id === bookId);
-    if (!book) return;
+  const book = books.find(b => b.id === bookId);
+  if (!book) return;
 
-    if (price > 0 && !hasPreview) {
-        alert('Este item não possui pré-visualização. Por favor, adquira a versão completa.');
-        return;
-    }
+  if (price > 0 && !hasPreview) {
+    alert('Este item não possui pré-visualização. Por favor, adquira a versão completa.');
+    return;
+  }
 
-    // Redirecionar para o leitor profissional
-    const params = new URLSearchParams({
-        file: file,
-        title: book.title,
-        author: book.author,
-        pages: book.pages,
-        id: book.id
-    });
+  // Salva os dados do livro usados pelo leitor
+  const currentBook = {
+    id: book.id,
+    title: book.title,
+    author: book.author,
+    pages: book.pages,
+    file: file
+  };
+  sessionStorage.setItem('currentBook', JSON.stringify(currentBook));
 
-    window.location.href = `reader0.html?${params.toString()}`;
+  // Redireciona para reader0.html
+  window.location.href = 'js/reader0.html'; // se reader0.html está dentro da pasta js
 }
+
+
 
 
 // Função para adicionar ao carrinho
@@ -527,4 +530,4 @@ window.checkout = checkout;
 window.closeCheckoutModal = closeCheckoutModal;
 window.confirmPurchase = confirmPurchase;
 window.updatePaymentDetails = updatePaymentDetails;
-window.handleRead = handleRead;
+
