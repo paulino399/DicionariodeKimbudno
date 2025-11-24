@@ -106,6 +106,24 @@ async function handleRead(file, hasPreview, price, bookId) {
     return;
   }
 
+  // Se for PDF, redireciona para a página de leitura
+  if (file.toLowerCase().endsWith('.pdf')) {
+    // Salva as informações do livro para a página de leitura
+    sessionStorage.setItem('currentBook', JSON.stringify({
+      id: book.id,
+      title: book.title,
+      author: book.author,
+      file: file,
+      price: price,
+      hasPreview: hasPreview
+    }));
+    
+    // Redireciona para a página de leitura
+    window.open('reader.html', '_blank');
+    return;
+  }
+
+  // Para outros tipos de arquivo, mantém o modal atual
   if (!file.toLowerCase().endsWith('.pdf')) {
     modalTitle.textContent = `Visualizar: ${book.title}`;
     modalBody.innerHTML = `
@@ -126,50 +144,6 @@ async function handleRead(file, hasPreview, price, bookId) {
     readModal.style.display = 'flex';
     return;
   }
-
-  modalTitle.textContent = `Leitura: ${book.title}`;
-  modalBody.innerHTML = `
-    <div style="text-align: center; padding: 1rem;">
-      <h3>${book.title}</h3>
-      <p>${book.author}</p>
-    </div>
-    <div style="width: 100%; height: 500px; overflow: auto; border: 1px solid #ddd; margin: 1rem 0;">
-      <canvas id="pdf-canvas" style="width: 100%;"></canvas>
-    </div>
-    <div style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center;">
-      <button class="btn btn-primary" onclick="handleDownload('${file}', '${book.title}')">
-        <i class="fas fa-download"></i> Baixar PDF
-      </button>
-      ${price > 0 ? `
-        <button class="btn btn-secondary" onclick="addToCart(${book.id})">
-          <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
-        </button>
-      ` : ''}
-      <button class="btn" onclick="closeModal()" style="background: #6c757d; color: white;">
-        Fechar
-      </button>
-    </div>
-  `;
-
-  try {
-    const loadingTask = pdfjsLib.getDocument(file);
-    const pdf = await loadingTask.promise;
-    const page = await pdf.getPage(1);
-    const viewport = page.getViewport({ scale: 1.5 });
-    const canvas = document.getElementById('pdf-canvas');
-    const context = canvas.getContext('2d');
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-    await page.render({
-      canvasContext: context,
-      viewport: viewport
-    }).promise;
-  } catch (error) {
-    modalBody.innerHTML += `<p style="color: red; text-align: center;">Erro ao carregar o PDF: ${error.message}</p>`;
-    console.error("Erro ao carregar o PDF:", error);
-  }
-
-  readModal.style.display = 'flex';
 }
 
 // Função para adicionar ao carrinho
