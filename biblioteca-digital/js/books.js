@@ -122,9 +122,9 @@ const books = [
     pages: 310,
     language: "Português",
     cover: "estatistica",
-    coverImage: "assets/images/estatistica.png",
+    coverImage: "assets/images/EstatisticaEprobabi.png",
     preview: true,
-    file: "assets/pdfs/estatistica_probabilidade.pdf",
+    file: "assets/pdfs/EstatisticaeProbabilidade-livro.pdf",
     type: "livro"
   },
   {
