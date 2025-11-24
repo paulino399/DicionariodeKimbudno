@@ -83,12 +83,13 @@ header::before {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: var(--primary-light);
+  background: var(--bg-white); /* fundo neutro para destacar a imagem */
+  border: 3px solid var(--accent-color); /* borda dourada */
+  box-shadow: var(--shadow-hover);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  box-shadow: var(--shadow);
   transition: transform 0.3s ease;
 }
 
