@@ -152,9 +152,9 @@ const books = [
     pages: 320,
     language: "Português",
     cover: "riqueza",
-    coverImage: "assets/images/riqueza.png",
+    coverImage: "assets/images/QuemPensaEnriquence.png",
     preview: true,
-    file: "assets/pdfs/quem_pensa_enriquece.pdf",
+    file: "assets/pdfs/QUEM PENSA ENRIQUECE.pdf",
     type: "livro"
   }
 ];
