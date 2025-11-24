@@ -61,7 +61,6 @@ header::before {
   80% { transform: translate(3%, 35%); }
   90% { transform: translate(-10%, 10%); }
 }
-
 .header-content {
   position: relative;
   z-index: 2;
@@ -79,15 +78,36 @@ header::before {
   animation: fadeInDown 0.8s ease-out;
 }
 
-.logo-section i {
-  font-size: 2.5rem;
-  color: white;
+/* substitui o ícone <i> pelo círculo com imagem */
+.logo-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.logo-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém proporção sem distorcer */
+  transition: transform 0.3s ease;
+}
+
+.logo-icon img:hover {
+  transform: scale(1.05);
 }
 
 .logo-section h1 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
+  color: white; /* mantém contraste no header */
 }
 
 .subtitle {
@@ -95,7 +115,9 @@ header::before {
   opacity: 0.9;
   margin-bottom: 2rem;
   animation: fadeInUp 0.8s ease-out 0.2s both;
+  color: white; /* garante legibilidade sobre fundo escuro */
 }
+
 
 .search-container {
   max-width: 600px;
