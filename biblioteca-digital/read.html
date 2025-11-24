@@ -1,0 +1,175 @@
+<script>
+    // Capturar parâmetros da URL
+    const params = new URLSearchParams(window.location.search);
+
+    const pdfFile = params.get("file");
+    const bookTitle = params.get("title") || "Sem título";
+    const bookAuthor = params.get("author") || "Autor desconhecido";
+
+    // Atualizar informações
+    document.getElementById("bookTitle").textContent = bookTitle;
+    document.getElementById("bookAuthor").textContent = "por " + bookAuthor;
+
+    // Vars PDF.js
+    let pdfDoc = null;
+    let currentPage = 1;
+    let totalPages = 0;
+    let scale = 1.2;
+    const canvas = document.getElementById("pdf-canvas");
+    const ctx = canvas.getContext("2d");
+
+    if (!pdfFile) {
+        alert("Erro: nenhum PDF foi enviado para leitura.");
+    }
+
+    // Carregar PDF
+    async function loadPDF() {
+        try {
+            const loadingTask = pdfjsLib.getDocument(pdfFile);
+            pdfDoc = await loadingTask.promise;
+
+            totalPages = pdfDoc.numPages;
+            document.getElementById("totalPages").textContent = totalPages;
+
+            document.getElementById("loadingSpinner").style.display = "none";
+
+            await renderPage(1);
+            await generateThumbnails();
+
+        } catch (error) {
+            console.error("Erro ao carregar PDF:", error);
+            document.getElementById("loadingSpinner").innerHTML = `
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Erro ao carregar o livro.</p>
+            `;
+        }
+    }
+
+    // Renderizar página
+    async function renderPage(num) {
+        const page = await pdfDoc.getPage(num);
+        const viewport = page.getViewport({ scale });
+
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        await page.render({
+            canvasContext: ctx,
+            viewport
+        }).promise;
+
+        currentPage = num;
+        document.getElementById("currentPage").value = num;
+
+        updateProgressBar();
+    }
+
+    // Miniaturas
+    async function generateThumbnails() {
+        const container = document.getElementById("thumbnailContainer");
+        container.innerHTML = "";
+
+        const pagesToShow = Math.min(totalPages, 10);
+
+        for (let i = 1; i <= pagesToShow; i++) {
+            const thumbWrapper = document.createElement("div");
+            thumbWrapper.classList.add("page-thumbnail");
+            if (i === 1) thumbWrapper.classList.add("active");
+
+            const thumbCanvas = document.createElement("canvas");
+            thumbWrapper.appendChild(thumbCanvas);
+            container.appendChild(thumbWrapper);
+
+            thumbWrapper.onclick = () => goToPage(i);
+
+            const page = await pdfDoc.getPage(i);
+            const viewport = page.getViewport({ scale: 0.2 });
+            thumbCanvas.height = viewport.height;
+            thumbCanvas.width = viewport.width;
+
+            await page.render({
+                canvasContext: thumbCanvas.getContext("2d"),
+                viewport
+            }).promise;
+        }
+    }
+
+    // Navegação
+    function nextPage() {
+        if (currentPage < totalPages) {
+            renderPage(currentPage + 1);
+            updateThumbnails();
+        }
+    }
+
+    function previousPage() {
+        if (currentPage > 1) {
+            renderPage(currentPage - 1);
+            updateThumbnails();
+        }
+    }
+
+    function goToPage(num) {
+        num = parseInt(num);
+        if (num >= 1 && num <= totalPages) {
+            renderPage(num);
+            updateThumbnails();
+        }
+    }
+
+    function updateThumbnails() {
+        document.querySelectorAll(".page-thumbnail").forEach((thumb, index) => {
+            thumb.classList.toggle("active", index + 1 === currentPage);
+        });
+    }
+
+    // Zoom
+    function zoomIn() {
+        scale += 0.1;
+        document.getElementById("zoomLevel").textContent = Math.round(scale * 100) + "%";
+        renderPage(currentPage);
+    }
+
+    function zoomOut() {
+        if (scale > 0.4) {
+            scale -= 0.1;
+            document.getElementById("zoomLevel").textContent = Math.round(scale * 100) + "%";
+            renderPage(currentPage);
+        }
+    }
+
+    // Progress bar
+    function updateProgressBar() {
+        const progress = (currentPage / totalPages) * 100;
+        document.getElementById("progressBar").style.width = progress + "%";
+    }
+
+    // Fullscreen
+    function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen();
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
+    // Fechar
+    function goBack() {
+        window.history.back();
+    }
+
+    function closeReader() {
+        window.history.back();
+    }
+
+    // Download
+    function downloadBook() {
+        const a = document.createElement("a");
+        a.href = pdfFile;
+        a.download = bookTitle + ".pdf";
+        a.click();
+    }
+
+    // Iniciar
+    loadPDF();
+</script>
