@@ -93,7 +93,7 @@ header::before {
   transition: transform 0.3s ease;
 }
 .logo-icon {
-  box-shadow: 0 0 15px var(--accent-color);
+  background: var(--primary-dark);
 }
 
 .logo-icon img {
