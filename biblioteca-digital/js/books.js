@@ -91,11 +91,12 @@ const books = [
     pages: 420,
     language: "Francês",
     cover: "Electronique",
-    coverImage: "assets/images/5G.png",
+    coverImage: "assets/images/Arduino_I2C.jpg",
     preview: true,
     file: "assets/pdfs/Arduino_I2C.pdf",
     type: "livro"
   },
+
   {
     id: 3,
     title: "Química Geral I",
