@@ -80,21 +80,21 @@ const books = [
   },
 
 
-  
+
   {
     id: 2,
-    title: "Dicionário Kimbundo-Português",
-    author: "Academia de Línguas",
-    description: "Dicionário completo com mais de 5.000 palavras e expressões.",
-    category: "dicionarios",
+    title: "Arduino_I2C",
+    author: "Gotronics",
+    description: "Guia prático sobre comunicação I2C com Arduino.",
+    category: "livros",
     price: 0,
     pages: 420,
-    language: "Kimbundo/Português",
-    cover: "dicionario",
+    language: "Francês",
+    cover: "Electronique",
     coverImage: "assets/images/5G.png",
     preview: true,
-    file: "assets/pdfs/Introdução 5G.pdf",
-    type: "dicionario"
+    file: "assets/pdfs/Arduino_I2C.pdf",
+    type: "livro"
   },
   {
     id: 3,
