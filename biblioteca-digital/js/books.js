@@ -107,9 +107,9 @@ const books = [
     pages: 380,
     language: "Português",
     cover: "quimica",
-    coverImage: "assets/images/quimica.png",
+    coverImage: "assets/images/QuimicaGeral.png",
     preview: true,
-    file: "assets/pdfs/quimica_geral.pdf",
+    file: "assets/pdfs/Livro_Quimica Geral I.pdf",
     type: "livro"
   },
   {
