@@ -1,4 +1,4 @@
-/* Variáveis CSS para cores e fontes */
+/* Variáveis CSS para temas */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #3498db;
@@ -7,8 +7,24 @@
     --dark-color: #2c3e50;
     --text-color: #333;
     --text-light: #fff;
+    --background-color: #f9f9f9;
+    --card-background: #ffffff;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
+}
+
+/* Tema Escuro */
+[data-theme="dark"] {
+    --primary-color: #34495e;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #2c3e50;
+    --dark-color: #ecf0f1;
+    --text-color: #ecf0f1;
+    --text-light: #ecf0f1;
+    --background-color: #1a1a1a;
+    --card-background: #2d3748;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Reset e estilos base */
@@ -22,7 +38,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #f9f9f9;
+    background-color: var(--background-color);
+    transition: var(--transition);
 }
 
 a {
