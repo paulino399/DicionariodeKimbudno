@@ -599,6 +599,121 @@ footer {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+
+/* Toggle Switch para tema */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--secondary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.slider .icons i {
+    font-size: 14px;
+    color: white;
+}
+
+/* Ajustes específicos para tema escuro */
+[data-theme="dark"] .project-card {
+    background-color: var(--card-background);
+    border: 1px solid #3a3a3a;
+}
+
+[data-theme="dark"] .project-info h3 {
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .project-info p {
+    color: #b0b0b0;
+}
+
+[data-theme="dark"] .modal-content {
+    background-color: var(--card-background);
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .review-form {
+    background-color: #3a3a3a;
+}
+
+[data-theme="dark"] .review {
+    background-color: #3a3a3a;
+    border-left-color: var(--secondary-color);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea,
+[data-theme="dark"] .form-group select {
+    background-color: #4a4a4a;
+    border-color: #5a5a5a;
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .tech-tag {
+    background-color: #3a3a3a;
+    color: var(--text-light);
+}
+
+[data-theme="dark"] .section-title h2 {
+    color: var(--text-light);
+}
+
+/* Ajuste do menu mobile para tema escuro */
+[data-theme="dark"] nav ul {
+    background-color: var(--primary-color);
+}
+
+
 /* Responsividade */
 @media (max-width: 992px) {
     .project-details {
