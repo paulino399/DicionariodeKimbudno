@@ -224,55 +224,56 @@
 
 
 {
-  "id": 5,
-  "title": "Arduino UNO vs ESP32 - A Comparação que Todo Engenheiro Eletrônico Aprende",
-  "shortDescription": "Análise técnica comparativa entre Arduino UNO e ESP32, explorando aplicações ideais para aprendizado e desenvolvimento de produtos reais.",
-  "fullDescription": "<h3>Visão Geral da Análise Técnica</h3><p>Se você já desenvolveu algum projeto de hardware, conhece esta verdade fundamental: Arduino ensina, ESP32 constrói. Mas as diferenças entre as duas plataformas vão muito além do simples 'WiFi vs sem WiFi'.</p><h3>🔍 Análise Comparativa Detalhada</h3><h4>Arduino UNO — A Plataforma de Aprendizado Ideal</h4><h5>Por que é amplamente adotado:</h5><ul><li>Placa mais acessível para iniciantes</li><li>Comportamento estável e previsível</li><li>Comunidade massiva + ecossistema de bibliotecas</li><li>Ideal para fundamentos de eletrônica digital/analógica</li></ul><h5>Aplicações Recomendadas:</h5><ul><li>Robôs seguidores de linha</li><li>Sistemas de automação básicos</li><li>Protótipos com sensores</li><li>Circuitos de temporização e padrões LED</li><li>Robótica educacional</li></ul><p><strong>Conclusão:</strong> Para iniciantes em hardware, o UNO é o melhor 'professor' que você encontrará.</p><h4>ESP32 — Quando Você Está Pronto para Construir Sistemas Reais</h4><h5>Por que é revolucionário:</h5><ul><li>Processador dual-core 240 MHz</li><li>WiFi e Bluetooth integrados</li><li>Maior quantidade de portas GPIO</li><li>Mais velocidade e memória</li><li>Otimizado para IoT e projetos de nível profissional</li></ul><h5>Aplicações Avançadas:</h5><ul><li>Dispositivos para casa inteligente</li><li>Dashboards de IoT</li><li>Vestíveis (Wearables)</li><li>Sistemas de monitoramento em tempo real</li><li>Aquisição de dados sem fio</li><li>Protótipos conectados à nuvem</li></ul><p><strong>Conclusão:</strong> O ESP32 é essencialmente o que acontece quando um microcontrolador amadurece para aplicações profissionais.</p><h3>🎯 Regra Prática da Indústria</h3><div class=\"rule-thumb\"><div class=\"rule-item\"><h5>Arduino UNO → Aprender Conceitos</h5><p>Foco em fundamentos de eletrônica e programação embarcada</p></div><div class=\"rule-item\"><h5>ESP32 → Construir Produtos</h5><p>Desenvolvimento de soluções conectadas e escaláveis</p></div></div><h3>🛠️ Competências Desenvolvidas</h3><div class=\"skills-comparison\"><div class=\"platform-skills\"><h5>Com Arduino UNO</h5><ul><li>Programação de microcontroladores</li><li>Interface com sensores e atuadores</li><li>Eletrônica digital e analógica</li><li>Protocolos de comunicação serial</li><li>Depuração de hardware</li></ul></div><div class=\"platform-skills\"><h5>Com ESP32</h5><ul><li>Programação multi-core</li><li>Comunicações wireless (WiFi/BT)</li><li>Conectividade com cloud</li><li>Otimização de performance</li><li>Desenvolvimento para IoT</li></ul></div></div><h3>📊 Especificações Técnicas Comparativas</h3><table class=\"specs-table\"><thead><tr><th>Parâmetro</th><th>Arduino UNO</th><th>ESP32</th></tr></thead><tbody><tr><td>Processador</td><td>ATmega328P @ 16MHz</td><td>Dual-core Xtensa @ 240MHz</td></tr><tr><td>Memória Flash</td><td>32KB</td><td>4MB+</td></tr><tr><td>RAM</td><td>2KB</td><td>520KB</td></tr><tr><td>GPIOs</td><td>14 digitais, 6 analógicas</td><td>36+</td></tr><tr><td>Conectividade</td><td>Serial/USB</td><td>WiFi + Bluetooth</td></tr><tr><td>Preço Médio</td><td>💰 Econômico</td><td>💰💰 Acessível</td></tr></tbody></table><h3>💡 Recomendações Estratégicas</h3><ul><li><strong>Para Estudantes:</strong> Comece com Arduino UNO para solidificar fundamentos</li><li><strong>Para Profissionais:</strong> Adote ESP32 para protótipos funcionais</li><li><strong>Para Empresas:</strong> Mantenha ambas as plataformas no portfólio de desenvolvimento</li></ul><p><em>Honestamente... você precisa de ambas as ferramentas no seu conjunto de habilidades.</em></p>",
+  "id": 6,
+  "title": "Arduino UNO vs ESP32 – A Comparação que Todo Engenheiro Eletrónico Acaba por Fazer",
+  "shortDescription": "Análise comparativa entre Arduino UNO e ESP32: da aprendizagem aos projetos profissionais, explorando o papel de cada plataforma no desenvolvimento eletrónico.",
+  "fullDescription": "<h3>🔌 A Dualidade Essencial no Desenvolvimento Eletrónico</h3><p>Se já montaste qualquer projeto de hardware, provavelmente já percebeste esta verdade fundamental:</p><ul><li><strong>O Arduino ensina-te</strong></li><li><strong>O ESP32 deixa-te construir</strong></li></ul><p>Mas a diferença entre os dois vai muito além de apenas 'ter ou não ter Wi‑Fi'. Esta análise representa o conhecimento que teria poupado meses no início da minha jornada profissional.</p><h3>🎓 Arduino UNO – O Ponto de Partida Perfeito</h3><h4>Porque é a Escolha Ideal para Iniciantes</h4><ul><li><strong>Simplicidade:</strong> A placa mais acessível para quem está a começar</li><li><strong>Confiabilidade:</strong> Comportamento estável, previsível e difícil de 'estragar'</li><li><strong>Ecossistema:</strong> Comunidade gigantesca com milhares de bibliotecas disponíveis</li><li><strong>Pedagogia:</strong> Perfeito para aprender fundamentos de digital, analógico e eletrónica básica</li></ul><h4>Projetos Ideais para Arduino UNO</h4><div class=\"project-examples\"><div class=\"example-group\"><h5>Robótica Educacional</h5><ul><li>Robôs segue-linha</li><li>Robótica simples e interativa</li><li>Projetos educacionais</li></ul></div><div class=\"example-group\"><h5>Automação Básica</h5><ul><li>Sistemas de automação simples</li><li>Controlo de LEDs e padrões luminosos</li><li>Circuitos de temporização</li></ul></div><div class=\"example-group\"><h5>Prototipagem</h5><ul><li>Protótipos com sensores básicos</li><li>Projetos de eletrónica fundamental</li><li>Experiências de laboratório</li></ul></div></div><p class=\"conclusion\"><strong>Conclusão:</strong> Se estás a começar no mundo do hardware, o UNO é o melhor 'professor' que vais encontrar.</p><h3>🚀 ESP32 – Quando Estás Pronto para Construir Coisas Reais</h3><h4>Porque é uma Plataforma Transformadora</h4><ul><li><strong>Performance:</strong> Processador dual-core a 240 MHz</li><li><strong>Conectividade:</strong> Wi‑Fi e Bluetooth integrados nativos</li><li><strong>Expansibilidade:</strong> Mais portas GPIO disponíveis</li><li><strong>Capacidade:</strong> Arquitetura mais rápida com mais memória</li><li><strong>Profissionalismo:</strong> Ideal para projetos de IoT e aplicações em nível de produto</li></ul><h4>Aplicações Avançadas com ESP32</h4><div class=\"project-examples\"><div class=\"example-group\"><h5>IoT e Casa Inteligente</h5><ul><li>Dispositivos de casa inteligente</li><li>Dashboards e sistemas de IoT</li><li>Projetos conectados à cloud</li></ul></div><div class=\"example-group\"><h5>Dispositivos Conectados</h5><ul><li>Wearables e dispositivos vestíveis</li><li>Sistemas de monitorização em tempo real</li><li>Registo de dados sem fio</li></ul></div><div class=\"example-group\"><h5>Soluções Profissionais</h5><ul><li>Protótipos funcionais escaláveis</li><li>Produtos para produção em série</li><li>Sistemas de monitorização remota</li></ul></div></div><p class=\"conclusion\"><strong>Visão:</strong> O ESP32 é, basicamente, o que acontece quando um microcontrolador 'cresce' e fica pronto para o mundo real.</p><h3>🎯 Regra Prática da Indústria</h3><div class=\"rule-of-thumb\"><div class=\"rule\"><h4>Arduino UNO → Aprender Conceitos</h4><p>Foco na compreensão fundamental da eletrónica e programação embarcada</p></div><div class=\"rule\"><h4>ESP32 → Construir Produtos</h4><p>Desenvolvimento de soluções reais, conectadas e prontas para o mercado</p></div></div><h3>🛠️ Análise Técnica Comparativa</h3><table class=\"specs-comparison\"><thead><tr><th>Parâmetro</th><th>Arduino UNO</th><th>ESP32</th></tr></thead><tbody><tr><td><strong>Processador</strong></td><td>ATmega328P @ 16MHz</td><td>Dual-core Xtensa @ 240MHz</td></tr><tr><td><strong>Memória</strong></td><td>32KB Flash + 2KB RAM</td><td>4MB+ Flash + 520KB RAM</td></tr><tr><td><strong>Conectividade</strong></td><td>Serial/USB</td><td>Wi-Fi + Bluetooth</td></tr><tr><td><strong>GPIOs</strong></td><td>14 digitais, 6 analógicas</td><td>36+ portas configuráveis</td></tr><tr><td><strong>Comunidade</strong></td><td>⭐️⭐️⭐️⭐️⭐️</td><td>⭐️⭐️⭐️⭐️⭐️</td></tr><tr><td><strong>Custo-Benefício</strong></td><td>Excelente para aprender</td><td>Ideal para produção</td></tr></tbody></table><h3>💡 Estratégia de Desenvolvimento Recomendada</h3><ul><li><strong>Para Estudantes:</strong> Iniciar com Arduino UNO para bases sólidas</li><li><strong>Para Profissionais:</strong> Utilizar ESP32 para protótipos funcionais</li><li><strong>Para Empresas:</strong> Manter ambas as plataformas no portfólio</li></ul><p class=\"final-thought\"><em>E, para ser sincero… precisas dos dois na tua caixa de ferramentas. Cada plataforma tem o seu propósito específico na jornada do desenvolvimento eletrónico.</em></p><h3>❓ Reflexão Profissional</h3><p>E tu, qual usas mais no dia a dia — UNO ou ESP32? Cada escolha reflete uma fase diferente da nossa evolução como engenheiros.</p>",
   "images": [
-    "assets/images/arduino-esp32/comparacao-placas.jpg",
-    "assets/images/arduino-esp32/aplicacoes-arduino.jpg",
-    "assets/images/arduino-esp32/aplicacoes-esp32.jpg",
-    "assets/images/arduino-esp32/esquema-comparativo.png",
-    "assets/images/arduino-esp32/projetos-reais.jpg"
+    "assets/images/arduino-esp32/comparacao-visual.jpg",
+    "assets/images/arduino-esp32/projetos-arduino.jpg",
+    "assets/images/arduino-esp32/projetos-esp32.jpg",
+    "assets/images/arduino-esp32/arquitetura-comparativa.png",
+    "assets/images/arduino-esp32/fluxo-aprendizagem.jpg"
   ],
-  "video": "https://www.youtube.com/embed/SEU_VIDEO_COMPARATIVO",
+  "video": "https://www.youtube.com/embed/cPVW8QksPOg",
   "authors": [
     {
       "name": "Seu Nome",
-      "role": "Engenheiro Eletrônico",
+      "role": "Engenheiro Eletrónico",
       "avatar": "assets/images/avatar.jpg"
     }
   ],
   "technologies": [
     "Arduino UNO", "ESP32", "C++", "PlatformIO", 
-    "IoT", "WiFi", "Bluetooth", "GPIO", 
-    "Microcontroladores", "Embedded Systems",
-    "Circuit Design", "Sensor Integration"
+    "IoT", "Wi-Fi", "Bluetooth", "GPIO", 
+    "Microcontroladores", "Sistemas Embebidos",
+    "Eletrónica Digital", "Eletrónica Analógica",
+    "Prototipagem", "Desenvolvimento Hardware"
   ],
-  "status": "Publicado",
-  "date": "2024-02-10",
-  "rating": 4.7,
+  "status": "Artigo Publicado",
+  "date": "2024-02-15",
+  "rating": 4.8,
   "reviews": [
     {
-      "author": "Eng. Desenvolvedor Embedded",
+      "author": "Prof. Universitário de Eletrónica",
       "rating": 5,
-      "comment": "Análise extremamente precisa que reflete perfeitamente a jornada de aprendizado na eletrônica embarcada.",
-      "date": "2024-02-15"
+      "comment": "Análise extremamente precisa que capta perfeitamente a evolução natural no aprendizado da eletrónica. Material excelente para orientar estudantes.",
+      "date": "2024-02-20"
     },
     {
-      "author": "Professor Universitário",
-      "rating": 4,
-      "comment": "Excelente material para orientar estudantes na escolha da plataforma adequada para cada fase do aprendizado.",
-      "date": "2024-02-20"
+      "author": "Engenheiro de Desenvolvimento",
+      "rating": 5,
+      "comment": "Descreve exatamente a minha jornada profissional. Comecei com Arduino e hoje uso ESP32 em projetos comerciais. A analogia do 'professor' vs 'construtor' é perfeita.",
+      "date": "2024-02-22"
     }
   ],
   "links": [
     {
-      "name": "📚 Documentação Completa Arduino",
+      "name": "📖 Documentação Arduino UNO",
       "url": "https://www.arduino.cc/reference/en/"
     },
     {
-      "name": "🔧 Documentação Oficial ESP32", 
+      "name": "🔧 Documentação ESP32", 
       "url": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/"
     },
     {
@@ -280,13 +281,14 @@
       "url": "https://github.com/seu-usuario/arduino-esp32-comparison"
     }
   ],
-  "projectType": "Análise Técnica",
+  "projectType": "Análise Técnica e Educacional",
   "tags": [
-    "Educação", "Eletrônica", "Embedded", "IoT", 
-    "Tutorial", "Comparação Técnica", "Desenvolvimento Hardware"
-  ]
+    "Educação", "Eletrónica", "Sistemas Embebidos", "IoT", 
+    "Tutorial", "Comparação Técnica", "Desenvolvimento Hardware",
+    "Microcontroladores", "Prototipagem", "Formação Profissional"
+  ],
+  "category": "Educação Técnica e Análise Comparativa"
 }
-
 
 
 
