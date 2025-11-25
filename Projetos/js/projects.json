@@ -1,0 +1,135 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Sistema de Gestão Empresarial",
+      "shortDescription": "Plataforma completa para gestão de processos empresariais.",
+      "fullDescription": "Este sistema foi desenvolvido para otimizar processos internos de empresas, integrando setores como RH, financeiro e operações. A solução oferece dashboards interativos, relatórios automatizados e controle de fluxo de trabalho.",
+      "images": [
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+      ],
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "authors": [
+        {
+          "name": "João Silva",
+          "role": "Desenvolvedor Full Stack",
+          "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+          "name": "Maria Santos",
+          "role": "Designer UX/UI",
+          "avatar": "https://randomuser.me/api/portraits/women/44.jpg"
+        }
+      ],
+      "technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "status": "Concluído",
+      "date": "2023-05-15",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "author": "Carlos Oliveira",
+          "rating": 5,
+          "comment": "Sistema incrível! Facilitou muito nosso trabalho.",
+          "date": "2023-06-10"
+        },
+        {
+          "author": "Ana Costa",
+          "rating": 4,
+          "comment": "Muito útil, mas gostaria de ver mais funcionalidades no futuro.",
+          "date": "2023-06-05"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Aplicativo de Delivery",
+      "shortDescription": "App para entrega de alimentos com interface intuitiva.",
+      "fullDescription": "Desenvolvemos um aplicativo completo para delivery de alimentos, com funcionalidades para clientes, restaurantes e entregadores. O sistema inclui geolocalização, pagamento integrado e sistema de avaliações.",
+      "images": [
+        "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+      ],
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "authors": [
+        {
+          "name": "Pedro Almeida",
+          "role": "Desenvolvedor Mobile",
+          "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+        },
+        {
+          "name": "Fernanda Lima",
+          "role": "Product Manager",
+          "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
+        }
+      ],
+      "technologies": ["React Native", "Firebase", "Node.js", "Stripe"],
+      "status": "Em desenvolvimento",
+      "date": "2023-08-20",
+      "rating": 4.2,
+      "reviews": [
+        {
+          "author": "Roberto Santos",
+          "rating": 5,
+          "comment": "App muito prático e fácil de usar!",
+          "date": "2023-09-01"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Plataforma de E-learning",
+      "shortDescription": "Sistema educacional com cursos interativos e gamificação.",
+      "fullDescription": "Criamos uma plataforma de ensino online com foco na experiência do aluno. O sistema inclui videoaulas, quizzes interativos, sistema de gamificação com conquistas e certificados, além de ferramentas para professores criarem e gerenciarem cursos.",
+      "images": [
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+      ],
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "authors": [
+        {
+          "name": "Lucas Oliveira",
+          "role": "Desenvolvedor Front-end",
+          "avatar": "https://randomuser.me/api/portraits/men/46.jpg"
+        },
+        {
+          "name": "Carla Mendes",
+          "role": "Especialista em Educação",
+          "avatar": "https://randomuser.me/api/portraits/women/68.jpg"
+        },
+        {
+          "name": "Rafael Costa",
+          "role": "Desenvolvedor Back-end",
+          "avatar": "https://randomuser.me/api/portraits/men/64.jpg"
+        }
+      ],
+      "technologies": ["Vue.js", "Laravel", "MySQL", "AWS"],
+      "status": "Concluído",
+      "date": "2023-03-10",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "author": "Mariana Silva",
+          "rating": 5,
+          "comment": "Plataforma excelente! Os cursos são muito bem estruturados.",
+          "date": "2023-04-15"
+        },
+        {
+          "author": "José Pereira",
+          "rating": 5,
+          "comment": "A gamificação torna o aprendizado muito mais interessante.",
+          "date": "2023-04-20"
+        },
+        {
+          "author": "Amanda Rocha",
+          "rating": 4,
+          "comment": "Gostei muito, mas o app poderia ter mais recursos offline.",
+          "date": "2023-05-02"
+        }
+      ]
+    }
+  ]
+}
