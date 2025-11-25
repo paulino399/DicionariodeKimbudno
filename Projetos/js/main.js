@@ -323,6 +323,117 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
+
+// Sistema de Lightbox para imagens
+let currentImageIndex = 0;
+let currentImages = [];
+
+function initLightbox() {
+    const lightbox = document.getElementById('image-lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxNext = document.getElementById('lightbox-next');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+
+    // Abrir lightbox
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('project-gallery-img')) {
+            const gallery = e.target.closest('.project-gallery');
+            currentImages = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
+            currentImageIndex = currentImages.indexOf(e.target.src);
+            
+            openLightbox(currentImages, currentImageIndex);
+        }
+    });
+
+    // Fechar lightbox
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Navegação
+    lightboxPrev.addEventListener('click', showPrevImage);
+    lightboxNext.addEventListener('click', showNextImage);
+
+    // Navegação por teclado
+    document.addEventListener('keydown', function(e) {
+        if (!lightbox.classList.contains('active')) return;
+        
+        switch(e.key) {
+            case 'Escape':
+                closeLightbox();
+                break;
+            case 'ArrowLeft':
+                showPrevImage();
+                break;
+            case 'ArrowRight':
+                showNextImage();
+                break;
+        }
+    });
+}
+
+function openLightbox(images, startIndex) {
+    const lightbox = document.getElementById('image-lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+    
+    currentImages = images;
+    currentImageIndex = startIndex;
+    
+    lightboxImage.src = currentImages[currentImageIndex];
+    lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+    lightbox.classList.add('active');
+    
+    // Prevenir scroll do body
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('image-lightbox');
+    lightbox.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+function showPrevImage() {
+    currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
+    updateLightboxImage();
+}
+
+function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % currentImages.length;
+    updateLightboxImage();
+}
+
+function updateLightboxImage() {
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+    
+    lightboxImage.src = currentImages[currentImageIndex];
+    lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentImages.length}`;
+    
+    // Efeito de fade
+    lightboxImage.style.opacity = '0';
+    setTimeout(() => {
+        lightboxImage.style.opacity = '1';
+    }, 150);
+}
+
+// Modificar a função que cria a galeria no modal
+function updateProjectGalleryInModal() {
+    // Esta função será chamada quando o modal do projeto for aberto
+    const galleryImages = document.querySelectorAll('.project-gallery img');
+    galleryImages.forEach(img => {
+        img.classList.add('project-gallery-img');
+    });
+}
+
+
 // Inicializar a página
 document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
