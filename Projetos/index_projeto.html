@@ -1,50 +1,98 @@
-<!DOCTYPE html> 
-<html lang="pt"> 
-    <head> <meta charset="UTF-8"> 
-        <title>Meu Portfólio</title> 
-        <link rel="stylesheet" href="/Projetos/style_projeto.css">
-     </head>
-      <body> 
-        <header class="topbar"> 
-            <div class="logo">Meu Portfólio</div> 
-            <nav> <a href="#projetos">Projetos</a> 
-                <a href="#sobre">Sobre mim</a> 
-                <a href="#contacto">Contacto</a> 
-            </nav> 
-        </header> 
-        <main> 
-            <section id="hero">
-                 <div class="hero-text"> 
-                    <h1>Projetos em destaque</h1> 
-                    <p>Explora os meus trabalhos em formato de produto digital.</p> 
-                </div> 
-            </section>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio de Projetos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Port<span>fólio</span></div>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#about">Sobre Mim</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Meus Projetos em Destaque</h1>
+            <p>Explore minha coleção de projetos criativos e inovadores. Cada projeto representa uma solução única para desafios específicos, com foco em design, funcionalidade e experiência do usuário.</p>
+            <a href="#projects" class="btn">Ver Projetos</a>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meus Projetos</h2>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Os projetos serão carregados dinamicamente via JavaScript -->
+            </div>
+        </div>
+    </section>
 
-<section id="projetos" class="container">
-  <h2>Projetos</h2>
-  <div id="project-grid" class="project-grid">
-    <!-- Cartões de projetos carregados via JS -->
-  </div>
-</section>
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sobre Mim</h3>
+                    <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras e funcionais que fazem a diferença.</p>
+                    <p>Com experiência em diversas tecnologias, busco sempre aprender e evoluir com cada projeto.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i>palancatech639@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +244 933 610 091</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Nancy, França</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-<section id="sobre" class="container">
-  <h2>Sobre mim</h2>
-  <p>Breve descrição tua, skills principais e área de foco.</p>
-</section>
+    <!-- Modal para detalhes do projeto -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Título do Projeto</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- Conteúdo será preenchido dinamicamente -->
+            </div>
+        </div>
+    </div>
 
-<section id="contacto" class="container">
-  <h2>Contacto</h2>
-  <p>Email: teuemail@exemplo.com</p>
-</section>
-
-
-</main> 
-<footer class="footer"> <p>© 2025 Teu Nome. Todos os direitos reservados.</p> 
-</footer> 
-<script src="/Projetos/app_projeto.js">
-
-</script> 
-</body> 
+    <script src="js/main.js"></script>
+</body>
 </html>
