@@ -1,6 +1,33 @@
 // Variável global para armazenar os projetos
 let projectsData = [];
 
+// Sistema de Tema Claro/Escuro
+function initTheme() {
+    const toggleSwitch = document.getElementById('checkbox');
+    const currentTheme = localStorage.getItem('theme');
+
+    // Aplicar tema salvo
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    // Alternar tema
+    toggleSwitch.addEventListener('change', switchTheme, false);
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+}
+
 // Carregar dados dos projetos do arquivo JSON
 async function loadProjects() {
     try {
@@ -110,12 +137,12 @@ function openProjectModal(projectId) {
     
     modalTitle.textContent = project.title;
     
-    // Construir o conteúdo do modal (CORRIGIDO - sem duplicação)
+    // Construir o conteúdo do modal
     modalBody.innerHTML = `
         <div class="project-details">
             <div>
                 <h3>Descrição Completa</h3>
-                <p>${project.fullDescription}</p>
+                <div class="description-content">${project.fullDescription}</div>
                 
                 <h3>Tecnologias Utilizadas</h3>
                 <div class="technologies">
@@ -433,4 +460,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
     initLightbox();
+    initTheme();
 });
