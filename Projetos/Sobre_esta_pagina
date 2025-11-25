@@ -1,0 +1,13 @@
+Estrutura de ficheiros
+
+    index.html – página principal com a lista de projetos.
+
+    projeto.html – página de detalhes de um projeto.
+
+    style.css – estilos globais (layout moderno e responsivo).
+
+    app.js – lógica JS da página principal (carregar projetos do JSON).
+
+    projeto.js – lógica JS da página de detalhes (carregar info do projeto selecionado).
+
+    projetos.json – dados dos projetos (imagem, descrições, autores, links, etc)
