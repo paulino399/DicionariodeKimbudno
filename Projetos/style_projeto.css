@@ -109,6 +109,12 @@ header {
     color: var(--secondary-color);
 }
 
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 nav ul {
     display: flex;
 }
@@ -130,6 +136,68 @@ nav ul li a:hover {
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* Toggle Switch para tema */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: white;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: var(--secondary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider .icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.slider .icons i {
+    font-size: 14px;
+    color: white;
 }
 
 /* Hero Section */
@@ -186,11 +254,12 @@ nav ul li a:hover {
 }
 
 .project-card {
-    background-color: white;
+    background-color: var(--card-background);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    border: 1px solid transparent;
 }
 
 .project-card:hover {
@@ -221,7 +290,7 @@ nav ul li a:hover {
 .project-info h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .project-info p {
@@ -328,13 +397,14 @@ footer {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: var(--card-background);
     width: 90%;
     max-width: 1000px;
     margin: 2rem auto;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
 }
 
 .modal-header {
@@ -369,6 +439,10 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-bottom: 2rem;
+}
+
+.description-content {
+    line-height: 1.8;
 }
 
 .project-gallery {
@@ -456,6 +530,8 @@ footer {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-family: inherit;
+    background-color: white;
+    color: #333;
 }
 
 .rating-input {
@@ -599,87 +675,13 @@ footer {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-
-/* Toggle Switch para tema */
-.theme-switch-wrapper {
-    display: flex;
-    align-items: center;
-    margin-left: 2rem;
-}
-
-.theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-}
-
-.theme-switch input {
-    display: none;
-}
-
-.slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    background-color: white;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: var(--secondary-color);
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-.slider .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8px;
-    height: 100%;
-}
-
-.slider .icons i {
-    font-size: 14px;
-    color: white;
-}
-
 /* Ajustes específicos para tema escuro */
-[data-theme="dark"] .project-card {
-    background-color: var(--card-background);
-    border: 1px solid #3a3a3a;
-}
-
 [data-theme="dark"] .project-info h3 {
     color: var(--text-light);
 }
 
 [data-theme="dark"] .project-info p {
     color: #b0b0b0;
-}
-
-[data-theme="dark"] .modal-content {
-    background-color: var(--card-background);
-    color: var(--text-light);
 }
 
 [data-theme="dark"] .review-form {
@@ -708,11 +710,9 @@ input:checked + .slider:before {
     color: var(--text-light);
 }
 
-/* Ajuste do menu mobile para tema escuro */
-[data-theme="dark"] nav ul {
-    background-color: var(--primary-color);
+[data-theme="dark"] .reviews-section {
+    border-top-color: #3a3a3a;
 }
-
 
 /* Responsividade */
 @media (max-width: 992px) {
@@ -724,6 +724,14 @@ input:checked + .slider:before {
 @media (max-width: 768px) {
     .mobile-menu {
         display: block;
+    }
+
+    .nav-wrapper {
+        gap: 1rem;
+    }
+    
+    .theme-switch-wrapper {
+        margin-left: 0;
     }
 
     nav ul {
