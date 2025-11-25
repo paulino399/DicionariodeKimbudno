@@ -175,7 +175,57 @@
       "date": "2024-02-15"
     }
   ]
+},
+
+
+
+{
+  "id": 5,
+  "title": "Sistema de Controlador de Voo para Foguete Modelo",
+  "shortDescription": "Controlador de voo com estabilização de rolagem, fusão de sensores e telemetria LoRa para foguetes modelo.",
+  "fullDescription": "Projeto completo de desenvolvimento de um Sistema de Controlador de Voo de pilha dupla para foguetes modelo, implementando estabilização de rolagem, estimativa de atitude em tempo real e telemetria de longo alcance usando princípios profissionais de aviônica.\n\n## ◆ Visão Geral do Sistema\n**Stack Aviônico:**\n- Computador de voo STM32F103 (Cortex-M3, 72 MHz)\n- IMU MPU6050 + barômetro BMP280\n- GNSS NEO-8M\n- Telemetria LoRa RA-02 (SX1278, 434 MHz)\n- Driver de servo PCA9685 para acionamento das aletas\n- BMS onboard + barramento de energia regulado de 3.3V\n\n**Segmento Terrestre:**\nReceptor ESP32-LoRa → UART → Web Serial → Dashboard React.js\n\n## ◆ Arquitetura do Software de Voo\n**Estimativa de Estado & Fusão:**\n- Fusão baseada em Kalman de acelerômetro + giroscópio\n- Estimativa de rolagem, arfagem e guinada com compensação de deriva\n- Rolagem usada como variável de feedback primária\n\n**Lei de Controle (Estabilização de Rolagem):**\n- Loop PID a ~100–200 Hz\n- Deflexão do servo limitada a ±25°\n- Mapeamento PWM de alta resolução via PCA9685\n\n## ◆ Domínios de Engenharia Abordados\nAviônica Embarcada (STM32/ESP32) | Fusão de Sensores | Controle PID | Design de PCB | Telemetria LoRa | Dinâmica de Foguetes | Integração de Sistemas",
+  "images": [
+    "assets/images/projeto-foguete/foto1.jpg",
+    "assets/images/projeto-foguete/foto2.jpg", 
+    "assets/images/projeto-foguete/foto3.jpg",
+    "assets/images/projeto-foguete/diagrama.png"
+  ],
+  "video": "https://www.youtube.com/embed/SEU_VIDEO_AQUI",
+  "authors": [
+    {
+      "name": "Seu Nome",
+      "role": "Engenheiro de Sistemas Aeroespaciais",
+      "avatar": "assets/images/avatar.jpg"
+    }
+  ],
+  "technologies": ["STM32", "ESP32", "LoRa", "Kalman Filter", "PID Control", "PCB Design", "C++", "React.js", "Sensor Fusion", "Aerospace"],
+  "status": "Concluído",
+  "date": "2024-01-15",
+  "rating": 4.9,
+  "reviews": [
+    {
+      "author": "Avaliador Técnico",
+      "rating": 5,
+      "comment": "Projeto impressionante com implementação profissional de conceitos aeroespaciais.",
+      "date": "2024-02-01"
+    }
+  ],
+  "links": [
+    {
+      "name": "Dashboard de Telemetria",
+      "url": "https://lnkd.in/greeUfhA"
+    },
+    {
+      "name": "Modelagem de Trajetória", 
+      "url": "https://lnkd.in/g2UCT6dd"
+    }
+  ]
 }
+
+
+
+
+
 
   ]
 }
