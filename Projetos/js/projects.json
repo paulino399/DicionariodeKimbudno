@@ -1,7 +1,7 @@
 {
   "projects": [
 
-    
+
     {
       "id": 1,
       "title": "Sistema de Gestão Empresarial",
@@ -138,5 +138,44 @@
         }
       ]
     }
+
+, {
+  "id": 4,
+  "title": "Sistema de Controlador de Voo para Foguete Modelo",
+  "shortDescription": "Controlador de voo com estabilização de rolagem, fusão de sensores e telemetria LoRa para foguetes modelo.",
+  "fullDescription": "Projeto completo de desenvolvimento de um Sistema de Controlador de Voo de pilha dupla para foguetes modelo, implementando estabilização de rolagem, estimativa de atitude em tempo real e telemetria de longo alcance usando princípios profissionais de aviônica.",
+  "images": [
+    "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+    "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80"
+  ],
+  "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  "authors": [
+    {
+      "name": "Seu Nome",
+      "role": "Engenheiro de Sistemas Aeroespaciais",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+    }
+  ],
+  "technologies": ["STM32", "ESP32", "LoRa", "Kalman Filter", "PID Control", "PCB Design", "C++", "React.js"],
+  "status": "Concluído",
+  "date": "2024-01-15",
+  "rating": 4.9,
+  "reviews": [
+    {
+      "author": "Engenheiro Aeroespacial",
+      "rating": 5,
+      "comment": "Um sistema de controlador de voo impressionante com excelente implementação de fusão de sensores e telemetria.",
+      "date": "2024-02-10"
+    },
+    {
+      "author": "Especialista em Sistemas Embarcados",
+      "rating": 4.8,
+      "comment": "Ótimo trabalho na integração de hardware e software para um controlador de voo robusto.",
+      "date": "2024-02-15"
+    }
+  ]
+}
+
   ]
 }
