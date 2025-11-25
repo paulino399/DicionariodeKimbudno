@@ -110,7 +110,7 @@ function openProjectModal(projectId) {
     
     modalTitle.textContent = project.title;
     
-    // Construir o conteúdo do modal
+    // Construir o conteúdo do modal (CORRIGIDO - sem duplicação)
     modalBody.innerHTML = `
         <div class="project-details">
             <div>
@@ -139,13 +139,10 @@ function openProjectModal(projectId) {
         
         <h3>Galeria de Imagens</h3>
         <div class="project-gallery">
-            ${project.images.map(img => `<img src="${img}" alt="${project.title}" loading="lazy">`).join('')}
-        </div>  <h3>Galeria de Imagens</h3>
-    <div class="project-gallery">
-        ${project.images.map(img => `
-            <img src="${img}" alt="${project.title}" loading="lazy" class="project-gallery-img">
-        `).join('')}
-    </div>
+            ${project.images.map(img => `
+                <img src="${img}" alt="${project.title}" loading="lazy" class="project-gallery-img">
+            `).join('')}
+        </div>
         
         <div class="project-authors">
             <h3>Autores do Projeto</h3>
@@ -208,9 +205,11 @@ function openProjectModal(projectId) {
             </div>
         </div>
     `;
+    
+    // Inicializar lightbox para as imagens desta galeria
     setTimeout(() => {
-    updateProjectGalleryInModal();
-}, 100);
+        initGalleryLightbox();
+    }, 100);
 
     // Adicionar funcionalidade às estrelas de avaliação
     const ratingStars = document.querySelectorAll('#rating-input i');
@@ -296,65 +295,15 @@ function openProjectModal(projectId) {
     modal.style.display = 'block';
 }
 
-// Fechar o modal
-document.querySelector('.close-modal').addEventListener('click', function() {
-    document.getElementById('project-modal').style.display = 'none';
-});
-
-// Fechar o modal ao clicar fora dele
-window.addEventListener('click', function(e) {
-    const modal = document.getElementById('project-modal');
-    if (e.target === modal) {
-        modal.style.display = 'none';
-    }
-});
-
-// Menu mobile
-document.querySelector('.mobile-menu').addEventListener('click', function() {
-    document.querySelector('nav ul').classList.toggle('show');
-});
-
-// Navegação suave para âncoras
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-            
-            // Fechar menu mobile se estiver aberto
-            document.querySelector('nav ul').classList.remove('show');
-        }
-    });
-});
-
-
-
 // Sistema de Lightbox para imagens
 let currentImageIndex = 0;
 let currentImages = [];
 
 function initLightbox() {
     const lightbox = document.getElementById('image-lightbox');
-    const lightboxImage = document.getElementById('lightbox-image');
     const lightboxClose = document.querySelector('.lightbox-close');
     const lightboxPrev = document.getElementById('lightbox-prev');
     const lightboxNext = document.getElementById('lightbox-next');
-    const lightboxCounter = document.getElementById('lightbox-counter');
-
-    // Abrir lightbox
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains('project-gallery-img')) {
-            const gallery = e.target.closest('.project-gallery');
-            currentImages = Array.from(gallery.querySelectorAll('img')).map(img => img.src);
-            currentImageIndex = currentImages.indexOf(e.target.src);
-            
-            openLightbox(currentImages, currentImageIndex);
-        }
-    });
 
     // Fechar lightbox
     lightboxClose.addEventListener('click', closeLightbox);
@@ -383,6 +332,19 @@ function initLightbox() {
                 showNextImage();
                 break;
         }
+    });
+}
+
+// Inicializar lightbox para uma galeria específica
+function initGalleryLightbox() {
+    const galleryImages = document.querySelectorAll('.project-gallery-img');
+    
+    galleryImages.forEach((img, index) => {
+        img.addEventListener('click', function() {
+            currentImages = Array.from(galleryImages).map(img => img.src);
+            currentImageIndex = index;
+            openLightbox(currentImages, currentImageIndex);
+        });
     });
 }
 
@@ -432,15 +394,40 @@ function updateLightboxImage() {
     }, 150);
 }
 
-// Modificar a função que cria a galeria no modal
-function updateProjectGalleryInModal() {
-    // Esta função será chamada quando o modal do projeto for aberto
-    const galleryImages = document.querySelectorAll('.project-gallery img');
-    galleryImages.forEach(img => {
-        img.classList.add('project-gallery-img');
-    });
-}
+// Fechar o modal
+document.querySelector('.close-modal').addEventListener('click', function() {
+    document.getElementById('project-modal').style.display = 'none';
+});
 
+// Fechar o modal ao clicar fora dele
+window.addEventListener('click', function(e) {
+    const modal = document.getElementById('project-modal');
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+// Menu mobile
+document.querySelector('.mobile-menu').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('show');
+});
+
+// Navegação suave para âncoras
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            // Fechar menu mobile se estiver aberto
+            document.querySelector('nav ul').classList.remove('show');
+        }
+    });
+});
 
 // Inicializar a página
 document.addEventListener('DOMContentLoaded', function() {
