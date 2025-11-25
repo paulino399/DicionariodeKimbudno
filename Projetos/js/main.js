@@ -140,7 +140,12 @@ function openProjectModal(projectId) {
         <h3>Galeria de Imagens</h3>
         <div class="project-gallery">
             ${project.images.map(img => `<img src="${img}" alt="${project.title}" loading="lazy">`).join('')}
-        </div>
+        </div>  <h3>Galeria de Imagens</h3>
+    <div class="project-gallery">
+        ${project.images.map(img => `
+            <img src="${img}" alt="${project.title}" loading="lazy" class="project-gallery-img">
+        `).join('')}
+    </div>
         
         <div class="project-authors">
             <h3>Autores do Projeto</h3>
@@ -203,7 +208,10 @@ function openProjectModal(projectId) {
             </div>
         </div>
     `;
-    
+    setTimeout(() => {
+    updateProjectGalleryInModal();
+}, 100);
+
     // Adicionar funcionalidade às estrelas de avaliação
     const ratingStars = document.querySelectorAll('#rating-input i');
     let selectedRating = 0;
@@ -437,4 +445,5 @@ function updateProjectGalleryInModal() {
 // Inicializar a página
 document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
+    initLightbox();
 });
