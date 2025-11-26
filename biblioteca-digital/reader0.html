@@ -121,9 +121,23 @@
             gap: 1rem;
         }
 
+        .toolbar-btn {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.toolbar-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
     
 
-.toolbar-btn {
+.toolbar-btn-V {
   background: linear-gradient(90deg, #679583 0%, #b1ead2 100%);
   border: none;
   color: #fff;
@@ -140,21 +154,24 @@
   text-decoration: none;
 }
 
-.toolbar-btn i {
+.toolbar-btn-V i {
   font-size: 1.25rem;
   margin-right: 6px;
 }
 
-.toolbar-btn:hover {
+.toolbar-btn-V:hover {
   background: linear-gradient(90deg, #1e4837 0%, #185a3e 100%);
   box-shadow: 0 4px 16px rgba(30, 60, 50, 0.22);
   color: #eadb9f;
 }
 
-.toolbar-btn:active {
+.toolbar-btn-V:active {
   outline: none;
   filter: brightness(0.95);
 }
+
+
+
 
 
         .page-controls {
@@ -276,7 +293,7 @@
                     <button class="toolbar-btn sidebar-toggle" onclick="toggleSidebar()">
                         <i class="fas fa-bars"></i>
                     </button>
-                    <button class="toolbar-btn" onclick="goBack()">
+                    <button class="toolbar-btn-V" onclick="goBack()">
                         <a href="/biblioteca-digital/index.html"><i class="fas fa-arrow-left"></i> Voltar</a>
                     </button>
                 </div>
