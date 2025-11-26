@@ -38,7 +38,6 @@ function displayBooks(booksToShow) {
     : booksToShow.map(book => createBookCard(book)).join('');
 }
 
-
 // Função para criar cartão de livro
 function createBookCard(book) {
   return `
@@ -77,7 +76,6 @@ function createBookCard(book) {
   `;
 }
 
-
 // Função para filtrar livros
 function filterBooks() {
   const category = categoryFilter.value;
@@ -86,41 +84,39 @@ function filterBooks() {
   const filteredBooks = books.filter(book => {
     const matchesCategory = category === 'all' || book.category === category;
     const matchesPrice = price === 'all' ||
-                       (price === 'free' && book.price === 0) ||
-                       (price === 'paid' && book.price > 0);
+                     (price === 'free' && book.price === 0) ||
+                     (price === 'paid' && book.price > 0);
     const matchesSearch = book.title.toLowerCase().includes(searchTerm) ||
-                        book.author.toLowerCase().includes(searchTerm) ||
-                        book.description.toLowerCase().includes(searchTerm);
+                     book.author.toLowerCase().includes(searchTerm) ||
+                     book.description.toLowerCase().includes(searchTerm);
     return matchesCategory && matchesPrice && matchesSearch;
   });
   displayBooks(filteredBooks);
 }
 
+// Função corrigida para leitura do livro
 function handleRead(file, hasPreview, price, bookId) {
-  const book = books.find(b => b.id === bookId);
-  if (!book) return;
+  const book = books.find(b => b.id === bookId);
+  if (!book) return;
 
-  if (price > 0 && !hasPreview) {
-    alert('Este item não possui pré-visualização. Por favor, adquira a versão completa.');
-    return;
-  }
+  if (price > 0 && !hasPreview) {
+    alert('Este item não possui pré-visualização. Por favor, adquira a versão completa.');
+    return;
+  }
 
-  // Salva os dados do livro usados pelo leitor
-  const currentBook = {
-    id: book.id,
-    title: book.title,
-    author: book.author,
-    pages: book.pages,
-    file: file
-  };
-  sessionStorage.setItem('currentBook', JSON.stringify(currentBook));
+  // Salva os dados do livro para o leitor, usando encodeURI no caminho do arquivo
+  const currentBook = {
+    id: book.id,
+    title: book.title,
+    author: book.author,
+    pages: book.pages,
+    file: encodeURI(file)
+  };
+  sessionStorage.setItem('currentBook', JSON.stringify(currentBook));
 
-  // Redireciona para reader0.html
-  window.location.href = 'js/reader0.html'; // se reader0.html está dentro da pasta js
+  // Redireciona para reader0.html (supondo que reader0.html está dentro da pasta js)
+  window.location.href = 'js/reader0.html';
 }
-
-
-
 
 // Função para adicionar ao carrinho
 function addToCart(bookId) {
@@ -530,4 +526,3 @@ window.checkout = checkout;
 window.closeCheckoutModal = closeCheckoutModal;
 window.confirmPurchase = confirmPurchase;
 window.updatePaymentDetails = updatePaymentDetails;
-
