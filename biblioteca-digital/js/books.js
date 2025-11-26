@@ -143,19 +143,19 @@ const books = [
     type: "livro"
   },
   {
-    id: 6,
-    title: "Quem Pensa Enriquece",
-    author: "Napoleon Hill",
-    description: "Clássico sobre mentalidade de sucesso e riqueza.",
-    category: "autoajuda",
-    price: 0,
-    pages: 320,
-    language: "Português",
-    cover: "riqueza",
-    coverImage: "assets/images/QuemPensaHirrequence.png",
-    preview: true,
-    file: "assets/pdfs/QUEM PENSA ENRIQUECE.pdf",
-    type: "livro"
-  }
+  id: 6,
+  title: "Quem Pensa Enriquece",
+  author: "Napoleon Hill",
+  description: "Clássico sobre mentalidade de sucesso e riqueza.",
+  category: "autoajuda",
+  price: 0,
+  pages: 320,
+  language: "Português",
+  cover: "riqueza",
+  coverImage: "assets/images/QuemPensaHirrequence.png",
+  preview: true,
+  file: "assets/pdfs/QUEM PENSA ENRIQUECE.pdf",
+  type: "livro"
+}
 ];
 
