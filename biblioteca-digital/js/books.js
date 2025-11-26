@@ -12,9 +12,15 @@ const books = [
     cover: "gramatica",
     coverImage: "assets/images/capa.jpg",
     preview: true,
-    file: "assets/pdfs/paulino.pdf",
+    file: "assets/pdfs/AssiNasceUmGrandePoeta.pdf",
     type: "livro"
   },
+
+
+
+
+
+
   {
     id: 2,
     title: "Dicionário Kimbundo-Português",
