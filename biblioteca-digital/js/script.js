@@ -118,6 +118,9 @@ function handleRead(file, hasPreview, price, bookId) {
   window.location.href = 'js/reader0.html';
 }
 
+
+
+
 // Função para adicionar ao carrinho
 function addToCart(bookId) {
   const book = books.find(b => b.id === bookId);
