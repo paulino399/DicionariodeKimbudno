@@ -152,7 +152,7 @@ const books = [
     pages: 320,
     language: "Português",
     cover: "riqueza",
-    coverImage: "assets/images/QuemPensaEnriquence.png",
+    coverImage: "assets/images/QuemPensaHirrequence.png",
     preview: true,
     file: "assets/pdfs/QUEM PENSA ENRIQUECE.pdf",
     type: "livro"
