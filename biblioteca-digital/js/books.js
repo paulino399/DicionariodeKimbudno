@@ -2,7 +2,7 @@
 const books = [
   {
     id: 1,
-    title: "Gramática do Kimbundo Moderno",
+    title: "Assim Nasce Um Poeta",
     author: "Graciano Ambriz Lord Fernandes",
     description: " Assim Nasce um Poeta não é apenas um título; é uma jornada.",
     category: "livros",
