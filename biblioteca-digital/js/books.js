@@ -3,8 +3,8 @@ const books = [
   {
     id: 1,
     title: "Gramática do Kimbundo Moderno",
-    author: "Graciano Ambriz_ Lord Fernandes",
-    description: "Assim Nasce um Poeta não é apenas um título; é uma jornada. Uma jornada que começa com a curiosidade e a sensibilidade de alguém que observa o mundo ao seu redor.",
+    author: "Graciano Ambriz Lord Fernandes",
+    description: " Assim Nasce um Poeta não é apenas um título; é uma jornada.",
     category: "livros",
     price: 1500,
     pages: 40,
