@@ -78,6 +78,11 @@
             border: 2px solid transparent;
             transition: all 0.2s ease;
         }
+        
+
+
+      
+
 
         .page-thumbnail:hover {
             border-color: #3498db;
@@ -116,19 +121,41 @@
             gap: 1rem;
         }
 
-        .toolbar-btn {
-            background: none;
-            border: none;
-            color: white;
-            padding: 0.5rem;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.2s ease;
-        }
+    
 
-        .toolbar-btn:hover {
-            background: rgba(255,255,255,0.1);
-        }
+.toolbar-btn {
+  background: linear-gradient(90deg, #679583 0%, #b1ead2 100%);
+  border: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(30, 60, 50, 0.12);
+  cursor: pointer;
+  transition: background 0.2s, color 0.18s, box-shadow 0.18s;
+  text-decoration: none;
+}
+
+.toolbar-btn i {
+  font-size: 1.25rem;
+  margin-right: 6px;
+}
+
+.toolbar-btn:hover {
+  background: linear-gradient(90deg, #1e4837 0%, #185a3e 100%);
+  box-shadow: 0 4px 16px rgba(30, 60, 50, 0.22);
+  color: #eadb9f;
+}
+
+.toolbar-btn:active {
+  outline: none;
+  filter: brightness(0.95);
+}
+
 
         .page-controls {
             display: flex;
@@ -250,7 +277,7 @@
                         <i class="fas fa-bars"></i>
                     </button>
                     <button class="toolbar-btn" onclick="goBack()">
-                        <i class="fas fa-arrow-left"></i> Voltar
+                        <a href="/biblioteca-digital/index.html"><i class="fas fa-arrow-left"></i> Voltar</a>
                     </button>
                 </div>
                 
