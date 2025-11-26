@@ -137,7 +137,7 @@ const books = [
     pages: 250,
     language: "Português",
     cover: "emocao",
-    coverImage: "assets/images/CarceredaEmocao.png",
+    coverImage: "assets/images/OCacerdaEmocao.png",
     preview: true,
     file: "assets/pdfs/Superando o carcere da emocao - Augusto Curypdf.pdf",
     type: "livro"
