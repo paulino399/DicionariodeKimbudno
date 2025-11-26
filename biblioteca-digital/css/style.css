@@ -211,6 +211,11 @@ header {
   border: 2px solid #273f3d;
 }
 
+.book-cover img:hover {
+  transform: perspective(800px) rotateY(8deg) scale(1.10);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25), 0 2px 12px rgba(0,0,0,0.09);
+}
+
 
 .book-badge {
   position: absolute;
