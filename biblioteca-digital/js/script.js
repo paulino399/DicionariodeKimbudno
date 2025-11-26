@@ -115,7 +115,7 @@ function handleRead(file, hasPreview, price, bookId) {
   sessionStorage.setItem('currentBook', JSON.stringify(currentBook));
 
   // Redireciona para reader0.html (supondo que reader0.html está dentro da pasta js)
-  window.location.href = 'js/reader0.html';
+  window.location.href = 'reader0.html';
 }
 
 
