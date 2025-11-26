@@ -202,13 +202,13 @@ header {
   border-radius: 8px;
   
   /* Efeito de sombra para profundidade */
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 1.5px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 20px 40px rgba(227, 221, 221, 0.15), 0 1.5px 8px rgba(150, 131, 131, 0.07);
   
   /* Rotação e inclinação para sensação de 3D */
   transform: perspective(800px) rotateY(-16deg) scale(1.05);
   
   /* Opcional: borda para destacar */
-  border: 2px solid #273f3d;
+  border: 2px solid #cde7e4;
 }
 
 .book-cover img:hover {
