@@ -114,7 +114,7 @@ function handleRead(file, hasPreview, price, bookId) {
   };
   sessionStorage.setItem('currentBook', JSON.stringify(currentBook));
 
-  // Redireciona para reader0.html (supondo que reader0.html está dentro da pasta js)
+  // Redireciona para reader0.html (supondo que reader0.html está na raiz do projeto)
   window.location.href = 'reader0.html';
 }
 
@@ -166,7 +166,7 @@ function updateCartUI() {
       <div class="cart-item-info">
         <div class="cart-item-title">${item.title}</div>
         <div class="cart-item-author">por ${item.author}</div>
-        <div class="cart-item-price">R$ ${item.price.toFixed(2)} x ${item.quantity}</div>
+        <div class="cart-item-price">Kzs ${item.price.toFixed(2)} x ${item.quantity}</div>
       </div>
       <button class="cart-item-remove" onclick="removeFromCart(${item.id})">
         <i class="fas fa-trash"></i>
