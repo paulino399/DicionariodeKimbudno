@@ -60,11 +60,8 @@ const books = [
     file: "assets/pdfs/paulino.pdf",
     type: "imagem"
   },
-
-
-
-   {
-    id: 4,
+{
+    id: 5,
     title: "Revista Cultural Kimbundo",
     author: "Editora Kimbundo",
     description: "Edição mensal com artigos sobre cultura, história e atualidades.",
@@ -82,7 +79,7 @@ const books = [
 
 
   {
-    id: 2,
+    id: 6,
     title: "Arduino_I2C",
     author: "Gotronics",
     description: "Guia prático sobre comunicação I2C com Arduino.",
@@ -98,7 +95,7 @@ const books = [
   },
 
   {
-    id: 3,
+    id: 7,
     title: "Química Geral I",
     author: "Ednilza Feitosa, Francisco Barbosa, Cristiane Forte",
     description: "Livro didático da UECE para o ensino de química geral.",
@@ -113,7 +110,7 @@ const books = [
     type: "livro"
   },
   {
-    id: 4,
+    id: 8,
     title: "Estatística e Probabilidade",
     author: "IFCE / UAB / MEC",
     description: "Material acadêmico para licenciatura em matemática.",
@@ -128,7 +125,7 @@ const books = [
     type: "livro"
   },
   {
-    id: 5,
+    id: 9,
     title: "Superando o Cárcere da Emoção",
     author: "Augusto Cury",
     description: "Reflexões sobre saúde emocional e liberdade interior.",
@@ -143,7 +140,7 @@ const books = [
     type: "livro"
   },
   {
-  id: 6,
+  id: 10,
   title: "Quem Pensa Enriquece",
   author: "Napoleon Hill",
   description: "Clássico sobre mentalidade de sucesso e riqueza.",
