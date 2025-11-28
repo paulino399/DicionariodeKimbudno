@@ -70,7 +70,7 @@ const books = [
     pages: 50,
     language: "Português",
     cover: "revista",
-    coverImage: "assets/images/revista-cultural.jpg", // Caminho da imagem da capa
+    coverImage: "assets/images/revisakimbundu.jpeg", // Caminho da imagem da capa
     preview: true,
     file: "assets/pdfs/revista-cultural.pdf",
     type: "revista"
