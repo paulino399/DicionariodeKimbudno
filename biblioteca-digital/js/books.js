@@ -35,7 +35,7 @@ const books = [
 
 {
     id: 3,
-    title: "Revista Cultural Kimbundo",
+    title: "Algebra Polinomial",
     author: "Editora Kimbundo",
     description: "Edição mensal com artigos sobre cultura, história e atualidades.",
     category: "revistas",
