@@ -47,15 +47,15 @@ const books = [
   },
 {
     id: 4,
-    title: "Imagens Históricas do Ndongo",
-    author: "Arquivo Nacional",
-    description: "Coleção de imagens históricas do Reino do Ndongo.",
+    title: "Anuaire Du ENSEM 2025",
+    author: "ENSEM",
+    description: "Une école d’ingénieurs du groupe INP au sein de l’Université de Lorraine",
     category: "imagens",
     price: 0,
-    pages: 0,
+    pages: 8,
     language: "Visual",
     cover: "imagem",
-    coverImage: "assets/images/Microélectronica.png", // Caminho da imagem da capa
+    coverImage: "assets/images/Ensem.jpg", // Caminho da imagem da capa
     preview: true,
     file: "assets/pdfs/paulino.pdf",
     type: "imagem"
