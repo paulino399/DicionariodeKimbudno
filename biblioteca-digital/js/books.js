@@ -22,7 +22,7 @@ const books = [
     description: "Introdução abrangente à tecnologia 5G e suas aplicações.",
     category: "LIVROS",
     price: 0,
-    pages: 420,
+    pages: 36,
     language: "Kimbundo/Português",
     cover: "dicionario",
     coverImage: "assets/images/5G.png",
