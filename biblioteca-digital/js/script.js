@@ -119,8 +119,6 @@ function handleRead(file, hasPreview, price, bookId) {
 }
 
 
-
-
 // Função para adicionar ao carrinho
 function addToCart(bookId) {
   const book = books.find(b => b.id === bookId);
@@ -156,7 +154,7 @@ function updateCartUI() {
         <p>Seu carrinho está vazio.</p>
       </div>
     `;
-    cartTotal.textContent = 'Total: R$ 0.00';
+    cartTotal.textContent = 'Total: Kzs 0.00';
     return;
   }
 
@@ -179,7 +177,7 @@ function updateCartUI() {
   const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
   cartModalBody.innerHTML = cartItemsHTML;
-  cartTotal.textContent = `Total: R$ ${total.toFixed(2)}`;
+  cartTotal.textContent = `Total: Kzs ${total.toFixed(2)}`;
 }
 
 // Função para abrir o modal do carrinho
