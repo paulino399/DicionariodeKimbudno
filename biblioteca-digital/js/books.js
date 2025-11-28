@@ -15,18 +15,12 @@ const books = [
     file: "assets/pdfs/AssiNasceUmGrandePoeta.pdf",
     type: "livro"
   },
-
-
-
-
-
-
   {
     id: 2,
-    title: "Dicionário Kimbundo-Português",
-    author: "Academia de Línguas",
-    description: "Dicionário completo com mais de 5.000 palavras e expressões.",
-    category: "dicionarios",
+    title: "Guia Completo sobre 5G",
+    author: "QMC TELECOM",
+    description: "Introdução abrangente à tecnologia 5G e suas aplicações.",
+    category: "LIVROS",
     price: 0,
     pages: 420,
     language: "Kimbundo/Português",
@@ -36,6 +30,9 @@ const books = [
     file: "assets/pdfs/Introdução 5G.pdf",
     type: "dicionario"
   },
+
+
+
 {
     id: 3,
     title: "Revista Cultural Kimbundo",
