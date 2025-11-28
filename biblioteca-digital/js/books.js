@@ -21,7 +21,7 @@ const books = [
     author: "QMC TELECOM",
     description: "Introdução abrangente à tecnologia 5G e suas aplicações.",
     category: "LIVROS",
-    price: 0,
+    price: 750,
     pages: 36,
     language: "Português",
     cover: "livro",
@@ -30,23 +30,20 @@ const books = [
     file: "assets/pdfs/Introdução 5G.pdf",
     type: "livro"
   },
-
-
-
 {
     id: 3,
     title: "Algebra Polinomial",
-    author: "Editora Kimbundo",
-    description: "Edição mensal com artigos sobre cultura, história e atualidades.",
-    category: "revistas",
-    price: 0,
+    author: "Cristiam Heurtas ",
+    description: "Material acadêmico sobre álgebra polinomial para estudantes de matemática.",
+    category: "livros",
+    price:1000,
     pages: 50,
     language: "Português",
-    cover: "revista",
+    cover: "livros",
     coverImage: "assets/images/polinomio.jpg", // Caminho da imagem da capa
     preview: true,
     file: "assets/pdfs/Math.pdf",
-    type: "revista"
+    type: "livros"
   },
 
 
