@@ -51,7 +51,7 @@ const books = [
     author: "ENSEM",
     description: "Une école d’ingénieurs du groupe INP au sein de l’Université de Lorraine",
     category: "imagens",
-    price: 0,
+    price: 250,
     pages: 8,
     language: "Visual",
     cover: "imagem",
@@ -66,7 +66,7 @@ const books = [
     author: "Editora Kimbundo",
     description: "Edição mensal com artigos sobre cultura, história e atualidades.",
     category: "revistas",
-    price: 0,
+    price: 100,
     pages: 25,
     language: "Português",
     cover: "revista",
@@ -75,7 +75,6 @@ const books = [
     file: "assets/pdfs/Nzinga.pdf",
     type: "revista"
   },
-
 
 
   {
@@ -94,7 +93,9 @@ const books = [
     type: "livro"
   },
 
-  {
+
+
+{
     id: 7,
     title: "Química Geral I",
     author: "Ednilza Feitosa, Francisco Barbosa, Cristiane Forte",
