@@ -45,10 +45,7 @@ const books = [
     file: "assets/pdfs/Math.pdf",
     type: "livros"
   },
-
-
-
-  {
+{
     id: 4,
     title: "Imagens Históricas do Ndongo",
     author: "Arquivo Nacional",
@@ -58,11 +55,14 @@ const books = [
     pages: 0,
     language: "Visual",
     cover: "imagem",
-    coverImage: "assets/images/revista-cultural.jpg", // Caminho da imagem da capa
+    coverImage: "assets/images/Microélectronica.png", // Caminho da imagem da capa
     preview: true,
-    file: "",
+    file: "assets/images/Microélectronica.png",
     type: "imagem"
   },
+
+
+
    {
     id: 4,
     title: "Revista Cultural Kimbundo",
