@@ -28,7 +28,7 @@ const books = [
     coverImage: "assets/images/5G.png",
     preview: true,
     file: "assets/pdfs/Introdução 5G.pdf",
-    type: "dicionario"
+    type: "livro"
   },
 
 
