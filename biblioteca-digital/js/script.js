@@ -55,7 +55,7 @@ function createBookCard(book) {
           <span>${book.language}</span>
         </div>
         <div class="book-price">
-          ${book.price === 0 ? 'Gratuito' : `R$ ${book.price.toFixed(2)}`}
+          ${book.price === 0 ? 'Gratuito' : `Kzs ${book.price.toFixed(2)}`}
         </div>
         <div class="book-actions">
           <button class="btn btn-primary" onclick="handleRead('${book.file}', ${book.preview}, ${book.price}, ${book.id})">
