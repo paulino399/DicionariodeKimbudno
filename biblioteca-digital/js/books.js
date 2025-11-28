@@ -57,7 +57,7 @@ const books = [
     cover: "imagem",
     coverImage: "assets/images/Microélectronica.png", // Caminho da imagem da capa
     preview: true,
-    file: "assets/images/Microélectronica.png",
+    file: "assets/pdfs/paulino.pdf",
     type: "imagem"
   },
 
