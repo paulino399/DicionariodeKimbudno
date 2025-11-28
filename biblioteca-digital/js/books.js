@@ -67,12 +67,12 @@ const books = [
     description: "Edição mensal com artigos sobre cultura, história e atualidades.",
     category: "revistas",
     price: 0,
-    pages: 50,
+    pages: 25,
     language: "Português",
     cover: "revista",
     coverImage: "assets/images/revisakimbundu.jpeg", // Caminho da imagem da capa
     preview: true,
-    file: "assets/pdfs/revista-cultural.pdf",
+    file: "assets/pdfs/Nzinga.pdf",
     type: "revista"
   },
 
