@@ -83,7 +83,7 @@ const books = [
     author: "Gotronics",
     description: "Guia prático sobre comunicação I2C com Arduino.",
     category: "livros",
-    price: 0,
+    price: 800,
     pages: 8,
     language: "Francês",
     cover: "Electronique",
@@ -92,16 +92,13 @@ const books = [
     file: "assets/pdfs/Arduino_I2C.pdf",
     type: "livro"
   },
-
-
-
 {
     id: 7,
     title: "Química Geral I",
     author: "Ednilza Feitosa, Francisco Barbosa, Cristiane Forte",
     description: "Livro didático da UECE para o ensino de química geral.",
     category: "educacao",
-    price: 0,
+    price: 500,
     pages: 136,
     language: "Português",
     cover: "quimica",
@@ -116,7 +113,7 @@ const books = [
     author: "IFCE / UAB / MEC",
     description: "Material acadêmico para licenciatura em matemática.",
     category: "educacao",
-    price: 0,
+    price: 150,
     pages: 310,
     language: "Português",
     cover: "estatistica",
@@ -146,7 +143,7 @@ const books = [
   author: "Napoleon Hill",
   description: "Clássico sobre mentalidade de sucesso e riqueza.",
   category: "autoajuda",
-  price: 0,
+  price: 200,
   pages: 320,
   language: "Português",
   cover: "riqueza",
