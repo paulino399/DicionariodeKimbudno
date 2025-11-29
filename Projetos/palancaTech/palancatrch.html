@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>PalancaTech – Projeto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero-palanca">
+    <h1>PalancaTech</h1>
+    <p>Startup tecnológica focada em soluções de energia, eletrónica, automação e desenvolvimento web para o mercado africano.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Sobre a empresa -->
+    <section>
+      <h2>Quem Somos</h2>
+      <p>A PalancaTech é uma empresa tecnológica inovadora que atua no desenvolvimento e otimização de infraestruturas industriais nos sectores de energia, eletrónica e automação, com foco no continente africano.</p>
+      <p>Com soluções adaptadas às realidades locais e alinhadas a padrões internacionais, a empresa contribui para a transformação digital e energética em Angola e outros mercados africanos.</p>
+    </section>
+
+    <!-- Serviços principais -->
+    <section>
+      <h2>O Que Fazemos</h2>
+      <ul>
+        <li>Desenvolvimento de sites modernos e funcionais para empresas e startups.</li>
+        <li>Projetos eletrónicos inovadores com foco em IoT para casas inteligentes, monitorização industrial e agricultura de precisão.</li>
+        <li>Soluções de energia inteligente, incluindo sistemas de energia renovável e automação de infraestruturas.</li>
+        <li>Serviços de manutenção preventiva e corretiva em sistemas elétricos, eletrónicos e de automação.</li>
+      </ul>
+    </section>
+
+    <!-- Visão e futuro -->
+    <section>
+      <h2>Visão Para o Futuro</h2>
+      <p>A PalancaTech pretende liderar o mercado tecnológico africano, expandindo a produção, manutenção e distribuição de soluções elétricas e eletrónicas avançadas, com forte compromisso com sustentabilidade e capacitação de talentos locais.</p>
+    </section>
+
+    <!-- Formulário de candidatura -->
+    <section id="candidatura">
+      <h2>Junte-se à PalancaTech</h2>
+      <p>Se tem interesse em fazer parte deste projeto, preencha o formulário abaixo para enviar a sua candidatura.</p>
+
+      <form id="candidaturaForm">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="area">Área de interesse</label>
+          <input type="text" id="area" name="area" placeholder="Ex.: Desenvolvimento Web, IoT, Energia, etc." required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Mensagem / Apresentação</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Enviar Candidatura</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // CONFIGURA AQUI OS SEUS CONTACTOS
+    const EMAIL_DESTINO = "joaopaulino399@gmail.com";   // seu e-mail
+    const WHATSAPP_NUM = "2449XXXXXXXX";               // seu número no formato internacional, sem + nem espaços
+
+    document.getElementById("candidaturaForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const email = document.getElementById("email").value;
+      const telefone = document.getElementById("telefone").value;
+      const area = document.getElementById("area").value;
+      const mensagem = document.getElementById("mensagem").value;
+
+      const texto = 
+        `Candidatura ao projeto PalancaTech%0A%0A` +
+        `Nome: ${nome}%0A` +
+        `E-mail: ${email}%0A` +
+        `Telefone/WhatsApp: ${telefone}%0A` +
+        `Área de interesse: ${area}%0A%0A` +
+        `Mensagem:%0A${mensagem}`;
+
+      // ENVIAR POR E-MAIL (abre o cliente de e-mail do utilizador)
+      window.open(`mailto:${EMAIL_DESTINO}?subject=Candidatura PalancaTech&body=${texto}`);
+
+      // ENVIAR POR WHATSAPP (abre conversa no WhatsApp)
+      window.open(`https://wa.me/${WHATSAPP_NUM}?text=${texto}`, "_blank");
+    });
+  </script>
+</body>
+</html>
