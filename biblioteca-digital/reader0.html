@@ -48,6 +48,8 @@
         .sidebar-header {
             padding: 1.5rem;
             border-bottom: 1px solid rgba(255,255,255,0.1);
+            overflow-y: auto;
+            max-height: 100vh;
         }
 
         .book-info h1 {
@@ -78,11 +80,6 @@
             border: 2px solid transparent;
             transition: all 0.2s ease;
         }
-        
-
-
-      
-
 
         .page-thumbnail:hover {
             border-color: #3498db;
@@ -102,13 +99,14 @@
             flex: 1;
             display: flex;
             flex-direction: column;
+            min-width: 0;
         }
 
         /* Toolbar */
         .reader-toolbar {
             background: var(--reader-toolbar-bg);
             color: white;
-            padding: 1rem;
+            padding: 0.7rem 1rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -118,67 +116,69 @@
         .toolbar-left, .toolbar-center, .toolbar-right {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.6rem;
         }
 
         .toolbar-btn {
-  background: none;
-  border: none;
-  color: white;
-  padding: 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
+            background: none;
+            border: none;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
 
-.toolbar-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
+        .toolbar-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
 
-    
+        .toolbar-btn-V {
+            background: linear-gradient(90deg, #679583 0%, #b1ead2 100%);
+            border: none;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 8px rgba(30, 60, 50, 0.12);
+            cursor: pointer;
+            transition: background 0.2s, color 0.18s, box-shadow 0.18s;
+            text-decoration: none;
+            white-space: nowrap;
+        }
 
-.toolbar-btn-V {
-  background: linear-gradient(90deg, #679583 0%, #b1ead2 100%);
-  border: none;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1.15rem;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  box-shadow: 0 2px 8px rgba(30, 60, 50, 0.12);
-  cursor: pointer;
-  transition: background 0.2s, color 0.18s, box-shadow 0.18s;
-  text-decoration: none;
-}
+        .toolbar-btn-V i {
+            font-size: 1rem;
+            margin-right: 4px;
+        }
 
-.toolbar-btn-V i {
-  font-size: 1.25rem;
-  margin-right: 6px;
-}
+        .toolbar-btn-V:hover {
+            background: linear-gradient(90deg, #1e4837 0%, #185a3e 100%);
+            box-shadow: 0 4px 16px rgba(30, 60, 50, 0.22);
+            color: #eadb9f;
+        }
 
-.toolbar-btn-V:hover {
-  background: linear-gradient(90deg, #1e4837 0%, #185a3e 100%);
-  box-shadow: 0 4px 16px rgba(30, 60, 50, 0.22);
-  color: #eadb9f;
-}
+        .toolbar-btn-V:active {
+            outline: none;
+            filter: brightness(0.95);
+        }
 
-.toolbar-btn-V:active {
-  outline: none;
-  filter: brightness(0.95);
-}
-
-.toolbar-btn-V a {
-  color: inherit;
-  text-decoration: none;
-}
+        .toolbar-btn-V a {
+            color: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+        }
 
         .page-controls {
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-size: 0.85rem;
         }
 
         .page-input {
@@ -201,7 +201,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
+            padding: 1.5rem;
             overflow: auto;
             position: relative;
         }
@@ -231,25 +231,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .reader-sidebar {
-                position: fixed;
-                left: 0;
-                top: 0;
-                height: 100%;
-                transform: translateX(-100%);
-            }
-
-            .reader-sidebar.open {
-                transform: translateX(0);
-            }
-
-            .sidebar-toggle {
-                display: block !important;
-            }
-        }
-
         .sidebar-toggle {
             display: none;
         }
@@ -259,15 +240,105 @@
             width: 100%;
             height: 4px;
             background: rgba(255,255,255,0.2);
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: relative;
         }
 
         .progress-bar {
             height: 100%;
             background: #e74c3c;
             transition: width 0.3s ease;
+            width: 0;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            body {
+                height: auto;
+                overflow: auto;
+            }
+
+            .reader-container {
+                flex-direction: column;
+                height: 100vh;
+            }
+
+            .reader-sidebar {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 80%;
+                max-width: 280px;
+                transform: translateX(-100%);
+                box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+            }
+
+            .reader-sidebar.open {
+                transform: translateX(0);
+            }
+
+            .sidebar-header {
+                max-height: 100%;
+            }
+
+            .reader-main {
+                width: 100%;
+            }
+
+            .reader-toolbar {
+                padding: 0.6rem 0.7rem;
+                gap: 0.4rem;
+            }
+
+            .toolbar-left {
+                gap: 0.3rem;
+            }
+
+            .toolbar-center {
+                flex: 1;
+                justify-content: center;
+            }
+
+            .toolbar-right {
+                gap: 0.3rem;
+            }
+
+            .page-controls span {
+                font-size: 0.75rem;
+            }
+
+            .page-input {
+                width: 45px;
+            }
+
+            .sidebar-toggle {
+                display: inline-flex;
+            }
+
+            .reader-content {
+                padding: 0.5rem;
+            }
+
+            .pdf-container {
+                width: 100%;
+                max-width: 100%;
+                max-height: calc(100vh - 60px);
+                overflow: auto;
+            }
+
+            #pdf-canvas {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .toolbar-btn-V {
+                padding: 6px 10px;
+                font-size: 0.8rem;
+            }
+
+            .zoom-controls span#zoomLevel {
+                font-size: 0.75rem;
+            }
         }
     </style>
 </head>
@@ -295,7 +366,9 @@
                         <i class="fas fa-bars"></i>
                     </button>
                     <button class="toolbar-btn-V" onclick="goBack()">
-                        <a href="/biblioteca-digital/index.html"><i class="fas fa-arrow-left"></i> Voltar</a>
+                        <a href="/biblioteca-digital/index.html">
+                            <i class="fas fa-arrow-left"></i> Voltar
+                        </a>
                     </button>
                 </div>
                 
@@ -348,7 +421,7 @@
                         <i class="fas fa-book-open"></i>
                         <p>Carregando livro...</p>
                     </div>
-                    <canvas id="pdf-canvas"></canvas>
+                    anvas id="pdf-canvas"></canvas>
                 </div>
             </div>
         </div>
@@ -392,7 +465,6 @@
                 document.getElementById('totalPages').textContent = totalPages;
                 document.getElementById('currentPage').value = 1;
                 
-                // Esconder spinner
                 document.getElementById('loadingSpinner').style.display = 'none';
                 
                 await renderPage(1);
@@ -403,7 +475,7 @@
                 document.getElementById('loadingSpinner').innerHTML = `
                     <i class="fas fa-exclamation-triangle"></i>
                     <p>Erro ao carregar o livro.</p>
-                    <button class="btn btn-primary" onclick="window.close()">Fechar</button>
+                    <button class="toolbar-btn-V" onclick="window.close()">Fechar</button>
                 `;
             }
         }
@@ -437,7 +509,6 @@
             const container = document.getElementById('thumbnailContainer');
             container.innerHTML = '';
             
-            // Limita a 10 miniaturas para performance
             const maxThumbnails = Math.min(totalPages, 10);
             
             for (let i = 1; i <= maxThumbnails; i++) {
@@ -445,12 +516,11 @@
                 thumbnail.className = 'page-thumbnail';
                 if (i === 1) thumbnail.classList.add('active');
                 
-                thumbnail.innerHTML = `<canvas id="thumb-${i}"></canvas>`;
+                thumbnail.innerHTML = `anvas id="thumb-${i}"></canvas>`;
                 thumbnail.onclick = () => goToPage(i);
                 
                 container.appendChild(thumbnail);
                 
-                // Renderizar miniatura
                 try {
                     const page = await pdfDoc.getPage(i);
                     const thumbViewport = page.getViewport({ scale: 0.2 });
@@ -546,9 +616,9 @@
             }
         }
 
-        // Voltar
+        // Voltar / Fechar
         function goBack() {
-            window.close();
+            window.history.back();
         }
 
         function closeReader() {
@@ -557,7 +627,6 @@
 
         // Event listeners
         function setupEventListeners() {
-            // Teclado
             document.addEventListener('keydown', (e) => {
                 switch(e.key) {
                     case 'ArrowLeft':
